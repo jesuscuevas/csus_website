@@ -23,8 +23,8 @@ title: Clark Fitzgerald
 description: >- # this means to ignore newlines until "baseurl:"
     Personal web pages for Professor Clark Fitzgerald, Mathematics and Statistics Department, CSU Sacramento.
     Course materials, data science and software tutorials, and a blog.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://webpages.csus.edu/fitzgerald/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/fitzgerald" # the subpath of your site, e.g. /blog
+url: "http://webpages.csus.edu" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: clarkfitzg
 github_username:  clarkfitzg
 
