@@ -3,6 +3,7 @@ title: About
 type: pages
 ---
 
+![profile picture]({% link img/profile.jpg %})
 
 I'm an Assistant Professor in the [Department of Mathematics & Statistics](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/) at CSU Sacramento, where I teach classes in statistics, computing, and data science.
 
