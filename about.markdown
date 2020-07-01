@@ -4,15 +4,17 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+![profile]({{ site.url }}/assets/profile.jpg)
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I'm an Assistant Professor in the [Department of Mathematics & Statistics](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/) at CSU Sacramento, where I teach classes in statistics, computing, and data science.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+The following are some ways to connect or otherwise see what I'm up to.
+Sorry if I don't engage much through these platforms, but my time goes to my family and my students first.
 
-
-[jekyll-organization]: https://github.com/jekyll
+- Twitter [@clarkfitzg](https://twitter.com/clarkfitzg)
+    I use Twitter when I want to share content publicly.
+- Github [@clarkfitzg](https://github.com/clarkfitzg)
+    I have all kinds of old code and projects sitting around here.
+- LinkedIn [@clarkfitzg](https://www.linkedin.com/in/clarkfitzg/)
+    Please send me a personal message if you're inviting me to connect.
+- Email mylastname `@csus.edu`.
