@@ -3,7 +3,7 @@ title: About
 type: pages
 ---
 
-![profile picture]({% link img/profile.jpg %})
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eJooFMxrPMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I'm an Assistant Professor in the [Department of Mathematics & Statistics](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/) at CSU Sacramento, where I teach classes in statistics, computing, and data science.
 
@@ -17,3 +17,5 @@ Sorry if I don't engage much through these platforms; my time goes to my family 
 - LinkedIn [@clarkfitzg](https://www.linkedin.com/in/clarkfitzg/)
     Please send me a personal message if you're inviting me to connect.
 - Email mylastname `@csus.edu`.
+
+![profile picture]({% link img/profile.jpg %})
