@@ -5,7 +5,11 @@ title: About
 permalink: /about/
 ---
 
-![profile]({{ site.url }}/assets/images/profile.jpg)
+<!--
+![profile picture]({{ site.url }}/assets/images/profile.jpg)
+![profile picture](/assets/images/profile.jpg)
+-->
+![profile picture]({{ '/assets/images/profile.jpg' | relative_url }})
 
 I'm an Assistant Professor in the [Department of Mathematics & Statistics](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/) at CSU Sacramento, where I teach classes in statistics, computing, and data science.
 
