@@ -34,6 +34,13 @@ plugins:
   - jekyll-feed
 
 
+defaults:
+  - scope:
+      path: ""    # Global defaults
+      type: pages
+    values:
+      layout: single
+
 # Allows me to refer to images as ![profile picture](/img/profile)
 collections:
   img:

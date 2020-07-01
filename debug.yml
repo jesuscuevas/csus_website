@@ -1,0 +1,4 @@
+# From https://stackoverflow.com/questions/37049753/how-can-i-easily-manage-different-base-url-of-jekyll-webpage-on-localhost-and-re?noredirect=1&lq=1
+name: MySite [DEBUG MODE]
+debug: true
+url: http://127.0.0.1:4000
