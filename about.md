@@ -18,7 +18,6 @@ The Liquid links {% link /img/profile.jpg %} seem to make more sense, because th
 
 
 
-
 I'm an Assistant Professor in the [Department of Mathematics & Statistics](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/) at CSU Sacramento, where I teach classes in statistics, computing, and data science.
 
 The following are some ways to connect or otherwise see what I'm up to.
