@@ -3,20 +3,6 @@ title: About
 type: pages
 ---
 
-<!--
-![profile picture]({{ site.url }}/assets/images/profile.jpg)
-![profile picture](/assets/images/profile.jpg)
-
-This works, but is super ugly and unwieldy.
-Do I have to do this with every relative link?
-
-The Liquid links {% link /img/profile.jpg %} seem to make more sense, because they validate the link.
--->
-![profile picture]({{ '/img/profile.jpg' | relative_url }})
-
-![profile picture]({% link /img/profile.jpg %})
-
-
 
 I'm an Assistant Professor in the [Department of Mathematics & Statistics](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/) at CSU Sacramento, where I teach classes in statistics, computing, and data science.
 

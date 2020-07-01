@@ -41,11 +41,11 @@ defaults:
     values:
       layout: single
 
-# Allows me to refer to images as ![profile picture](/img/profile)
-collections:
-  img:
-    output: true
-    permalink: /:collection/:name
+## Allows me to refer to images as ![profile picture](/img/profile)
+#collections:
+#  img:
+#    output: true
+#    permalink: /:collection/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.
