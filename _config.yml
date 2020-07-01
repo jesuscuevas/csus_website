@@ -41,6 +41,8 @@ defaults:
     values:
       layout: single
 
+include: ["_pages", "_tutorials"]
+
 ## Allows me to refer to images as ![profile picture](/img/profile)
 #collections:
 #  img:
