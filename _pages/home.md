@@ -5,4 +5,4 @@ permalink: /
 ---
 
 
-Here's the [Julia debugging tutorial]({% link _tutorials/julia_debugger.md %}).
+Here's the [Julia debugging tutorial]({% link tutorials/julia_debugger.md %}).
