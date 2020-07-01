@@ -10,9 +10,8 @@ title: About
 This works, but is super ugly and unwieldy.
 Do I have to do this with every relative link?
 -->
-![profile picture]({{ '/assets/images/profile.jpg' | relative_url }})
+![profile picture]({{ '/img/profile.jpg' | relative_url }})
 
-![profile picture]({{ site.baseurl }}/assets/images/profile.jpg)
 
 I'm an Assistant Professor in the [Department of Mathematics & Statistics](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/) at CSU Sacramento, where I teach classes in statistics, computing, and data science.
 

@@ -33,8 +33,12 @@ theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+
+# Allows me to refer to images as ![profile picture](/img/profile)
+collections:
+  img:
+    output: true
+    permalink: /:collection/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.
