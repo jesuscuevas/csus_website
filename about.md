@@ -8,6 +8,9 @@ permalink: /about/
 <!--
 ![profile picture]({{ site.url }}/assets/images/profile.jpg)
 ![profile picture](/assets/images/profile.jpg)
+
+This works, but is super ugly and unwieldy.
+Do I have to do this with every relative link?
 -->
 ![profile picture]({{ '/assets/images/profile.jpg' | relative_url }})
 
