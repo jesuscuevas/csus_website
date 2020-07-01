@@ -9,12 +9,14 @@ type: pages
 
 This works, but is super ugly and unwieldy.
 Do I have to do this with every relative link?
+
+The Liquid links {% link /img/profile.jpg %} seem to make more sense, because they validate the link.
 -->
 ![profile picture]({{ '/img/profile.jpg' | relative_url }})
 
-![profile picture](/img/profile.jpg)
+![profile picture]({% link /img/profile.jpg %})
 
-![profile picture](/img/profile)
+
 
 
 I'm an Assistant Professor in the [Department of Mathematics & Statistics](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/) at CSU Sacramento, where I teach classes in statistics, computing, and data science.
