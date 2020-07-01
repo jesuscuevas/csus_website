@@ -22,7 +22,7 @@ title: Clark Fitzgerald
 #email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
     Personal web pages for Professor Clark Fitzgerald, Mathematics and Statistics Department, CSU Sacramento.
-    Course materials, data science and software tutorials, and a blog.
+    Course materials, data science and software tutorials, and miscellaneous writing.
 baseurl: "/fitzgerald" # the subpath of your site, e.g. /blog
 url: "http://webpages.csus.edu" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: clarkfitzg
@@ -32,6 +32,9 @@ github_username:  clarkfitzg
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
