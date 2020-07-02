@@ -17,7 +17,7 @@ exclude:
 collections:
     pages:
         output: true
-        permalink: :title
+        permalink: :title/
 
 defaults:
   -
@@ -25,7 +25,7 @@ defaults:
         path: ""
         type: posts
     values:
-        permalink: :title
+        permalink: :title/
         layout: single
         author_profile: true
         read_time: true
