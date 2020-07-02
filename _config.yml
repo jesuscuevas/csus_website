@@ -1,15 +1,32 @@
 title: Clark Fitzgerald
+subtitle: statistician @ Sac State
+name: Clark Fitzgerald
 description: >- # this means to ignore newlines until "baseurl:"
     Data science resources by Professor Clark Fitzgerald, Mathematics and Statistics Department, CSU Sacramento.
     Course materials, technology and software tutorials, case studies, and miscellaneous writing.
 baseurl: /fitzgerald
 url: http://webpages.csus.edu
-twitter_username: clarkfitzg
-github_username:  clarkfitzg
+twitter:
+    username: clarkfitzg
+social:
+  links:
+    - https://twitter.com/clarkfitzg
+    - https://github.com/clarkfitzg
+    - https://www.linkedin.com/in/clarkfitzg
+
+analytics:
+  provider: google-gtag
+  google:
+    tracking_id: UA-171580159-1
+    anonymize_ip: false
+
+locale: en-US
+search: true
 
 theme: minimal-mistakes-jekyll
 plugins:
-  - jekyll-feed
+    - jekyll-feed
+    - jekyll-seo-tag
 
 exclude:
     - makefile
@@ -38,3 +55,8 @@ defaults:
         type: pages
     values:
         layout: single
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development  # disable compression in dev environment
