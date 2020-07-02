@@ -359,6 +359,136 @@ If a = 2, x = 3, y = 4, then ax + y = 10
 Problem solved.
 
 
+## An __Actual__ Bug
+
+I wrote the following buggy program to solve [Project Euler number 18](https://projecteuler.net/problem=18).
+
+```julia
+maxsum = function(datafile = "18example.txt")
+    oldmax = [0]
+    for line in eachline(datafile)
+        weights = parse.(Int, split(line))
+        newmax = similar(weights)
+        for (i, wi) in enumerate(weights)
+            largest_parent = if i == 1
+                    # The left side of the triangle
+                    oldmax[i]
+                elseif i == length(weights)
+                    # The right side of the triangle
+                    oldmax[i-1]
+                else
+                    # The middle of the triangle
+                    maximum(oldmax[(i-1):i])
+                end
+            newmax[i] = largest_parent + wi
+        end
+    end
+    maximum(newmax)
+end
+```
+
+If you'd like to follow along, create a file called `18example.txt` with the following contents:
+```
+3
+7 4
+2 4 6
+8 5 9 3
+```
+
+`maxsum` produces an error when I try to use it.
+
+```julia
+julia> maxsum()
+ERROR: BoundsError: attempt to access 1-element Array{Int64,1} at index [1:2]
+Stacktrace:
+ [1] throw_boundserror(::Array{Int64,1}, ::Tuple{UnitRange{Int64}}) at ./abstractarray.jl:542
+ [2] checkbounds at ./abstractarray.jl:507 [inlined]
+ [3] getindex at ./array.jl:817 [inlined]
+ [4] (::var"#1#2")(::String) at ./REPL[26]:16
+ [5] (::var"#1#2")() at ./REPL[26]:2
+ [6] top-level scope at REPL[27]:1
+```
+
+I didn't immediately notice the error, so I pulled out the debugger and went straight to the help menu to remind myself of the syntax.
+
+```julia
+julia> using Debugger
+
+julia> break_on(:error)
+
+julia> @run maxsum()
+Breaking for error:
+ERROR: BoundsError: attempt to access 1-element Array{Int64,1} at index [1:2]
+Stacktrace:
+ [1] throw_boundserror(::Array{Int64,1}, ::Tuple{UnitRange{Int64}}) at abstractarray.jl:542
+ [2] checkbounds(::Array{Int64,1}, ::Tuple{UnitRange{Int64}}) at abstractarray.jl:507
+ [3] getindex(::Array{Int64,1}, ::UnitRange{Int64}) at array.jl:817
+ [4] (::var"#3#4")(::String) at /Users/clark/projects/summer20euler/clark/18.jl:19
+ [5] (::var"#3#4")() at /Users/clark/projects/summer20euler/clark/18.jl:5
+
+In throw_boundserror(A, I) at abstractarray.jl:542
+>542  throw_boundserror(A, I) = (@_noinline_meta; throw(BoundsError(A, I)))
+
+About to run: (throw)(BoundsError([0], (1:2,)))
+1|debug> ?
+  Debugger commands
+  ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+ ...
+```
+
+The first couple frames didn't look familiar, so I crawled up the stack.
+
+```julia
+1|debug> up
+In checkbounds(A, I) at abstractarray.jl:505
+ 505  function checkbounds(A::AbstractArray, I...)
+ 506      @_inline_meta
+>507      checkbounds(Bool, A, I...) || throw_boundserror(A, I)
+ 508      nothing
+ 509  end
+
+About to run: (Base.throw_boundserror)([0], (1:2,))
+2|debug> up
+...
+3|debug> up
+In #3(datafile) at /Users/clark/projects/summer20euler/clark/18.jl:4
+ 15                  # The right side of the triangle
+ 16                  oldmax[i-1]
+ 17              else
+ 18                  # The middle of the triangle
+>19                  maximum(oldmax[(i-1):i])
+ 20              end
+ 21          newmax[i] = largest_parent + wi
+ 22      end
+ 23  end
+```
+
+Aha, this looks like the code I wrote!
+It looks like the error came from this indexing: `oldmax[(i-1):i]`.
+Let's see if `i` and `oldmax` match my expectations.
+
+```julia
+About to run: (getindex)([0], 1:2)
+4|debug> fr
+[4] #3(datafile) at /Users/clark/projects/summer20euler/clark/18.jl:4
+  | datafile::String = "18example.txt"
+  | oldmax::Array{Int64,1} = [0]
+  | ::Int64 = 2
+  | line::String = "2 4 6"
+  | weights::Array{Int64,1} = [2, 4, 6]
+  | newmax::Array{Int64,1} = [2, 0, 0]
+  | i::Int64 = 2
+  | wi::Int64 = 4
+  | largest_parent::Int64 = 0
+4|debug> q
+julia>
+```
+
+Nope, I expected the `oldmax` array to grow by one element with every iteration.
+It doesn't grow, because I forgot to update with the line `oldmax = newmax`.
+Problem solved.
+
+
 ## Conclusion
 
 This post highlighted only a couple of Debugger's rich set of capabilities.
