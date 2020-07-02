@@ -361,6 +361,7 @@ Problem solved.
 
 ## An __Actual__ Bug
 
+I get lots of practice using debuggers, because I write lots of bugs.
 I wrote the following buggy program to solve [Project Euler number 18](https://projecteuler.net/problem=18).
 
 ```julia
@@ -486,7 +487,13 @@ julia>
 
 Nope, I expected the `oldmax` array to grow by one element with every iteration.
 It doesn't grow, because I forgot to update with the line `oldmax = newmax`.
-Problem solved.
+That's an easy fix.
+
+For this problem, I could have stared at it until I saw the error.
+Depending on how fresh my brain is, the "stare 'em down" approach for a problem like this that could take less than a minute or more than an hour.
+It's also easy to convince yourself that code is correct when you stare at it for too long.
+After all, you have a clear idea what it should do.
+The problem is almost always that you didn't communicate that idea clearly enough to the computer.
 
 
 ## Conclusion
@@ -498,5 +505,12 @@ We didn't even talk about watching expressions, editing code on the fly, or more
 
 Debuggers are one of those peripheral skills that take a little time and effort to learn, so it's easy to put it off.
 Don't.
+You and I both write buggy programs.
 Debuggers save time by allowing you to quickly pinpoint problems.
 They also strengthen your mental model, for any language, by allowing you to constantly test, explore, and verify what you believe to be true.
+
+Some bugs are truly difficult to uncover, even with debuggers.
+For example, a system might have many interacting parts, and it's hard to isolate where the issue is.
+A helpful strategy in that case is to spend time hunting for it, and then walk away and clear your head.
+Go for a walk, get some fresh air, and sit back down a couple hours later, or the next day.
+Many times I've hunted fruitlessly for hours, and then sat back down with a clear head and immediately found the bug.
