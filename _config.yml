@@ -35,19 +35,24 @@ plugins:
 
 
 defaults:
+  # _posts
   - scope:
-      path: ""    # Global defaults
-      type: pages
+      path: ""
+      type: posts
     values:
       layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
-include: ["_pages"]
 
-## Allows me to refer to images as ![profile picture](/img/profile)
-#collections:
-#  img:
-#    output: true
-#    permalink: /:collection/:name
+include: 
+    - _pages
+
+exclude:
+    - makefile
 
 # Exclude from processing.
 # The following items will not be processed, by default.
