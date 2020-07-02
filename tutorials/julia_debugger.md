@@ -363,6 +363,9 @@ Problem solved.
 
 I get lots of practice using debuggers, because I write lots of bugs.
 I wrote the following buggy program to solve [Project Euler number 18](https://projecteuler.net/problem=18).
+The problem is finding a maximal sum by traversing a triangle, but that's not so important.
+Don't focus on the code either.
+Our goal is to follow along with a real debugging process.
 
 ```julia
 maxsum = function(datafile = "18example.txt")
@@ -410,7 +413,7 @@ Stacktrace:
  [6] top-level scope at REPL[27]:1
 ```
 
-I didn't immediately notice the error, so I pulled out the debugger and went straight to the help menu to remind myself of the syntax.
+I didn't immediately spot the error based on the stack trace, so I pulled out the debugger and went straight to the help menu to remind myself of the syntax.
 
 ```julia
 julia> using Debugger
@@ -486,7 +489,7 @@ julia>
 ```
 
 Nope, I expected the `oldmax` array to grow by one element with every iteration.
-It doesn't grow, because I forgot to update with the line `oldmax = newmax`.
+It doesn't grow, because I forgot to update with the line `oldmax = newmax` after processing each line.
 That's an easy fix.
 
 For this problem, I could have stared at it until I saw the error.
@@ -505,7 +508,7 @@ We didn't even talk about watching expressions, editing code on the fly, or more
 
 Debuggers are one of those peripheral skills that take a little time and effort to learn, so it's easy to put it off.
 Don't.
-You and I both write buggy programs.
+Bugs will crop up despite your best efforts.
 Debuggers save time by allowing you to quickly pinpoint problems.
 They also strengthen your mental model, for any language, by allowing you to constantly test, explore, and verify what you believe to be true.
 
@@ -514,3 +517,5 @@ For example, a system might have many interacting parts, and it's hard to isolat
 A helpful strategy in that case is to spend time hunting for it, and then walk away and clear your head.
 Go for a walk, get some fresh air, and sit back down a couple hours later, or the next day.
 Many times I've hunted fruitlessly for hours, and then sat back down with a clear head and immediately found the bug.
+
+Happy debugging!
