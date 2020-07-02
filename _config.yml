@@ -38,4 +38,3 @@ defaults:
         type: pages
     values:
         layout: single
-        read_time: true
