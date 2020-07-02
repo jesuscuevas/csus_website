@@ -1,6 +1,4 @@
 ---
-title: Contact
-type: pages
 ---
 
 ![profile picture]({% link img/profile.jpg %})
