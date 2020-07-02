@@ -1,7 +1,6 @@
 ---
 title: Contact
 type: pages
-permalink: /contact/
 ---
 
 ![profile picture]({% link img/profile.jpg %})

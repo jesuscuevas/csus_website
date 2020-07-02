@@ -1,9 +1,10 @@
 ---
-layout: single
 title: Introduction to Julia's Debugger
-date: 2020-06-19 08:34
-comments: false
-categories: julia, debugging, software
+date: 2020-07-02
+tags:
+    - julia
+    - debugging 
+    - software
 ---
 
 This post demonstrates [Julia's Debugger](https://github.com/JuliaDebug/Debugger.jl) through some simple examples.

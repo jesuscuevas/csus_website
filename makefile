@@ -1,2 +1,2 @@
 serve:
-	jekyll serve
+	jekyll serve --watch
