@@ -9,8 +9,6 @@ If you're an alumni of one of my courses and you're using what you learned from 
 Forgive me if I don't engage much publicly; my time is limited, and it goes to my family and students first.
 
 - Twitter [@clarkfitzg](https://twitter.com/clarkfitzg)
-    I use Twitter to share content publicly.
 - Github [@clarkfitzg](https://github.com/clarkfitzg)
-    All kinds of old code and projects are sitting around in here.
 - LinkedIn [@clarkfitzg](https://www.linkedin.com/in/clarkfitzg/)
 - Email `fitzgerald@csus.edu`
