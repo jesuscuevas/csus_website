@@ -1,5 +1,5 @@
 title: Clark Fitzgerald
-subtitle: statistician @ Sac State
+subtitle: Statistics Professor @ Sacramento State
 name: Clark Fitzgerald
 author: Clark Fitzgerald
 logo: /img/sac_state_logo.png
@@ -15,20 +15,17 @@ social:
     - https://twitter.com/clarkfitzg
     - https://github.com/clarkfitzg
     - https://www.linkedin.com/in/clarkfitzg
-
 analytics:
   provider: google-gtag
   google:
     tracking_id: UA-171580159-1
     anonymize_ip: false
-
 locale: en-US
 search: true
-
 theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: contrast
 plugins:
     - jekyll-feed
-
 exclude:
     - makefile
 
