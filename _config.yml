@@ -28,6 +28,7 @@ plugins:
     - jekyll-feed
 exclude:
     - makefile
+    - todo.md
 
 collections:
     pages:

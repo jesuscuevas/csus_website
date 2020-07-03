@@ -1,0 +1,2 @@
+- lighten code snippet background
+- post dates appear at top of page, maybe add updated date?
