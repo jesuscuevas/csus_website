@@ -5,9 +5,14 @@ tags:
     - personal
 ---
 
-I'm a first generation college student, and a veteran.
+I didn't follow the typical route into higher education.
+I served in the military, returned to community college after a break of several years, transferred to a university, worked, returned later to graduate school, and had kids while in school.
+Every step of the way I felt like I was going to fail.
+I made it through because of a positive attitude, a disciplined approach to my studies, and using available resources.
+
 <iframe seamless="seamless" style="width: 100%; border: none; display: block; max-width: 768px; height: 600px;" src="https://getyarn.io/yarn-clip/embed/8c90e7d7-9877-4f5b-83d3-c43f2c6e7a6d?autoplay=false"> </iframe>
-I grew up in a small rural town without many opportunities or much excitement.
+
+I grew up in a small rural town in Northern California.
 By the end of high school I was tired of school.
 I didn't expect to ever go to college, so I joined the Army.
 
