@@ -59,3 +59,5 @@ compress_html:
   clippings: all
   ignore:
     envs: development  # disable compression in dev environment
+
+# Sac state web colors {green: #044432, gold: #bcac7a}
