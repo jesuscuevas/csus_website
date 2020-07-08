@@ -29,6 +29,8 @@ plugins:
 exclude:
     - makefile
     - todo.md
+include:
+    - _assets/site.webmanifest
 
 collections:
     pages:
