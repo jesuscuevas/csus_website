@@ -1,3 +1,4 @@
+- Can I rename posts without a date?
 - create page based on tags
 - lighten code snippet background
 - widen code blocks, and general text
