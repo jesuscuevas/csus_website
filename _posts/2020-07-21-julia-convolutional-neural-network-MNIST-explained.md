@@ -112,9 +112,12 @@ end
 
 The rest of the program passes `Args` around all over, so they act like global parameters.
 `lr` is the learning rate which controls 
-They're mutuable because the program 
+They're mutuable because the program [dynamically adjusts them later](#learning-rate) based on how the training goes.
 
 
+### Minibatches
+
+```julia
 # Bundle images together with labels and group into minibatchess
 function make_minibatch(X, Y, idxs)
     X_batch = Array{Float32}(undef, size(X[1])..., 1, length(idxs))
@@ -124,7 +127,17 @@ function make_minibatch(X, Y, idxs)
     Y_batch = onehotbatch(Y[idxs], 0:9)
     return (X_batch, Y_batch)
 end
+```
 
+A Minibatch uses a subset of the data used for a single update to the model.
+`X_batch` is a 4 dimensional Float32 array, with the last dimension corresponding to the sample, so `X_batch[:, :, :, 1]` is the first image.
+I presume the first three dimensions are x axis, y axis, and color channel.
+
+
+
+
+
+```
 function get_processed_data(args)
     # Load labels and images from Flux.Data.MNIST
     train_labels = MNIST.labels()
@@ -255,7 +268,12 @@ help?> ADAM
             best_acc = acc
             last_improvement = epoch_idx
         end
-	
+```
+
+### Learning Rate
+
+```julia
+
         # If we haven't seen improvement in 5 epochs, drop our learning rate:
         if epoch_idx - last_improvement >= 5 && opt.eta > 1e-6
             opt.eta /= 10.0
