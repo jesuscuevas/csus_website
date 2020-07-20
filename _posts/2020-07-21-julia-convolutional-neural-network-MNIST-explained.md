@@ -129,12 +129,22 @@ function make_minibatch(X, Y, idxs)
 end
 ```
 
-A Minibatch uses a subset of the data used for a single update to the model.
+A Minibatch uses a subset of the data used for a single update to the model, and this code produces minibatches from the original data.
+
+The definition of `X_batch` is `Array{Float32}(undef, size(X[1])..., 1, length(idxs))`.
+Here's what each argument means:
+
+- `Array{Float32}(undef,` the function call and the first argument, declares this as a Float32 array.
+    There are no initial values, because we'll fill them in later.
+- `size(X[1])...,`, unpack into the two values, 28 and 28, which are the dimensions of the pixels in the image.
+    This clever unpacking based on the value of `x[1]` means that the code will work with any set of images, as long as they're all the same size.
+    It should also unpack higher dimensions.
+- `1, ` means the next (3rd) dimension has only 1 slice, so it's not really another dimension.
+    I believe this is used for color channels.
+- `length(idxs)` says that the array will be as long as the number of images.
+
 `X_batch` is a 4 dimensional Float32 array, with the last dimension corresponding to the sample, so `X_batch[:, :, :, 1]` is the first image.
-I presume the first three dimensions are x axis, y axis, and color channel.
-
-
-
+`onehotbatch(Y[idxs], 0:9)` encodes the labels `Y[idxs]` in a matrix of 1's and 0's, using 0:9 as the possible class values.
 
 
 ```
