@@ -19,6 +19,9 @@ A student, Stephen Gibson, wanted to use a convolutional neural network to class
 I want to learn Julia, so this seemed like a nice application to motivate me to learn something new.
 My strategy is to comment the existing code in great detail, along with what I don't understand, so that we can adapt this code to our video classification task.
 
+In other words, this is my first time looking at actual neural networks in code, or using software for neural networks, so I have no idea what I'm doing.
+Keep that in mind as you read. 😘 
+
 Julia's [model-zoo package](https://github.com/FluxML/model-zoo) has many examples of using Julia for machine learning.
 The code that follows comes from model-zoo's [example of applying a convolutional neural network](https://github.com/FluxML/model-zoo/blob/master/vision/mnist/conv.jl) to the MNIST data set.
 The [MNIST data set](https://en.wikipedia.org/wiki/MNIST_database) is a set of images containing handwritten digits.
