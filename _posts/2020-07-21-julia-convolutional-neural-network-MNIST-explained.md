@@ -24,11 +24,12 @@ Keep that in mind as you read. 😘
 
 Julia's [model-zoo package](https://github.com/FluxML/model-zoo) has many examples of using Julia for machine learning.
 The code that follows comes from model-zoo's [example of applying a convolutional neural network](https://github.com/FluxML/model-zoo/blob/master/vision/mnist/conv.jl) to the MNIST data set.
-The [MNIST data set](https://en.wikipedia.org/wiki/MNIST_database) is a set of images containing handwritten digits.
+The [MNIST data set](https://en.wikipedia.org/wiki/MNIST_database) is a set of images containing handwritten digits, for example:
 
-![Example of handwritten digits from MNIST](%{ link img/MnistExamples.png }%)
+![Example of handwritten digits from MNIST]({% link img/MnistExamples.png %})
 
-This program does the following:
+The goal of the program is to take these images and map them to the integers 0 through 9.
+Comments describe the high level goals of the program:
 
 > Demonstrates basic model construction, training, saving,
 > conditional early-exit, and learning rate scheduling.
