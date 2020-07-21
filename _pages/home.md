@@ -16,4 +16,9 @@ Most of them are joint work with [Nick Ulle](https://github.com/nick-ulle).
 - [Python 4 week course](https://github.com/nick-ulle/2015-python)
 - 1.5 hour YouTube video, [Overview of Python for Data Analysis](https://www.youtube.com/watch?v=sxcUKfZSbb4).
     Here is the [code repository](https://github.com/clarkfitzg/python_april_2017)
-- [Julia debugging tutorial]({% link _posts/2020-07-02-julia-debugger-tutorial.md %})
+
+### Julia 
+
+- [debugging tutorial]({% link _posts/2020-07-02-julia-debugger-tutorial.md %})
+
+- [MNIST convnet explained]({% link _posts/2020-07-21-julia-convolutional-neural-network-MNIST-explained.md %})
