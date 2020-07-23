@@ -119,7 +119,7 @@ The rest of the program passes `Args` around all over, so they act like global p
 They're mutuable because the program [dynamically adjusts them later](#learning-rate) based on how the training goes.
 
 
-### Minibatches
+### Transforming Images to Arrays
 
 ```julia
 # Bundle images together with labels and group into minibatchess
@@ -133,7 +133,8 @@ function make_minibatch(X, Y, idxs)
 end
 ```
 
-A Minibatch uses a subset of the data used for a single update to the model, and this code produces minibatches from the original data.
+This code transforms the grayscale images into Float32 arrays that Flux can process.
+A better name than `make_minibatch` might be `transform_raw_inputs`.
 
 The definition of `X_batch` is `Array{Float32}(undef, size(X[1])..., 1, length(idxs))`.
 Here's what each argument means:
@@ -143,15 +144,17 @@ Here's what each argument means:
 - `size(X[1])...,`, unpack into the two values, 28 and 28, which are the dimensions of the pixels in the image.
     This clever unpacking based on the value of `x[1]` means that the code will work with any set of images, as long as they're all the same size.
     It should also unpack higher dimensions.
-- `1, ` means the next (3rd) dimension has only 1 slice, so it's not really another dimension.
-    I believe this is used for color channels.
+- `1, ` means the next (3rd) dimension has only 1 slice, because it's a greyscale image.
+    If the images were RGB color then this would be 3.
 - `length(idxs)` says that the array will be as long as the number of images.
 
 `X_batch` is a 4 dimensional Float32 array, with the last dimension corresponding to the sample, so `X_batch[:, :, :, 1]` is the first image.
 `onehotbatch(Y[idxs], 0:9)` encodes the labels `Y[idxs]` in a matrix of 1's and 0's, using 0:9 as the possible class values.
 
 
-```
+### Loading Data
+
+```julia
 function get_processed_data(args)
     # Load labels and images from Flux.Data.MNIST
     train_labels = MNIST.labels()
@@ -167,7 +170,16 @@ function get_processed_data(args)
     return train_set, test_set
 
 end
+```
 
+`get_processed_data` massages the data into the right form for the neural network.
+`MNIST` is a module that contains the actual MNIST data set.
+`partition` splits the images into groups so that each batch will have the same size.
+
+
+### Defining Model Architecture
+
+```julia
 # Build model
 function build_model(args; imgsize = (28,28,1), nclasses = 10)
     cnn_output_size = Int.(floor.([imgsize[1]/8,imgsize[2]/8,32]))	
@@ -189,7 +201,32 @@ function build_model(args; imgsize = (28,28,1), nclasses = 10)
     flatten,
     Dense(prod(cnn_output_size), 10))
 end
+```
 
+`build_model` is a function that returns a function which actually defines the CNN.
+It returns a `Chain` representing the transformations in the network: three convolutions, each reducing the size of the dimensions, followed by a final densely connected layer.
+[Google's explanation of a convolution](https://developers.google.com/machine-learning/practica/image-classification/convolutional-neural-networks#1_convolution) helped me understand the basic idea, and I recommend you look it over before proceeding.
+
+Let's examine `Conv((3, 3), imgsize[3]=>16, pad=(1,1), relu)` in detail.
+The first argument, `(3, 3)` defines the size of the convolution, so it operates on overlapping 3x3 pixels.
+It's two dimensional, for a two dimensional image.
+If I'm going to write one that operates on a video, then it should be three dimensional.
+The second argument, `imgsize[3]=>16`, defines the input and output channels.
+`imgsize[3]` is just 1, so this convolution takes an input with 1 channel and produces an output with 16 channels.
+Coursera has an approachable video [describing what it means to have multiple input and output channels](https://www.coursera.org/lecture/deep-neural-networks-with-pytorch/9-3-multiple-input-and-output-channels-1rUTu).
+`pad=(1,1)` means that the sides of the input will be padded before the convolution, so the first two dimensions of the result will be the same size as the input.
+If we used a size `(5, 5)` convolution, then we would need `pad=(2,2)` to keep the first two dimensions the same.
+Finally, `relu` means the σ activation function is rectified linear unit.
+In summary, this convolution layer takes a 28 x 28 x 1 image and produces a 28 x 28 x 16 activation map.
+
+
+
+I'm not sure why `imgsize` is hardcoded in as a default argument at `(28,28,1)`, when it was [not hardcoded above](#transforming-images-to-arrays).
+It could be some requirement of the packages, but I suspect it was just convenient to hardcode it.
+
+
+
+```julia
 # We augment `x` a little bit here, adding in random noise. 
 augment(x) = x .+ gpu(0.1f0*randn(eltype(x), size(x)))
 
