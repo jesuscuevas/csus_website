@@ -219,12 +219,14 @@ If we used a size `(5, 5)` convolution, then we would need `pad=(2,2)` to keep t
 Finally, `relu` means the σ activation function is rectified linear unit.
 In summary, this convolution layer takes a 28 x 28 x 1 image and produces a 28 x 28 x 16 activation map.
 
+The next function to apply is `MaxPool((2,2))` for a max pooling layer to reduce the size of the output.
+`(2,2)` means that the max pooling will use 2 by 2 windows, which is common.
 
-
-I'm not sure why `imgsize` is hardcoded in as a default argument at `(28,28,1)`, when it was [not hardcoded above](#transforming-images-to-arrays).
+On a side note, I'm not sure why `imgsize` is hardcoded in as a default argument at `(28,28,1)`, when it was [not hardcoded above](#transforming-images-to-arrays).
 It could be some requirement of the packages, but I suspect it was just convenient to hardcode it.
 
 
+### Utility Functions
 
 ```julia
 # We augment `x` a little bit here, adding in random noise. 
@@ -237,7 +239,12 @@ paramvec(m) = vcat(map(p->reshape(p, :), params(m))...)
 anynan(x) = any(isnan.(x))
 
 accuracy(x, y, model) = mean(onecold(cpu(model(x))) .== onecold(cpu(y)))
+```
 
+
+### Training
+
+```julia
 function train(; kws...)	
     args = Args(; kws...)
 
