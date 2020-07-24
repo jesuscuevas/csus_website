@@ -241,8 +241,13 @@ anynan(x) = any(isnan.(x))
 accuracy(x, y, model) = mean(onecold(cpu(model(x))) .== onecold(cpu(y)))
 ```
 
+These are helper functions used below.
+The comments describe what they do.
 
-### Training
+
+### `train` Function
+
+At 77 lines, `train` is the largest function in here, so we break it down into multiple parts.
 
 ```julia
 function train(; kws...)	
@@ -263,7 +268,16 @@ function train(; kws...)
     
     # Make sure our model is nicely precompiled before starting our training loop
     model(train_set[1][1])
+```
 
+The training starts by calling the data loading and model building functions defined above. 
+I don't know why `train` uses the global variable `Args`, while the other functions accepted it as an argument.
+I'm not sure why it's necessary to precompile.
+
+
+### Loss Function
+
+```julia
     # `loss()` calculates the crossentropy loss between our prediction `y_hat`
     # (calculated from `model(x)`) and the ground truth `y`.  We augment the data
     # a bit, adding gaussian random noise to our image to make it more robust.
@@ -272,6 +286,11 @@ function train(; kws...)
         ŷ = model(x̂)
         return logitcrossentropy(ŷ, y)
     end
+```
+
+The loss function, aptly named `loss`, exists within the body of the `train` function, which gives it access to the variable `model`.
+They could have defined `loss` with the other utility functions, but I suspect they did it this way so that `loss` would only be a function of `x` and `y`, not of `model`.
+
 
 ## Selecting Optimizer
 
@@ -281,8 +300,8 @@ function train(; kws...)
     opt = ADAM(args.lr)
 ```
 
+The optimizer controls how the model updates at each iteration, and there are many possible optimizers to choose from.
 The manual entry for `ADAM` is quite helpful.
-It references the [paper that describes the ADAM algorithm](https://arxiv.org/abs/1412.6980v8) 
 
 ```julia
 help?> ADAM
@@ -295,7 +314,13 @@ help?> ADAM
     •    Learning rate (η): Amount by which gradients are discounted before updating the weights.
 ```
 
+The help page references the [paper that describes the ADAM algorithm](https://arxiv.org/abs/1412.6980v8) and tells us that `lr` in the global args does indeed stand for learning rate.
+I appreciate being pointed to the original source, because this is probably the quickest way to learn exactly what the algorithm is doing.
 
+
+## Updating the Model
+
+```julia
     @info("Beginning training loop...")
     best_acc = 0.0
     last_improvement = 0
