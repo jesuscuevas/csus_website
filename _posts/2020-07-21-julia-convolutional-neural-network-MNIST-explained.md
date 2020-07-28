@@ -10,7 +10,7 @@ tags:
     - code commentary
 ---
 
-We explain in detail Julia's model-zoo example of a convolutional neural network, from a beginner's perspective, so that we can understand the code well enough to modify it to work for another classification task.
+We explain in detail Julia's [model-zoo example of a convolutional neural network](https://github.com/FluxML/model-zoo/blob/master/vision/mnist/conv.jl), from a beginner's perspective, so that we can understand the code well enough to modify it to work for another classification task.
 
 
 ## Background
@@ -24,6 +24,7 @@ Keep that in mind as you read. 😘
 
 Julia's [model-zoo package](https://github.com/FluxML/model-zoo) has many examples of using Julia for machine learning.
 The code that follows comes from model-zoo's [example of applying a convolutional neural network](https://github.com/FluxML/model-zoo/blob/master/vision/mnist/conv.jl) to the MNIST data set.
+[Download the whole script here.]({% link assets/conv.jl %})
 The [MNIST data set](https://en.wikipedia.org/wiki/MNIST_database) is a set of images containing handwritten digits, for example:
 
 ![Example of handwritten digits from MNIST]({% link img/MnistExamples.png %})
@@ -272,7 +273,7 @@ function train(; kws...)
 
 The training starts by calling the data loading and model building functions defined above. 
 I don't know why `train` uses the global variable `Args`, while the other functions accepted it as an argument.
-I'm not sure why it's necessary to precompile.
+I'm also not sure why it's necessary to precompile.
 
 
 ### Loss Function
