@@ -1,4 +1,6 @@
 main:
+  - title: "Students"
+    url: /students/
   - title: "About"
     url: /about/
   - title: "Contact"
