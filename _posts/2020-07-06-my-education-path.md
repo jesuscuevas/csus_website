@@ -12,21 +12,21 @@ I served active duty in the military, bummed around, returned later to community
 I grew up in a small rural town in Northern California.
 In high school I worked on a ranch, mostly digging holes.
 By the end of high school I was tired of school, and ready to see the world.
-I didn't expect to ever go to college, so I enlisted in the Army.
+I didn't expect to ever go to college, and I wanted to be independent of my parents, so I enlisted in the Army.
 
 ![me as a soldier]({% link img/army.jpg %})
 
 In the Army I chose the military occupation specialty (MOS) of "heavy construction equipment operator" so that I could have an actual job skill when I got out.
 I volunteered for Airborne school and became a Maroon Beret in a combat unit at Fort Bragg, NC, and then Afghanistan.
 When I wasn't deployed I did some general education night classes in Fayetteville; the command was very supportive of me going to school.
-In retrospect, I wish I would have tried out for Special Forces, the Green Berets.
-I didn't care much for life in the Army, and there was no way I was going to reenlist so I could pursue that. I was itching to be free.
+In retrospect, I wish I would have tried out for Special Forces, because I wonder if I could have done it.
+I didn't care much for life in the Army, and there was no way I was going to reenlist so I could pursue Special Forces. I was itching to be free.
 
 ![In Outward Bound, students poop in these ammo cans at group campsites. In the Army, they held my machine gun ammo.]({% link img/ammo_can.jpg %})
 
 I got out and spent some time rock climbing, bumming around, and working for [Outward Bound Wilderness](https://www.outwardbound.org/).
-How I miss those days!
-A salty old Vietnam veteran named Bob O'Rourke advised me to go to school.
+How I miss those carefree days!
+A salty old Vietnam veteran I worked with named Bob O'Rourke advised me to go to school.
 Indeed, the new Post 9/11 GI bill education benefits looked pretty sweet.
 I would earn significantly more money going to school than I did in the Army, or than I could have made from working, so I went back to my hometown community college, since that was the only school that would have me.
 
@@ -36,6 +36,13 @@ Think about it, veterans.
 You have 36 months of GI Bill benefits.
 Do you want to use them on community college that's practically free, or on graduate school that costs an arm and a leg?
 
+Most veterans experience some bumps as they adjust to student life, or any normal civilian life after military service, particularly after a combat deployment.
+I was no exception.
+I went through a period when I didn't want to acknowledge the influence of the military experience in my life at all.
+Eventually I accepted it and realized that my experiences were rare compared to many of my student peers, and that I could leverage them in many useful ways.
+For example, I used my experience to land the job at Outward Bound, and mentioned them in college application essays as positive learning and growing experiences.
+
+I started out studying engineering, but then switched to math because I appreciated the beauty and generality.
 After taking all the math classes at my community college, I transferred to UC Berkeley as a math major, where I struggled.
 The upper division classes were so difficult!
 I wanted to quit math and choose an easier major, but I couldn't because I had too many units.
