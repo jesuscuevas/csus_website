@@ -30,9 +30,6 @@ exclude:
     - makefile
     - todo.md
 
-# https://stackoverflow.com/questions/15497207/how-to-display-post-summary-on-index-page-using-jekyll
-excerpt_separator: <!--more-->
-
 collections:
     pages:
         output: true
