@@ -7,8 +7,3 @@ main:
     url: /about/
   - title: "Contact"
     url: /contact/
-
-
-stat128_sidebar:
-  - title: "STAT 128 home"
-    url: /stat128/
