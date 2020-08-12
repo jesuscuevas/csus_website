@@ -43,7 +43,8 @@ defaults:
     values:
         permalink: :title/
         layout: single
-        author_profile: true
+        classes: wide
+        #author_profile: false
         read_time: true
         comments: true
         share: true
@@ -53,6 +54,7 @@ defaults:
         path: _pages/
         type: pages
     values:
+        classes: wide
         layout: single
 
 compress_html:
