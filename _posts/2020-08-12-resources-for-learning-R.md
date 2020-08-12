@@ -1,4 +1,6 @@
 ---
+sidebar:
+  nav: stat128_sidebar
 tags:
     - stat128
 ---
