@@ -1,5 +1,4 @@
 ---
-date: 2020-08-03
 ---
 
 If you're a student at CSUS and you are interested in doing a research project involving data science or software development in Julia, R, or Python, then come by my office (Shasta 156) or [send me an email](mailto:fitzgerald@csus.edu).
