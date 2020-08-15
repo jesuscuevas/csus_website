@@ -2,7 +2,7 @@
 title: STAT 128 - Statistical Computing
 ---
 
-This is the course webpage for STAT 128 at CSU Sacramento.
+This is the course webpage for my STAT 128 course at CSU Sacramento.
 In this class we'll learn about data science and statistical computing using the R programming language.
 
 <ul>
