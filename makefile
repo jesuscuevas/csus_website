@@ -1,5 +1,6 @@
 serve:
 	jekyll serve --watch
 
-prod:
+up:
 	jekyll build
+	lftp -e "mirror -R _site .; bye" -u fitzgerald ftps://webpages.csus.edu
