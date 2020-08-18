@@ -11,9 +11,9 @@ For example, I expect your midterm submissions to be clear and relatively formal
 In a casual setting such as Canvas discussions, submission comments, or chat, then you can relax.
 I've even gone way out of my comfort zone and started using emoticons. 😎
 They're more fun than I realized, and they add an element of humanity.
-Appropriate GIF's are welcome too- this is the internet, after all!
+Appropriate meme's are welcome too- this is the internet, after all!
 
-![cat typing on computer]({% link img/cat_typing.webp %})
+![joke meme]({% link img/joke_meme.png %})
 
 Communicate with your fellow students.
 I designed the participation assignments and discussions so that you can interact and have some exchange of ideas with others in the class.
