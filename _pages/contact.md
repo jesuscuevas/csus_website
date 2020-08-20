@@ -12,3 +12,5 @@ Forgive me if I don't engage much publicly; my time is limited, and it goes to m
 - Github [@clarkfitzg](https://github.com/clarkfitzg)
 - LinkedIn [@clarkfitzg](https://www.linkedin.com/in/clarkfitzg/)
 - Email `fitzgerald@csus.edu`
+
+For a general index of student resources on the CSUS campus, please see Josh Wiscon's [Campus Resources Page](http://webpages.csus.edu/wiscons/more/SacStateCampusResources.html).
