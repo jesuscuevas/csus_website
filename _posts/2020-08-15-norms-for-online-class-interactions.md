@@ -15,6 +15,13 @@ Appropriate meme's are welcome too- this is the internet, after all!
 
 ![joke meme]({% link img/joke_meme.png %})
 
+Mind what you show on video.
+Video chat is wonderful, and I expect you to turn your videos on during class meetings the majority of the time, so that your fellow students can see your facial expressions and body language.
+That's all we want to see!
+Consider finding a good [Zoom background](https://sacstate.smugmug.com/Sac-State-Zoom-Backgrounds/) that hides your actual room.
+Technical issues might prevent you from turning on videos, for example, if your internet connection is unstable.
+You should also turn off your video if there's anything you don't want others to see, for example, if you need to briefly speak to another member of your household.
+
 Communicate with your fellow students.
 I designed the participation assignments and discussions so that you can interact and have some exchange of ideas with others in the class.
 I encourage you to form study groups and meet outside of class; let me know if I can help facilitate this.
@@ -30,5 +37,6 @@ This seems reasonable, based on most of the grandmothers I've met.
 Use the homework assignment submission comments for private communication with me, the instructor.
 I encourage you to use audio or video, and I plan to also.
 For example, you can tell me what you struggled with in this assignment, or if you have something personal going on this week that prohibited you from doing as well as you usually do.
-You can also talk with me about your classes and career plans, ask me about [my educational experiences](http://webpages.csus.edu/fitzgerald/my-education-path/), or ask about anything academic and career related
+You can also talk with me about your classes and career plans, ask me about [my educational experiences](http://webpages.csus.edu/fitzgerald/my-education-path/), or ask about anything academic and career related.
 If you're experiencing relationship troubles, depression, or other issues more suitable for a trained counselor, then I may refer you to [Counseling Services](https://www.csus.edu/student-life/health-counseling/).
+Keep in mind that all faculty members are mandatory reporters, which means we must [report issues](https://www.csus.edu/title-ix/reporting.html) such as child abuse.
