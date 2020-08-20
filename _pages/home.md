@@ -1,8 +1,11 @@
 ---
 title: ""
-date: 2020-07-04
 permalink: /
 ---
+
+<img src="{% link img/profile.jpg %}" alt="profile picture" width="200"/>
+
+This site contains course materials, technology and software tutorials, case studies, and miscellaneous writing.
 
 ## Programming Tutorials 
 
