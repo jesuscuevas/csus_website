@@ -4,11 +4,14 @@ description: "CSUS Professor Clark Fitzgerald's personal website. Data science c
 permalink: /
 ---
 
-{% include datascience_mail_list.html %}
-
 <img src="{% link img/profile.jpg %}" alt="profile picture" width="200"/>
 
 This site contains course materials, technology and software tutorials, case studies, and miscellaneous writing.
+
+## Data Science @ Sacramento State
+
+{% include datascience_mail_list.html %}
+
 
 ## Programming Tutorials 
 
