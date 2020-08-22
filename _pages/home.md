@@ -1,8 +1,17 @@
 ---
 title: ""
-date: 2020-07-04
+description: "CSUS Professor Clark Fitzgerald's personal website. Data science course materials, technology and software tutorials, case studies, data, and miscellaneous writing."
 permalink: /
 ---
+
+<img src="{% link img/profile.jpg %}" alt="profile picture" width="200"/>
+
+This site contains course materials, technology and software tutorials, case studies, and miscellaneous writing.
+
+## Data Science @ Sacramento State
+
+{% include datascience_mail_list.html %}
+
 
 ## Programming Tutorials 
 
@@ -16,4 +25,9 @@ Most of them are joint work with [Nick Ulle](https://github.com/nick-ulle).
 - [Python 4 week course](https://github.com/nick-ulle/2015-python)
 - 1.5 hour YouTube video, [Overview of Python for Data Analysis](https://www.youtube.com/watch?v=sxcUKfZSbb4).
     Here is the [code repository](https://github.com/clarkfitzg/python_april_2017)
-- [Julia debugging tutorial]({% link _posts/2020-07-02-julia-debugger-tutorial.md %})
+
+### Julia 
+
+- [debugging tutorial]({% link _posts/2020-07-02-julia-debugger-tutorial.md %})
+
+- [MNIST convnet explained]({% link _posts/2020-07-21-julia-convolutional-neural-network-MNIST-explained.md %})
