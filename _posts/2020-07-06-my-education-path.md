@@ -1,12 +1,12 @@
 ---
 title: My Educational Journey
-date: 2020-08-02
+date: 2020-08-21
 tags:
     - personal
 ---
 
 I took an unorthodox path to becoming a statistics professor.
-I served active duty in the military, bummed around, returned later to community college, transferred to university, started a family, worked in industry data science, and then returned to school for my PhD.
+I served active duty in the military, bummed around, returned later to community college as a first generation college student, transferred to university, started a family, worked in industry data science, and then returned to school for my PhD.
 
 <iframe seamless="seamless" style="width: 100%; border: none; display: block; max-width: 768px; height: 600px;" src="https://getyarn.io/yarn-clip/embed/8c90e7d7-9877-4f5b-83d3-c43f2c6e7a6d?autoplay=false"> </iframe>
 I grew up in a small rural town in Northern California.
