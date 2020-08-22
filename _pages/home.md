@@ -4,8 +4,7 @@ description: "CSUS Professor Clark Fitzgerald's personal website. Data science c
 permalink: /
 ---
 
-TODO: [DATASCIENCE-L](https://listserv.csus.edu/scripts/wa-CSUS.exe?INDEX)
-For announcements and updates about data science in and around CSUS campus.
+{% include datascience_mail_list.html %}
 
 <img src="{% link img/profile.jpg %}" alt="profile picture" width="200"/>
 
