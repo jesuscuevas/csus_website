@@ -1,13 +1,14 @@
 ---
-date: 2020-07-02
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eJooFMxrPMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I'm an Assistant Professor in the [Department of Mathematics & Statistics](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/) at CSU Sacramento, where I teach classes in statistics, computing, and data science.
 This is my personal website, which I use primarily to share course material with the public.
-I hope you find it useful.
 It does not reflect the opinions of my employer.
+
+If you find any of the content on this site useful, feel free to link to it, or [send me an email](mailto:fitzgerald@csus.edu).
+Not everything posted on here is nicely finished, and I expect the content will continue to evolve for many years.
 Use code at your own risk.
 
 I built this website using Jekyll, and you can find the [website source code here](https://github.com/clarkfitzg/csus_website).
