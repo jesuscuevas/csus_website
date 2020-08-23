@@ -5,7 +5,7 @@ tags:
 ---
 
 This high level advice is for college students regardless of major.
-Some of my viewpoints are different from what you typically hear in academia.
+Some of my advice differs from what you typically hear in academia.
 Everything is informed by my [personal experience]( {% link _posts/2020-07-06-my-education-path.md %}) through undergrad; they're what worked for me.
 You and I might be very different.
 Pick and apply the tips you like, ignore the others. 🤘
@@ -21,6 +21,12 @@ Instead, go live in a fun place and do things you like!
 Work a seasonal job and travel.
 When you travel, you'll meet young people from all over the world, and have a great time.
 You have the whole rest of your life to be responsible.
+
+Seriously consider a career in the skilled trades, like being a nurse, plumber, or an electrician.
+These careers offer many advantages compared to white collar work.
+You don't necessarily need a college degree.
+It's satisfying to see something physical come together and start working.
+It's not possible to outsource these jobs to another country.
 
 When you're ready to go back to school, you can go to any community college.
 On average, my community college teachers were better teachers than the Professors at UC Berkeley, who are famous for their research.
@@ -85,6 +91,11 @@ This can be extremely difficult when you're in a challenging situation.
 You might think that you cannot do it, because the task is simply harder than you can handle, and you see other students breezing through the material.
 Self-doubt begins to sabotage your effort.
 It has happened to me.
+
+
+#### Use all the resources you have available
+
+Go to your professor's office hours.
 
 
 #### Engage with others
