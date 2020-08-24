@@ -22,22 +22,16 @@ Work a seasonal job and travel.
 When you travel, you'll meet young people from all over the world, and have a great time.
 You have the whole rest of your life to be responsible.
 
-Seriously consider a career in the skilled trades, like being a nurse, plumber, or an electrician.
-These careers offer many advantages compared to white collar work.
-You don't necessarily need a college degree.
-It's satisfying to see something physical come together and start working.
-It's not possible to outsource these jobs to another country.
-
 When you're ready to go back to school, you can go to any community college.
 On average, my community college teachers were better teachers than the Professors at UC Berkeley, who are famous for their research.
-
 You'll do better when you're ready to focus, and you have an idea of what you like.
 The older community college students in any math or science class are quite focused.
 They know where they want to go, and that it's going to take work.
 
 Of course, don't wait too long.
 If you have kids, your time vanishes, and you'll have to arrange childcare, so everything is harder.
-I'm typing this as my kid is hanging on my leg, whining.
+I'm typing this with a kid hanging on my leg, begging for attention.
+Duty calls.
 
 
 #### Work hard
@@ -55,16 +49,16 @@ It's not necessarily worth it.
 Ask people hard questions, look objectively at the data, and determine how much your degree will really be worth, before you commit to it.
 When listening to success stories, ask yourself, "Is this typical for a major in this field, or is this person an anomaly?"
 
-For example, the nursing field is justifiably famous for being practical.
-There are many opportunities to work as a Registered Nurse (RN) for competitive pay.
-It makes perfect financial sense to take on a reasonable amount of debt to pursue a nursing degree.
+Seriously consider a career in the skilled trades, like being a nurse, plumber, or an electrician.
+These careers offer many advantages compared to white collar work, and you don't necessarily need a college degree.
+They typically pay well, and there are jobs everywhere.
+Physical work, making something come together and happen with your hands, provides direct and immediate job satisfaction.
+It's not possible to outsource these jobs to another country.
 
 A mathematics undergraduate degree is also much more practical and general purpose than many realize.
 Math teaches logic and reason, which makes it excellent preparation for law school, medical school, or any other graduate school.
 Graduate level study in any STEM subject always becomes more mathematical.
 In my statistics PhD program, at least 90% of the students had a bachelors degree in mathematics, not statistics.
-
-All this advice matters even more for graduate school than undergrad.
 
 
 #### Manage your workload
@@ -72,7 +66,7 @@ All this advice matters even more for graduate school than undergrad.
 Allow enough room in your schedule to dedicate yourself to the classes that you're taking.
 It's better to get good grades in two classes than average grades in four classes.
 When I was an undergrad at Berkeley, this meant taking only two upper division math classes during one semester, and never working during the semester.
-These math classes took a huge amount of time for me, but I was determined to give them my best effort.
+These math classes took a huge amount of time for me, and I needed my schedule open to give myself enough time to put in my best effort.
 
 
 #### Challenge yourself
@@ -88,7 +82,7 @@ Indeed, we don't get enough ways to safely experience failure in college.
 #### Maintain a can-do attitude
 
 This can be extremely difficult when you're in a challenging situation.
-You might think that you cannot do it, because the task is simply harder than you can handle, and you see other students breezing through the material.
+You might think that you cannot do it, because the task is simply harder than you can handle, and you other students appear to breeze through the material.
 Self-doubt begins to sabotage your effort.
 It has happened to me.
 
@@ -109,4 +103,4 @@ Professors love it when students engage with them and the material, because it a
 
 It's easy to get caught up in grades.
 Don't let a bunch of letters and numbers control your life.
-If you put in your best effort by following the tips above, then the grades will follow.
+If you put in your best effort by following the tips above, then you will earn the best grades possible.
