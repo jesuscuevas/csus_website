@@ -30,7 +30,7 @@ __Course Meetings:__
 MWF, 12-1pm via Zoom
 
 __Office Hours:__
-after class, or by appointment
+after class, and Tuesdays at 8 and 10:30 AM. [Tuesday office hour Zoom links](https://csus.instructure.com/courses/67306/discussion_topics/531301)
 
 __Drops:__
 [College Drop Policy](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/_internal/docs/drop-policy.pdf)

@@ -35,3 +35,6 @@ The RTP repository contains lots of personal reflection as I learn how to teach.
 
 I built this website using Jekyll, and you can find the [website source code here](https://github.com/clarkfitzg/csus_website).
 Feel free to use it as a template or a starting point if you want to build a website.
+
+I have no special talents or interest in formatting.
+If you're my student and it would be better if this website looked a different way, then just let me know.
