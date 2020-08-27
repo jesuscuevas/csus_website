@@ -124,6 +124,11 @@ __Attendance:__
 Class is where we'll cover the core material and do practice problems and other interactive activities, so plan on attending.
 Experience shows that students perform better when they attend class, even online.
 
+__Participation:__
+I will occasionally "warm call" students for class discussion questions by cycling through the Zoom attendees.
+The purpose of calling on you is to increase your engagement with the material, and to provide you with practice speaking and participating in a virtual environment.
+You may skip your turn, but I encourage you to participate.
+
 __Studying:__
 Expect to spend approximately 2 hours on activities outside of class for every 1 hour in class.
 Some weeks will require more, some less.

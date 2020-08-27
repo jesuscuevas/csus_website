@@ -23,3 +23,4 @@ free
 - R works well for statistics classes because it doesn't require external libraries, and the plotting is especially easy.
 - Requires minimal expertise from instructor, a good thing.
 - Sets students up for best practices
+- The price is right, open source software, open educational resources.
