@@ -79,7 +79,8 @@ Don't sit back and absorb; ask questions, engage.
 
 ### I'm your guide.
 
-As
+You can read the book, you can watch lectures online.
+I need to offer more value.
 
 
 ### We're going to have lots of interaction
