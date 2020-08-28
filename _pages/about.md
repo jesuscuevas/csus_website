@@ -17,6 +17,8 @@ I value clear, direct, and timely communication with my students.
 Sometimes, I'm direct to the point of being terse.
 So if I reply with one word, or just a 👍, please know that's just a style I use when I'm short on time.
 
+![biking with family]({% link img/bikefamily.jpg %})
+
 The following posts are more about my personal experience and opinions, and less about technical content.
 Most of my RTP ([research, tenure, and promotion](https://github.com/clarkfitzg/rtp)) documents are also online.
 The RTP repository contains lots of personal reflection as I learn how to teach.

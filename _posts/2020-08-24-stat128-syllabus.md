@@ -17,8 +17,9 @@ __Instructor:__ Dr. Clark Fitzgerald [About me](http://webpages.csus.edu/fitzger
 
 __Contact:__ 
 I value clear, direct, and timely communication with students.
+Here's an [explanation and video demonstration]({% link _posts/2020-08-27-communication-for-current-students.md %}) of how to communicate in this class.
 
-For the fastest response to questions that aren't personal, please use [Canvas discussions](https://csus.instructure.com/courses/67306/discussion_topics) or [Canvas chat](https://csus.instructure.com/courses/67306/external_tools/2780) so that other students can see and respond to your questions.
+For the fastest response to questions that aren't personal, please use [Canvas discussions](https://csus.instructure.com/courses/67306/discussion_topics) so that other students can see and respond to your questions.
 For personal communication about a particular assignment, please use the assignment comments box.
 For other personal communication you can contact me at <fitzgerald@csus.edu> or through Canvas messages.
 Please allow up to two business days to respond.

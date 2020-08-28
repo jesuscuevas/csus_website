@@ -4,12 +4,12 @@ tags:
     - stat128
 ---
 
-Communication with current students is always my priority, and this post contains a video demonstrating how to communicate.
-The fastest and most efficient way to communicate publicly with me and all other students in a course is through Canvas discussions.
-Assignment submission comments are optional; they provide direct, asynchronous, private, communication with the me.
+Communication with current students is my top priority, and this post demonstrates how to communicate efficiently in my courses.
+The fastest way to communicate publicly with me and all other students in a course is through Canvas discussions.
+Assignment submission comments are optional; they provide direct, asynchronous, private, communication with me, your instructor.
+
 Keep these conventions in mind when you set your [Canvas notification preferences](https://csus.instructure.com/profile/communication).
 You should always receive immediate notifications about course announcements and discussion threads that you are following.
-
 Other professors will likely have other preferences.
 You can also set your notifications specific to each course by navigating to the home page of the course and clicking on the button with a bell labeled "View Course Notifications".
 
