@@ -6,7 +6,7 @@ tags:
 This is a warm up activity for the first day of classes.
 
 
-### What's your word of the day?
+### What's your word of the day? (1,2,3,GO)
 
 Pick one (appropriate) word.
 Maybe it's how you feel, for example, excited or nervous.
@@ -37,6 +37,7 @@ This is how I prefer my Zoom screen to look when I'm attending a meeting:
 ![Zoom screenshot]({% link img/zoom_screenshare_screenshot.png %})
 
 Presentation, several people, then chat window.
+I've been using Zoom for months, and I found out last week that I can make it look like this.
 Play around with your Zoom settings, for example, I changed my default so it doesn't go full screen in presentation mode.
 
 
@@ -50,43 +51,41 @@ My inexperience in teaching turns out to be a strength, because I wasn't tied to
 
 We have the ability to quickly access any fact known to mankind.
 Old school lecturing is out.
+
+
+### Let's prepare to succeed in this new world.
+
 I'm going to try new things, and they won't all work.
+If you're not into this, you've got 2 weeks to nail down your schedule, and it won't offend me in the least if you switch classes.
 
 
-### Our goal is for you to learn.
+### Our goal is for you to learn to reason.
 
 First principle, we're starting with this in mind.
+Reasoning is an active process.
 
 
-### What's the best thing to learn in college?
+### What unique value does a college course offer? (1,2,3,GO)
 
-We'll cover some technical topics in this course, and you'll grow familiar with them.
-But is it so important that you are comfortable with some fancy technique of integration?
-In 10 years, is someone going to call you out and say, "What's the PMF for a binomial distribution?"
-
-
-### Let's learn independent, critical thinking.
-
-In my opinion, this is the most important thing.
-Look at a problem, reason through it, and come up with a reasonable solution.
+You can read the book, which is more correct and thorough than I will ever be.
+You can watch lectures online from the most exciting, dynamic, and intelligent speakers in the world.
+How can your college courses compete?
 
 
-### You'll need to engage.
+### You'll need to engage and interact.
 
 It's going to take dedicated effort on your part.
 Don't sit back and absorb; ask questions, engage.
 
+An example of interaction is the warm call activity.
+Problem- not everyone is comfortable with this kind of interaction.
+
 
 ### I'm your guide.
 
-You can read the book, you can watch lectures online.
-I need to offer more value.
-
-
-### We're going to have lots of interaction
+I'll provide structure and facilitate interaction.
+I'll show you how to solve the problems.
+I'll help you understand the concepts.
 
 
 ### Community agreement activity
-
-breakout rooms.
-Sort names alphabetically 

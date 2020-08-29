@@ -8,16 +8,20 @@ This is my personal website, which I use primarily to share course material with
 It does not reflect the opinions of my employer.
 
 If you find the content on this site useful, feel free to link to it, or [send me an email](mailto:fitzgerald@csus.edu).
-Not everything posted on here is nicely finished, and I expect the content will continue to evolve for many years.
+Most content I post here is somewhat incomplete and unpolished, and I expect it to continue to evolve for many years.
 Use code at your own risk.
+
 
 ## Personal
 
 I value clear, direct, and timely communication with my students.
 Sometimes, I'm direct to the point of being terse.
 So if I reply with one word, or just a 👍, please know that's just a style I use when I'm short on time.
+Why am I short on time?
 
 ![biking with family]({% link img/bikefamily.jpg %})
+
+If only life were always as fun as pictures make it look.
 
 The following posts are more about my personal experience and opinions, and less about technical content.
 Most of my RTP ([research, tenure, and promotion](https://github.com/clarkfitzg/rtp)) documents are also online.
