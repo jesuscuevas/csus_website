@@ -53,17 +53,6 @@ We have the ability to quickly access any fact known to mankind.
 Old school lecturing is out.
 
 
-### The Economist Interviews Janet Napolitano
-
-August 27, 2020
-
-"This week we speak to Janet Napolitano, former president of the University of California and the first woman secretary of homeland security under Barack Obama"
-
-Relevant quote to data science starts around minute 13:00.
-
-[Can higher education pass the covid-19 test?](https://www.economist.com/podcasts/2020/08/27/can-higher-education-pass-the-covid-19-test)
-
-
 ### Let's prepare to succeed in this new world.
 
 I'm going to try new things, and they won't all work.
@@ -97,6 +86,17 @@ Problem- not everyone is comfortable with this kind of interaction.
 I'll provide structure and facilitate interaction.
 I'll show you how to solve the problems.
 I'll help you understand the concepts.
+
+
+### The Economist Interviews Janet Napolitano
+
+August 27, 2020
+
+[Can higher education pass the covid-19 test?](https://www.economist.com/podcasts/2020/08/27/can-higher-education-pass-the-covid-19-test)
+
+"This week we speak to Janet Napolitano, former president of the University of California and the first woman secretary of homeland security under Barack Obama"
+
+Relevant quote to data science starts around minute 12:30 and goes to 13:50.
 
 
 ### Community agreement activity
