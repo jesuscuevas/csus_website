@@ -1,3 +1,10 @@
+---
+tags:
+    - stat128
+---
+
+Tentative schedule for lecture topics
+
 Course Description: Computer methods for accessing, transforming, summarizing, graphing, and making statistical inferences from data.
 Focus is on open-source, command-line software, but menu-driven statistical software may be introduced.
 Students will learn to apply computer methods to solve problems selected from the areas of modeling, simulation, inference and statistical learning.
@@ -7,7 +14,6 @@ The intent of this course is to provide students with the software skills needed
 Idea: Learn to program through simple experiments.
 Lectures are going to be very interactive.
 
-List of topics by week
 
 1. August 31
   __introduction__

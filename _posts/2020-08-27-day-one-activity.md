@@ -3,7 +3,8 @@ tags:
     - stat128
 ---
 
-This is a warm up activity for the first day of classes.
+- break the ice
+- set community norms
 
 
 ### What's your word of the day? (1,2,3,GO)

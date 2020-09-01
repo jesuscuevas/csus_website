@@ -3,6 +3,10 @@ tags:
     - stat128
 ---
 
+- Describe use cases for R at a high level: interactivity, visualization, data analysis, and statistical modeling
+- Describe difference between R and RStudio
+
+
 ## R is a high level language
 
 Ocean drawing - GUI's in the air, languages underwater.
@@ -37,6 +41,11 @@ To be most productive, you usually want to program in the highest level language
 
 Usually programs use a specific file extension.
 For example, we might use `hw1.R` or `hw1.Rmd`.
+
+Q: Why is programming intimidating?
+
+Your program must be perfect to run.
+Every single piece of syntax in the right place.
 
 
 ### Integrated development environments (IDE's) help you write code.
@@ -81,9 +90,13 @@ Q: What does this mean?
 
 R is designed for:
 
-- analyzing and processing data
+- processing data
+- statistical analysis
 - interactivity, meaning you don't need much code to do standard statistical analysis.
      For example, `lm(y ~ ., data)` does multivariate linear regression.
+- visualization
+
+R may behave quite differently than other more rigid languages, and we can talk about this in office hours.
 
 
 ### Lets open up Rstudio and play.
