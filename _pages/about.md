@@ -3,7 +3,7 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eJooFMxrPMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-I'm an Assistant Professor in the [Department of Mathematics & Statistics](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/) at CSU Sacramento, where I teach classes in statistics, computing, and data science.
+I'm an Assistant Professor in the [Department of Mathematics & Statistics](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/) at CSU Sacramento, where I teach [classes in statistics](https://catalog.csus.edu/courses-a-z/stat/), computing, and data science.
 This is my personal website, which I use primarily to share course material with the public.
 It does not reflect the opinions of my employer.
 

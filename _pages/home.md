@@ -6,6 +6,7 @@ permalink: /
 
 <img src="{% link img/profile.jpg %}" alt="profile picture" width="200"/>
 
+I'm an Assistant Professor in the [Department of Mathematics & Statistics](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/) at CSU Sacramento, where I teach [classes in statistics](https://catalog.csus.edu/courses-a-z/stat/), computing, and data science.
 This site contains course materials, technology and software tutorials, case studies, and miscellaneous writing.
 
 ## Data Science @ Sacramento State

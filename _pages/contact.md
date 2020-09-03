@@ -10,14 +10,16 @@ Current students, please use [Canvas to communicate]({% link _posts/2020-08-27-c
 
 ------------------------------------------------------------
 
-If it would totally make your day if I follow or connect with you on one of these platforms, then send me an email, because I rarely check them!
+If it would totally make your day if I follow or connect with you on one of these platforms, then send me an email.
 If you're an alumni of one of my courses and you're using what you learned from the course, then I would be especially glad to hear your story so that I can share with current classes.
-Forgive me if I don't engage much publicly; my time is limited, and it goes to my family and students first.
+Forgive me if I don't engage much publicly on social media; my time is limited, and it goes to my family and students first.
 
 - Twitter [@clarkfitzg](https://twitter.com/clarkfitzg)
 - Github [@clarkfitzg](https://github.com/clarkfitzg)
 - LinkedIn [@clarkfitzg](https://www.linkedin.com/in/clarkfitzg/)
-- Email `fitzgerald@csus.edu`
+- Email <fitzgerald@csus.edu>
+
+Looking for other [faculty in the mathematics / statistics department](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/meet-us/)?
 
 ------------------------------------------------------------
 
