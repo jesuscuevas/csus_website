@@ -107,3 +107,17 @@ Google this: "Error: object not found"
 
 Here's the [first Stack Overflow post](https://stackoverflow.com/questions/27886839/what-does-error-object-myvariable-not-found-mean) Google found for me.
 The answer goes into great detail about all the possible ways you could produce this error.
+
+### packages
+
+"There's an app for that"
+External, user contributed packages make R great.
+CRAN has tons, for every application you can imagine.
+Explain package GUI.
+
+
+
+
+
+
+
