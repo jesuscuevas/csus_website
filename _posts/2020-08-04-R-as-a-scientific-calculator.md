@@ -59,7 +59,6 @@ used by professionals                       |   No          |   No              
 
 Abstract:
 We're teaching online classes, so students have computers, which makes statistical tables (Z,t,F,binomial,etc.) obsolete.
-We should teach our students to use computers for calculation, so that we can focus our teaching efforts on the higher level concepts.
-In particular, we should teach programming languages as scientific calculators.
+We should teach our students to use computers as scientific calculators, so that we can focus our teaching efforts on the higher level concepts.
 I'll present some concrete examples and strategies for teaching the R language in a lower division statistics course.
 You don't need to know R or programming to take this approach.
