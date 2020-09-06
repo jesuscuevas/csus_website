@@ -1,0 +1,183 @@
+---
+tags:
+  - stat128
+---
+
+123 go: What food are you craving?
+
+## Announcements
+
+1. First homework will be available this weekend.
+  Worth 45% of course grade, in contrast to the 5% for review (see syllabus)
+2. CA Election Data Challenge
+<https://csus.instructure.com/courses/67306/discussion_topics/550411>
+
+## Objectives
+
+- Define the following terms, and identify them in an R expression:
+    - assignment `x = 4` or `x <- 4`
+    - variable name `x`
+    - function call `foo(x, y, z)` name of the function is `foo`. 
+    - argument `x, y, z`, You'll see `foo`, `bar` used as generic variable names.
+- Look up built in documentation `?abs`
+- Search for error messages, and take out the part specific to our problem.
+
+
+### Assignment 
+```{r}
+x = 4
+x <- 4   # Exactly the same thing
+```
+The name: `x`
+The value: 4
+
+```{r}
+?`=`
+```
+Assign a value to a name.
+
+```{r}
+x + 3
+```
+```{r}
+x
+```
+
+What is that `[1]` in front of the 7?
+
+YES! The position in the vector.
+```{r}
+1:100
+```
+```{r}
+x = 3
+x + 1
+```
+
+Old `x` is gone, replaced with the new `x`.
+```{r}
+x = 4
+```
+
+Suppose we want to assign `x + 4` to the variable `y`. How?
+
+```{r}
+y = x + 4
+```
+
+In general, the expression on the right can be very complicated
+
+```{r}
+y = log(x) + x^2 + sin(x - 2/17)
+```
+
+
+
+
+### Function calls
+
+Functions are the heart of R.
+
+```{r}
+sqrt(4)
+sqrt(x)
+```
+
+`sqrt` is the function.
+`4` is the __argument__.
+A function can take 0, 1, or many arguments.
+`f(...)`
+
+
+
+
+### Documentation
+
+```{r}
+?sqrt
+```
+
+```{r}
+sqrt(y)
+```
+
+`sqrt(-1) = i`
+
+```{r}
+sqrt(-1)
+```
+
+123go - imaginary number, or something else?
+think about design principles of R-
+do the right thing interactively.
+
+If you want complex numbers:
+```{r}
+1 + 5i
+```
+
+
+
+
+### Errors
+
+Q: Predict what will happen
+```{r}
+sqrt(four)
+```
+`four` is a variable name, not a literal number like `4`
+
+Suppose you have no idea what this error means.
+What do you do?
+Google it!
+Make a search that google can actually find.
+Remove the parts that are specific to our example.
+
+Original: "Error: object 'four' not found"
+Google this: "Error: object not found"
+
+R is case-sensitive, which means: `sqrt != Sqrt`.
+```{r}
+Sqrt(4)
+```
+
+
+
+### packages
+
+External R software, community contributed, open source.
+
+
+### Office hours
+
+"There is no package data.table"
+
+Google this: "There is no package "
+
+Solution is to install the package first.
+```{r}
+install.packages("data.table")
+```
+
+How to type code in the text editor and send it right to the console.
+```{r}
+2 + 3
+```
+
+R is based on vectors... so everything is a vector, there are no scalars.
+
+```{r}
+x = 1:10
+```
+
+add 1 to each element of `x`
+```{r}
+x + 1
+```
+
+
+
+
+
+
+
