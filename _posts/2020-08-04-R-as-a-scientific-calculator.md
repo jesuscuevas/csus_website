@@ -13,7 +13,7 @@ Setup for further growth with technology    |   No          |   No              
 used by professionals                       |   No          |   No              |   Yes
 
 
-### Context
+### Prior work
 
 - Deb Nolan and Duncan Temple Lang have been strongly advocating for more computing in the statistics curricula since at least 2010.
 - Other prior work: [Mosaic](http://mosaic-web.org/) Pruim, Kaplan, Horton provide useful material for teachers.
@@ -36,17 +36,20 @@ used by professionals                       |   No          |   No              
 ### Switching focus
 
 - Why make students evaluate something like `pbinom(7, size = 15, prob = 0.4)`?
-    Tedious and error prone.
+    It's tedious and error prone.
+    Everyone makes mistakes.
 - A basic computer will outperform any mathematician when it comes to long calculations.
     We're human, they're machines.
 - I'm changing the focus of my courses away from the calculations, and focusing instead on the higher critical thinking skills, for example, mapping a word problem into known random variables.
+- We often have only one semester to teach statistics.
+    Learning how to correctly evaluate expressions is important, but learning the higher level concepts is more important.
 
 
 ### How I'm actually doing it
 
 - I'm teaching our STAT 50, a lower division, terminal course in statistics.
 - Goal is to use R as a scientific calculator, which is much simpler than learning to program.
-- Of course, my ulterior motive is to expose them to data science material to get them excited so they'll take STAT 128 (Statistical Computing) with me.
+- Of course, my ulterior motive is to expose them to data science material to get them excited so they'll take STAT 128 (Statistical Computing)
 - Any interpreted language will work the same here: Python, Julia, R
 - R works well for statistics classes because it doesn't require external libraries, and the plotting is especially easy.
 - Requires minimal expertise from instructor, a good thing.
@@ -57,8 +60,47 @@ used by professionals                       |   No          |   No              
 
  and it's high time for them to join their extinct cousins, the mathematical tables of logarithms and trigonometric functions.
 
-Abstract:
-We're teaching online classes, so students have computers, which makes statistical tables (Z,t,F,binomial,etc.) obsolete.
-We should teach our students to use computers as scientific calculators, so that we can focus our teaching efforts on the higher level concepts.
-I'll present some concrete examples and strategies for teaching the R language in a lower division statistics course.
-You don't need to know R or programming to take this approach.
+## Title: Goodbye Z Tables, Hello R – Using the R language as a scientific calculator for statistics classes
+
+## Abstract:
+
+The ability to use a computer as a scientific calculator is a powerful asset for statistics students at all levels, for many reasons.
+The content of this talk is as follows.
+First, I argue that in 2020, more than ever, it's time to stop teaching statistical tables (Z,t,F,binomial,etc.).
+Second, I describe how incorporating the computer has shifted the focus of my classes to become less rote and more conceptual.
+Finally, I present some concrete strategies and examples for teaching the R language as a scientific calculator in lower division statistics course.
+You do not need to know R or programming to follow this approach.
+
+
+Students should learn to use computers as scientific calculators.
+
+ have served their time, and it's time to retire them alongside their cousins, the logarithmic and trigonometric tables.
+
+so that we can shift the emphasis of our courses from rote calculation to higher level skills, such as identifying probability distributions in word problems. 
+It's 2020, and students have access to computers.
+
+
+Instead of tables, statistics students should learn to use computers as scientific calculators.
+In lower division courses, the emphasis will shift 
+
+
+
+Many college students will take only one course in statistics.
+As instructors, 
+
+What should they be able to do when they get out?
+
+When we're teaching, we should ask ourselves, is this the best way to teach?
+ and we need to keep this in mind as we choose which content we'll 
+How 
+
+
+We 
+
+Our course content should reflect 
+
+
+We should teach robust methods for numeric calculation in our statistics classes.
+The switch 
+
+Students have computers, so we should teach them 
