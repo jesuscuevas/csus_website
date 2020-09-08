@@ -47,8 +47,9 @@ used by professionals                       |   No          |   No              
 
 ### How I'm actually doing it
 
+- "But we're not programmers!" The power of yet.
 - I'm teaching our STAT 50, a lower division, terminal course in statistics.
-- Goal is to use R as a scientific calculator, which is much simpler than learning to program.
+- Goal is to use R as a scientific calculator
 - Of course, my ulterior motive is to expose them to data science material to get them excited so they'll take STAT 128 (Statistical Computing)
 - Any interpreted language will work the same here: Python, Julia, R
 - R works well for statistics classes because it doesn't require external libraries, and the plotting is especially easy.
@@ -66,9 +67,9 @@ used by professionals                       |   No          |   No              
 
 The ability to use a computer as a scientific calculator is a powerful asset for statistics students at all levels, for many reasons.
 The content of this talk is as follows.
-First, I argue that in 2020, more than ever, it's time to stop teaching statistical tables (Z,t,F,binomial,etc.).
-Second, I describe how incorporating the computer has shifted the focus of my classes to become less rote and more conceptual.
-Finally, I present some concrete strategies and examples for teaching the R language as a scientific calculator in lower division statistics course.
+First, I argue that in 2020, more than ever, it's time to stop teaching statistical tables such as the Z table.
+Second, I describe how incorporating functionality from the R language into a lower division statistics course has shifted the focus from rote calculation to more conceptual understanding.
+Finally, I present some concrete strategies and examples for teaching R as a scientific calculator, which is much simpler than learning to program.
 You do not need to know R or programming to follow this approach.
 
 
