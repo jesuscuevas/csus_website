@@ -1,1 +1,103 @@
-TODO
+123GO: What's your word of the day?
+
+Announcements:
+
+- First HW posted
+- Discord for this class?
+
+Goals:
+
+- Create standalone HTML reports from Rmarkdown
+- Embed graphics and code into HTML reports
+- Change chunk parameters
+
+References:
+
+- [Rmarkdown documentation](https://rmarkdown.rstudio.com/)
+
+
+## motivation
+
+Make beautiful reports
+
+Q: Why not just copy and paste into MS Word?
+
+- lack of control? too much control?
+- reproducibility: want to reproduce all our steps as easily as possible.
+- provenance: Tracking changes in the document
+
+## Markdown
+
+Why not just write HTML?
+
+Who has edited HTML by hand?
+
+How fun is it?
+:(
+
+Eww, yuck
+lots of boilerplate...
+boilerplate is just repetitive code.
+```
+<p> tags
+write a paragraph
+<\p>
+```
+
+We want something easy to write, that we can convert to any other document type we like: Word, PDF, HTML.
+That's Markdown.
+
+```
+[<-- anchor text ----->](<---------- URL ------------>)
+```
+
+Use this convention to cite sources:
+[According to Wikipedia](https://en.wikipedia.org/wiki/Markdown), Markdown is ....
+
+According to [this](https://en.wikipedia.org/wiki/Markdown), Markdown is ....
+
+Why is using "this" as anchor text bad?
+
+- Not descriptive, requires following links
+- hard for readers with low vision
+
+# H1 title
+
+## H2 title
+
+### H3 title
+
+#### H4 title
+
+
+## Rmarkdown
+
+Variation or extension of markdown that works well with R.
+
+```{r}
+x = 1:10
+2 * x
+```
+
+
+## Your turn
+
+
+## Code Chunks
+
+
+## Chunk Options
+
+
+## Inline R
+
+
+
+## Pretty tables
+
+
+
+## Mathematics
+
+
+## How `knitr` Works

@@ -11,6 +11,7 @@ tags:
 
 References:
 
+- [markdown documentation](https://daringfireball.net/projects/markdown/)
 - [Rmarkdown documentation](https://rmarkdown.rstudio.com/)
 
 
