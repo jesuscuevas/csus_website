@@ -1,0 +1,163 @@
+- manipulate named vectors
+- summarize univariate data using statistics and graphics
+
+Announcements:
+
+- I appreciate Irene asking "What is boilerplate?"
+    Please ask when I use words like these without defining them!
+- Office hours 3pm tomorrow TODO: send out Zoom invite.
+
+
+## Named vectors
+
+A vector is an ordered sequence of data.
+
+Make some random data, `x`.
+`runif` r is for random
+unif is for uniform
+```{r}
+n = 26
+x = runif(n)
+names(x) = letters
+```
+
+Seeding the random number generator makes it start generating random numbers from the same place.
+
+```{r}
+n = 26
+set.seed(128)
+x = runif(n)  # Uses the RNG
+names(x) = letters
+x
+```
+
+"psuedo random number generators"
+
+```{r}
+n = 26  # <--- 26 is a Hardcoded value, which is generally bad practice.
+set.seed(128)
+x = runif(n)  # Uses the RNG
+names(x) = letters
+x
+
+# OR 123 go which is better?
+
+set.seed(128)
+x = runif(length(letters))   # Doesn't rely on specifying n
+names(x) = letters
+x
+
+# same idea as above
+
+n = length(letters)
+set.seed(128)
+x = runif(n)   # Doesn't rely on specifying n
+names(x) = letters
+x
+```
+hardcoding is bad because:
+
+- Length of letters could change!
+- manual data entry is error prone.
+- tedious
+- mistakes can propagate through
+- DRY "don't repeat yourself"
+
+So why ever hardcode?
+
+- It's convenient / easy
+
+
+## Helpful functions for homework
+
+`names, sort, head, tail, hist, %in%, x["a"]`
+Raminro, Richard, Rocky, Roman, Sarah, Sergio
+
+`decreasing = FALSE` is the default argument.
+We change it with `sort(x, decreasing = TRUE)`.
+
+TODO: Fix so students can download live notes.
+
+```{r}
+sort(x)
+
+sort(x, decreasing = TRUE)
+```
+`names, sort, head, tail, hist, %in%, x["a"]`
+Raminro, Richard, Rocky, Roman, Sarah, Sergio
+
+```{r}
+hist(x)
+```
+
+
+```{r}
+x[c("b", "a")]
+```
+
+
+sorting by name:
+```{r}
+x[sort(names(x))]
+```
+
+```{r}
+"a" %in% names(x) # is "a" in the names of x?
+```
+
+
+## Summary statistics
+
+
+
+Measures of center:
+```{r}
+mean(x)
+median(x)
+mean(x, trim = 0.05)
+```
+
+Outliers
+```{r}
+y = c(x, 10)
+mean(y)
+
+```
+
+123GO
+Will this be the same as `mean(x)`?
+```{r}
+mean(y, trim = 0.05)
+```
+
+```{r}
+x[1] == y[1]
+```
+
+
+
+
+Measures of spread:
+```{r}
+sd(x)
+quantile(x)
+range(x)
+summary(x)
+```
+
+
+
+## Exponent notation
+
+Scientific notation
+```
+first   e exponent
+7.246701e-01  = 7.246701 * 10^-1
+```
+
+
+## 1d graphics
+
+
+
+## preview filtering by condition

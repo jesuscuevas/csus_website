@@ -59,7 +59,17 @@ used by professionals                       |   No          |   No              
 - How I'm working R in: when I get to a calculation in my lecture presentation, I run the R code on my computer in front of me, and copy paste to my ipad (Mac feature).
 - Note that this example doesn't show the way a professional would actually use R to calculate the standard deviation of these numbers, `sd(c(2,3,5,6))`.
 
- and it's high time for them to join their extinct cousins, the mathematical tables of logarithms and trigonometric functions.
+If you are dying to teach these methods on a paper exam, then there are still a couple options.
+I like providing facts like "suppose Z ~ N(0, 1), then P(Z < 2) = 0.977".
+The reason I like this is because I don't care how long it takes students to look facts like these up, and I do not want to assess them on it.
+
+consider providing R output for functions, for example:
+```{r}
+> pnorm(0.2)
+[1] 0.5792597
+```
+
+
 
 ## Title: Goodbye Z Tables, Hello R – Using the R language as a scientific calculator for statistics classes
 
