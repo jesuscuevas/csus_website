@@ -7,7 +7,7 @@ tags:
 - Embed graphics and code into HTML reports
 - Change chunk parameters
 
-[Live notes]({% link files/stat128/fall20/2020-09-09.Rmd %})
+[Live notes]({% link files/stat128/fall20/2020-09-09.txt %})
 
 References:
 
