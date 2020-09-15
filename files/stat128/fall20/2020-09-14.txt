@@ -1,1 +1,175 @@
-TODO
+---
+tags: stat128
+output:
+  pdf_document: default
+---
+
+- describe high level idea of data frames
+- load external CSV file
+- select columns by name
+- `class, dim, head, tail, unique, table`
+
+123GO - On a scale of 1 (easy) to 10 (hard), how difficult did you find the last homework?
+
+Write LaTex $x + y$.
+
+Announcements:
+
+- Ask more questions! Discord
+- Note in the assignment if you work with someone else.
+- But still do the work yourself.
+
+```{r, echo = FALSE}
+hist(rnorm(100))
+```
+
+`data[rows, columns]`
+`data[, columns]`
+
+Ways to select a column "A"
+
+1. data[, "A"]
+1. data[["A"]]
+1. data$A
+1. with(data, A)
+
+`with(data, plot(x, y))`
+
+
+## data frames
+
+```{r}
+?data.frame
+```
+
+sounds important!
+
+matrix like structure, with columns of the same type
+
+A data frame is like a spreadsheet! or a table
+
+Use autocompletion for faster, more accurate typing.
+
+An example:
+```{r}
+airquality
+```
+```{r}
+class(airquality)
+```
+
+Use `class` to see how the object behaves.
+R uses the value of `class` to dispatch in object oriented programming.
+
+```{r}
+dim(airquality)
+```
+
+dim for dimensions.
+153 rows, and 6 columns.
+
+Each row is a record / observation
+
+ncols << nrows 
+
+What's the biggest table you've ever seen?
+millions
+
+
+```{r}
+head(airquality)
+```
+
+```{r}
+summary(airquality)
+```
+
+
+## select columns
+
+```{r}
+colnames(airquality)
+```
+
+Select the "Temp" column
+
+```{r}
+temperature = airquality[, "Temp"]
+```
+
+123go - what's the class of temperature?
+
+```{r}
+class(temperature)
+```
+
+Line plot:
+```{r}
+plot(temperature, type = "l")
+```
+
+
+
+Multiple columns
+
+Temp and Ozone
+```{r}
+c("Temp", "Ozone")
+temp_ozone = airquality[, c("Temp", "Ozone")]
+class(temp_ozone) # 123 go -what is this?
+```
+
+`with` allows you to type an expression using column names of a data frame as variables.
+```{r}
+with(temp_ozone, plot(Temp, Ozone))
+```
+
+
+
+## load files
+
+local on my machine or somewhere else?
+
+```{r}
+air = read.csv("http://webpages.csus.edu/fitzgerald/files/stat128/fall20/ad_viz_plotval_data.csv")
+```
+
+R visited my website, downloaded the data, and parsed it into a data.frame.
+
+
+## your turn
+
+
+```{r}
+class
+dim
+head
+summary
+```
+
+Which sites are represented in this data set?
+Hint:
+To find the unique values of the column "Month" in the `airquality` data we can do:
+
+```{r}
+unique(airquality[, "Month"])
+```
+
+Or, more informatively:
+
+```{r}
+table(airquality[, "Month"])
+```
+
+So there are 31 days in month 5 (May), 
+
+
+## dates
+
+
+
+
+
+
+
+
