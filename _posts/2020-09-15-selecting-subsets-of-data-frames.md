@@ -22,9 +22,9 @@ We also need to know about dates:
 ### Announcements
 
 - These online notes are more thorough, please use them in your homework. 
-- HW partially graded
+- HW graded
 
-[live notes]({% link files/stat128/fall20/2020-09-14.txt %})
+[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-09-16.Rmd)
 
 
 ### References

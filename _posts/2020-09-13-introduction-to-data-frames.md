@@ -20,7 +20,7 @@ Announcements:
     Explaining ideas to another is a wonderful way to learn.
 - To get the benefit from this course, you do need to do your own work, and completely understand it.
 
-[live notes]({% link files/stat128/fall20/2020-09-14.txt %})
+[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-09-14.Rmd)
 
 [homework air quality data]({% link files/stat128/fall20/ad_viz_plotval_data.csv %})
 

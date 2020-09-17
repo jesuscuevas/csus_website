@@ -11,7 +11,7 @@ tags:
 - Look up builtin documentation
 - Search for error messages
 
-[Live notes]({% link files/stat128/fall20/2020-09-04.txt %})
+[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-09-04.Rmd)
 
 
 ### Assignment 

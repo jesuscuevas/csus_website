@@ -11,7 +11,7 @@ Announcements:
 - I appreciate Irene asking "What is boilerplate?"
     Please ask when I use words like these without defining them!
 
-[Live notes]({% link files/stat128/fall20/2020-09-11.txt %})
+[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-09-11.Rmd)
 
 
 ## Named vectors
