@@ -3,77 +3,23 @@ tags:
     - stat128
 ---
 
-- Write reproducible data analyses
-- Maintain consistency between written code and global environment
-- Ask precise questions about programming
 - Predict when variables will be available in function bodies and global environment
 
 Announcements:
 
-- Glad to see more code and chatter in the Discord.
-    It's good to post your broken code here, so we can fix it.
 
+Assignment feedback
 
-Resources:
-
-- Stack Overflow on [minimal reproducible example](https://stackoverflow.com/help/minimal-reproducible-example)
-
-[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-09-21.Rmd)
-
-
-## Sharing workflow tips in RStudio
-
-Workflow is __how__ you develop your programs.
-Workflow can make the difference between a pleasant experience and endless frustration.
-
-How are you currently using RStudio?
-What is working, and what are you struggling with when you write your code?
-Work in your (new semipermanent!) small groups and come up with one thing that works, and one place where you're having trouble.
-Share with the class.
-
-
-## How to ask a precise question
-
-When asking questions, copy and paste the code and output that gives you trouble.
-Not a screenshot, unless you're asking about 
-For example...
-
-Example should be minimal, complete, and reproducible.
-
-
-## Reproducible data analyses
-
-These are two separate stages to writing a report: development, and producing the final report.
-
-Q: When you go to produce your final report, should it matter what you have in your global environment?
-
-A: NO. The code should contain everything to perform the analysis, so that it's self contained, and other people can run it and see what it does.
-Other people includes future you. :)
-
-Q: Can you think of anything that should not be contained in the code, but rather kept private?
-
-A: Passwords! For example, some data sources require authentication.
-
-When you are developing a report with Rmarkdown, you can use the interactive R console to help you understand, check, verify, and quickly experiment.
-
-When you knit an Rmd document, or run an R script, a new R session starts up and runs every line of code in order.
-That's all it does.
-For the final report to work, all the code must be in chunks in the right order in the Rmd document.
-Because it's a new R session, any of the objects in your global environment
-
-It's possible that the state of your global environment does not match the state of your program when you run all the chunks.
-Rstudio has a bunch of ways for you to run chunks.
-
-Some chunks may not be finished.
-In this case, you should use comments, prefacing your code with `#`.
-
-Q: Check them out. Which method is most similar to what heppens 
-One handy feature is "Restart R and Run all chunks", since this is most similar
+- Many discovered the formula interface for `plot(y ~ x, data = d)`.
+- Only necessary to convert date column one time at the beginning of your analysis.
+- Summaries are fine, but don't print long vectors.
+- Color should be semantically meaningful. We'll talk about color in graphs next week.
+- `x == "TRUE"` You probably will never need to do this, and you certainly never need to do this: `x == TRUE`
 
 
 ## Function Scope
 
-Last lecture introduced writing functions with some simple examples.
+Last week lecture introduced writing functions with some simple examples.
 Let's get a little deeper into what's actually happening.
 Suppose you __define__ the function:
 
@@ -192,3 +138,31 @@ One way you can find globals, and check if all looks as it should, is:
 
 `precip` is out of place, compared to the standard builtin functions.
 We may talk more about this in a future lecture.
+
+
+### Vectorized functions
+
+At a high level, vectorized functions work elementwise on vectors.
+The following are all examples of vectorized functions:
+
+```{r}
+# Something to work with:
+x = 1:10
+
+# Vectorized functions:
+x + 1
+2 * x
+x < 5.6
+```
+
+We can also use them with several vectors at once.
+
+```{r}
+y = 2 * x
+
+x + y
+x - y
+x * y
+```
+
+Vectorized functions make your R code clean to read and fast to run.
