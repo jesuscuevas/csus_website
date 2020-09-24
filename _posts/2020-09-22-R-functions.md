@@ -4,9 +4,12 @@ tags:
 ---
 
 - Predict when variables will be available in function bodies and global environment
+- Determine whether a function is vectorized.
 
 Announcements:
 
+- Recall late policy on assignments.
+- Minor change to question on HW template just now
 
 Assignment feedback
 
@@ -15,6 +18,8 @@ Assignment feedback
 - Summaries are fine, but don't print long vectors.
 - Color should be semantically meaningful. We'll talk about color in graphs next week.
 - `x == "TRUE"` You probably will never need to do this, and you certainly never need to do this: `x == TRUE`
+
+[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-09-22.Rmd)
 
 
 ## Function Scope
