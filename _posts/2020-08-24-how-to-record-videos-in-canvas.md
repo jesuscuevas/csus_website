@@ -16,6 +16,7 @@ Stretch your comfort zone, post your recording, and know that everyone feels the
 It does get easier.
 If you're truly stuck, then contact me, and we'll come up with an alternative activity that you're more comfortable with.
 
+
 If you have a webcam, I suggest you use the recorder built in to canvas.
 Click the record button and you'll see a screen like the one below.
 
