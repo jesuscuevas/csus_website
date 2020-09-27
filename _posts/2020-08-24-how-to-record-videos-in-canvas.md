@@ -37,26 +37,46 @@ Step 2 - Log in to [CSUS Mediasite](https://www.csus.edu/mymediasite).
 
 Step 3 - From Mediasite, click the button "Add Presentation" prominently displayed on the top blue bar.
 
+![]({% link img/video_upload/addpresentation.png %})
+
 Step 4 - Click "Upload New Video" and find the video that you would like to share.
 
-Step 5 - Give an appropriate name and description.
+![]({% link img/video_upload/uploadvideo.png %})
+
+Step 5 - Give an appropriate name. The description is optional.
+
+![]({% link img/video_upload/namepresentation.png %})
 
 Step 7 - Click "Create Presentation" and wait while your computer uploads the video.
 
+Step 7b - Set "Who can view?" slider to "Everyone".
+
+![]({% link img/video_upload/whocanview.png %})
+
 Step 8 - Click "Share Presentation".
 
+![]({% link img/video_upload/sharepresentation.png %})
+
 Step 9 - Click "Embed" to see the HTML code to embed your video.
+
+![]({% link img/video_upload/embedbutton.png %})
 
 Step 10 - Copy the Embed Code by clicking the big "Copy" button under the Embed Code.
 Do not copy the Quick Link.
 
+![]({% link img/video_upload/embed_code.png %})
+
 Step 11 - Navigate to the Canvas discussion where you would like to share your video.
 Click on "HTML Editor".
 
-Step 12 - Paste your HTML code and then click "Post" to share your video.
+![]({% link img/video_upload/htmleditor.png %})
+
+Step 12 - Paste your HTML code and then click "Post Reply" to share your video.
+
+![]({% link img/video_upload/pastedhtml.png %})
 
 
-## 1 - Record video directly in Canvas
+## 2 - Record video directly in Canvas
 
 If you have a webcam, you can use the recorder built in to canvas.
 Click the record button and you'll see a screen like the one below.

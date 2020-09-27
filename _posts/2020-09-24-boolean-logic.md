@@ -11,6 +11,8 @@ Announcements:
 - You should be proud of yourselves for the last HW.
 - New programmer specific office hours after class today, all are welcome.
 
+[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-09-25.Rmd)
+
 
 ## boolean logic
 

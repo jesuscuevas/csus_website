@@ -19,7 +19,7 @@ Assignment feedback
 - Color should be semantically meaningful. We'll talk about color in graphs next week.
 - `x == "TRUE"` You probably will never need to do this, and you certainly never need to do this: `x == TRUE`
 
-[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-09-22.Rmd)
+[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-09-23.Rmd)
 
 
 ## Function Scope
