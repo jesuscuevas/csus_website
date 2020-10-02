@@ -177,12 +177,62 @@ g = ggplot(data = d, mapping = aes(x = time, y = winnings)) +
 
 ## More data
 
-Suppose we want to compare multiple betting strategies.
-Then we need more data.
+Suppose we want to compare multiple betting strategies by drawing two lines on the same plot.
+We need more data.
 
 ```{r}
 dc = play(strategy = simple_strategy(column1), nplayers = 1, ntimes = TIMES)
 ```
 
 `d` came from the evens strategy, and `dc` came from the column strategy.
+Let's add that information to our data in a way that ggplot will like.
 
+```{r}
+d$strategy = "even"
+dc$strategy = "column"
+```
+
+We've added a column `strategy` to both data frames describing what strategy we used to generate this data.
+Now we need to combine these two data frames by stacking them on top of each other.
+It doesn't matter which one comes on top.
+
+```{r}
+d2 = rbind(d, dc)
+```
+
+`d2` contains the data from `d` and `dc`.
+Let's plot them:
+
+```{r}
+g = ggplot(data = d2, mapping = aes(x = time, y = winnings)) +
+    geom_line()
+```
+
+That's a weird looking plot!
+We want two lines, one for each strategy.
+Adding a `group` aesthetic will give us this, and this is what you would use to plot many players using the same strategy simultaneously.
+
+```{r}
+g = ggplot(data = d2, mapping = aes(x = time, y = winnings)) +
+    geom_line(aes(group = strategy))
+```
+
+However, we don't know which line is which.
+Let's map the color to `strategy`.
+
+```{r}
+g = ggplot(data = d2, mapping = aes(x = time, y = winnings)) +
+    geom_line(aes(color = strategy))
+```
+
+Nice.
+
+I wonder what the `geom_step` looks like?
+
+```{r}
+g = ggplot(data = d2, mapping = aes(x = time, y = winnings)) +
+    geom_step(aes(color = strategy))
+```
+
+Now we start to see the power of ggplot2.
+Once you get over the hump and write something that works, the legend and these kinds of different aesthetics come easily.
