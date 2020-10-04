@@ -234,5 +234,7 @@ g = ggplot(data = d2, mapping = aes(x = time, y = winnings)) +
     geom_step(aes(color = strategy))
 ```
 
+I bet this would work well to visualize the martingale strategy.
+
 Now we start to see the power of ggplot2.
 Once you get over the hump and write something that works, the legend and these kinds of different aesthetics come easily.
