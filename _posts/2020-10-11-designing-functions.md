@@ -80,8 +80,11 @@ Functions are another way.
 For the next homework, we're going deeper into typical outcomes when you gamble by doing many simulations.
 
 ```{r}
-NTIMES = 1000L
-d = play(simple_strategy(even), nplayers = 1000L, ntimes = NTIMES)
+set.seed(1380)
+
+NTIMES = 10000L
+NPLAYERS = 500L
+d = play(simple_strategy(even), nplayers = 500L, ntimes = NTIMES)
 ```
 
 I would like to know the mean and standard deviation of winnings at every time point `time`.
@@ -104,6 +107,7 @@ sd_theory = function(time){
 }
 
 
+
 #' Compute summary statistics for a particular time
 #'
 #' @param ds data frame containing columns for winnings at a particular time
@@ -122,7 +126,28 @@ dtheory = do.call(rbind, dq)
 dtheory$pop_mean = mean_theory(dtheory$time)
 dtheory$pop_sd = sd_theory(dtheory$time)
 
+dtheory$lower = with(dtheory, sample_mean - 2 * sample_sd)
+dtheory$upper = with(dtheory, sample_mean + 2 * sample_sd)
 
+
+NEXAMPLES = 30L
+example_lines = d[d$player <= NEXAMPLES, ]
+
+library(ggplot2)
+
+sample_color = "red"
+pop_color = "blue"
+conf_line = 2
+
+g = ggplot(data = dtheory) +
+    geom_line(mapping = aes(x = time, y = sample_mean), color = sample_color) + 
+    geom_line(mapping = aes(x = time, y = pop_mean), color = pop_color) +
+    geom_line(mapping = aes(x = time, y = lower), linetype = conf_line) + 
+    geom_line(mapping = aes(x = time, y = upper), linetype = conf_line) +
+    geom_line(data = example_lines, mapping = aes(x = time, y = winnings, group = player), alpha = 0.1, size = 0.3)
+    
+
+print(g)
 
 ```
 
