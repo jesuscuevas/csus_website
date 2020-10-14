@@ -3,10 +3,15 @@ tags:
     - stat128
 ---
 
+- Evaluate code using `source`
 - Plan and implement functions
 - Document functions
 
 Announcements:
+
+- Good job on the COVID assignment.
+    Everyone in the world is talking about COVID, but how many have actually looked at the raw case level data firsthand?
+    That's over 4 million rows, more than anyone said they have dealt with before.
 
 [live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-10-12.Rmd)
 
@@ -148,7 +153,22 @@ g = ggplot(data = dtheory) +
     
 
 print(g)
-
 ```
 
+## Group Activity - Planning computations
 
+We want to make the plot above.
+How are we going to make it?
+
+
+## Designing functions
+
+Here are some general steps to follow when writing a function.
+Order doesn't matter much, as long as you wait until the end to implement it.
+
+1. Decompose large problems into smaller problems.
+2. Decide what the inputs and outputs should be.
+3. Create the function __signature__, the name of the function and all the inputs.
+4. Have a test case ready, so you can check for correctness.
+    TDD- Test driven development.
+5. Implement the function.
