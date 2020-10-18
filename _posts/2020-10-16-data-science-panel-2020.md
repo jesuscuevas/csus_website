@@ -3,6 +3,9 @@ tags:
     - stat128
 ---
 
+Video Q&A panel with 5 data scientists working in industry and government.
+
+
 [Webinar recording](https://csus.zoom.us/rec/share/8V8xNnQH5-4ecvy31OA-39Sq0TO0f_sYtciXDHtFb8i4tUABddLzrUCiKVZdw2uj.CJjDlDtsk6SM6XmN?startTime=1602874815000)
 
 Data Scientist was the #1 best job in America from 2016 to 2019, according to [Glassdoor.com](https://www.glassdoor.com/List/Best-Jobs-in-America-2019-LST_KQ0,25.htm).
@@ -30,6 +33,22 @@ Agenda:
 - 12:30 - open Q&A
 - 12:50 - finish webinar, begin Zoom meeting with breakout rooms for each speaker
 
+
+# Take Aways
+
+> Below are some quotes from attendees describing what they took away from the panel.
+
+"The thing that I found the most interesting is how broad this is.  I know data science is a big field, but I never realized its even bigger than I originally thought.  From this, I feel like many problem I had faced can be solved with data science.  I feel like this is a career that can be useful in many other field."
+
+"Personally, I really appreciated Hugo being transparent about imposter syndrome and how in reality individuals with different backgrounds will shine in other areas of the field. With this variety of archetypes in the field, data scientists are exposed to so many different perspectives in terms of tackling problems; and that the further they are in their field, the more they know and the more they know they don’t. However, as this is a technology-based field, data scientists are continuously learning as technology is constantly evolving."
+
+"I like the idea of creating a simple visualization to communicate the impact of a project so that recruiters can understand your project without doing a lot of work. The meaning is more important than the complexity. In the chat someone mentioned writing a blog post about your project so that you can share it as a link to employers and I thought that was really smart."
+
+"Going into the data science panel I wasn’t exactly sure how doing statistical math could be applied to professional fields. My original thought was that these pro’s worked more with data structures, allocating large files in clever ways to save memory space. However the actual application was very nuanced and each panelist worked in different fields working to achieve different goals under the umbrella of data science work. ... In summation, what I took away from the data science panel was how diversified the field is and also how passionate the panelists seemed about their jobs."
+
+"So of the main things I took away from the panel was companies will hire you on communication skill, recommendations, and ability to learn. This was quite a surprise to me since I was under the impression as a Computer Science major that I must know every algorithm and remember every language we went over in class and it was becoming a bit overwhelming. It is more about understanding the concepts and being able to implement the concepts with any resource available to you. (Alejandro) did not know Sql which was a requirement for his job but was hired anyways because his ability to learn, this gave me some hope."
+
+"I learned that with data science it is continuous learning because there are going to be some tools that they use one day, but then a better tool might come along and then they would have to use that tool instead. A data scientist needs to have a willingness to learn, some things that a data scientist should know is SQL and Python or R. Some career tips that I learned from the data scientists is to try to make a project or to see if I can get an internship or a volunteer position. Overall, this was a great panel and I am very happy that I attended it."
 
 
 # Questions

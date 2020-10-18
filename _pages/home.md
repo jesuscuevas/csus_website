@@ -11,6 +11,8 @@ This site contains course materials, technology and software tutorials, case stu
 
 ## Data Science @ Sacramento State
 
+[2020 Data Science Career Panel]({% link _posts/2020-10-16-data-science-panel-2020.md %})
+
 {% include datascience_mail_list.html %}
 
 
