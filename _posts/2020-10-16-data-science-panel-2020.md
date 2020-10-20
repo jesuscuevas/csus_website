@@ -8,6 +8,8 @@ Video Q&A panel with 5 data scientists working in industry and government.
 
 [Webinar recording](https://csus.zoom.us/rec/share/8V8xNnQH5-4ecvy31OA-39Sq0TO0f_sYtciXDHtFb8i4tUABddLzrUCiKVZdw2uj.CJjDlDtsk6SM6XmN?startTime=1602874815000)
 
+Attendance: 83 registered, 61 attended, including around 30 students from STAT 128.
+
 Data Scientist was the #1 best job in America from 2016 to 2019, according to [Glassdoor.com](https://www.glassdoor.com/List/Best-Jobs-in-America-2019-LST_KQ0,25.htm).
 Why?
 What do data scientists do?
