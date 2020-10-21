@@ -8,7 +8,7 @@ tags:
     - variable name
     - function call
     - argument 
-- Look up builtin documentation
+- Find and interpret builtin documentation
 - Search for error messages
 
 [live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-09-04.Rmd)

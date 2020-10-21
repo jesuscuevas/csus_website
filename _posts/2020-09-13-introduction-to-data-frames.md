@@ -6,7 +6,7 @@ tags:
 - describe high level idea of data frames
 - load CSV file on local file system
 - select columns by name
-- `class, dim, head, tail, unique, table`
+- interpret interactive results of `class, dim, head, tail, unique, table`
 
 123GO - On a scale of 1 (easy) to 10 (hard), how difficult did you find the last homework?
 
