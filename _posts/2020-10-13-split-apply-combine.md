@@ -11,6 +11,8 @@ Announcements:
 - Homework hint- for the questions on the martingale, it may be easiest to modify the `doublebet` strategy function.
     Ask me on Discord and I'll help you with this, because we haven't covered control flow like loops and conditional statements.
 
+[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-10-14.Rmd)
+
 Resources:
 
 - [The Split-Apply-Combine Strategy for Data Analysis](https://www.jstatsoft.org/article/view/v040i01) by Hadley Wickham

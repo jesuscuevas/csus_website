@@ -5,6 +5,8 @@ tags:
 
 - Write functions containing `if` and `else` statements
 
+[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-10-19.Rmd)
+
 Announcements:
 
 - Midterm next week
