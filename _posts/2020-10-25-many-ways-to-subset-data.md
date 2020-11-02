@@ -41,6 +41,12 @@ Here's a vector for us to play with.
 x = 1:10 / 10
 ```
 
+## logical
+
+```{r}
+x[x < 0.5]
+```
+
 ## index
 
 ```{r}
@@ -51,12 +57,6 @@ And negative index:
 
 ```{r}
 x[-c(5, 9)]
-```
-
-## logical
-
-```{r}
-x[x < 0.5]
 ```
 
 ## names
@@ -84,8 +84,18 @@ DATA[ROWS, COLUMNS]
 
 Selection through logical critieria is the most generally useful for data analysis.
 
+For example, "cars that have greater than 30 mpg"
+
 ```{r}
-mtcars[
+mtcars[30 < mtcars$mpg, ]
+```
+
+Some variants:
+
+```{r}
+subset(mtcars, 30 < mpg)
+
+with(mtcars, mtcars[30 < mpg, ])
 ```
 
 
@@ -95,8 +105,11 @@ mtcars[
 # First five rows
 mtcars[1:5, ]
 
-# First five columns
-mtcars[, 1:5]
+# First four columns
+mtcars[, 1:4]
+
+# columns and rows
+mtcars[1:5, 1:4]
 ```
 
 Negative index
@@ -110,4 +123,31 @@ mtcars[, -(1:5)]
 
 ## names
 
+```{r}
+mtcars[, "mpg"]
 
+mtcars["Honda Civic", ]
+
+mtcars["Honda Civic", "mpg"]
+```
+
+Then there is the `$` operator.
+
+```{r}
+mtcars$mpg
+```
+
+Will this partial match work?
+
+```{r}
+mtcars$mp
+```
+
+Yes- it's useful for interactive situations, say when a column name has 20 characters.
+Check out the difference between `[` and `$` if we try to use a column that doesn't exist.
+
+```{r}
+mtcars$stat128
+
+mtcars[, "stat128"]
+```
