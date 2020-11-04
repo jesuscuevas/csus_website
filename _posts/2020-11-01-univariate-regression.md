@@ -6,6 +6,8 @@ tags:
 - Explain the idea of linear regression with one variable
 - Extract the coefficients of a linear model produced by `lm`
 
+[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-11-02.Rmd)
+
 123 GO – What’s your favorite Halloween candy?
 
 Announcements:
