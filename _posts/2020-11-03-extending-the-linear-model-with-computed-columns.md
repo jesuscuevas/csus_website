@@ -111,6 +111,20 @@ One reason is that it only makes sense to fit this cubic spline to pairs of `x` 
 
 Part of modeling is evaluating how well a model performs.
 The linear model minimizes the sum of squared error.
+Come up with a function that calculates the mean squared error (MSE) for an `lm` object predicting some new test data.
+That is, if we estimate a linear model given by the function f, then the MSE is the sample mean of `(f(x_i) - y_i)^2`.
+
+```{r}
+#' Calculate the mean squared error of the model on testdata
+#'
+#' @param model fitted model object
+#' @param testdata data frame containing a column y representing the true values to compare the fitted values against
+mse = function(model, testdata)
+{
+}
+```
+
+Here's an example of how you might use such a function:
 
 ```{r}
 # Simulate data
@@ -124,31 +138,21 @@ dtrain = d[test_index, ]
 dtest = d[-test_index, ]
 
 fit = lm(y ~ x, data = dtrain)
-```
-
-Come up with a function that calculates the mean squared error for an `lm` object predicting some new test data.
-
-```{r}
-#' Calculate the mean squared error of the model on testdata
-#'
-#' @param model fitted model object
-#' @param testdata data frame containing a column y representing the true values to compare the fitted values against
-mse = function(model, testdata)
-{
-}
-
-# Usage
 mse(fit, dtest)
 ```
-
 
 
 ## Object oriented programming
 
 How does `predict` know what to do?
-It must be a really intelligent function.
+It must be a really smart function, let's look at it.
 
 ```{r}
+predict
 ```
 
+Nope! Just object oriented programming.
 
+```{r}
+predict.lm
+```
