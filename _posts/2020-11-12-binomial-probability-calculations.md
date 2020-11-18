@@ -56,7 +56,7 @@ probability = dbinom(k, size = 10, prob = 0.3)
 plot(k, probability, ylim = c(0, 0.4))
 
 p2 = dbinom(k, size = 10, prob = 0.8)
-points(k, p2, pch = 2)
+points(k, p2, col = "blue")
 ```
 
 Q: What's the probability that X = 1?
