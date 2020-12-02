@@ -1,17 +1,9 @@
----
-tags:
-    - stat128
----
+Goals:
 
 - Write wrapper functions
-- Debug functions that you write
-
-[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-12-01.Rmd)
+- Understand the tradeoffs with different styles of coding
 
 123 GO – What's one item on your Christmas wish list?
-
-Announcements:
-
 
 
 ## Wrapper functions
@@ -21,27 +13,19 @@ For example, `pnorm` calculates the cumulative distribution function for the nor
 
 ```{r}
 x = seq(from = -4, to = 4, by = 0.1)
-plot(x, pnorm(x))
 
-lines(x, pnorm(x, sd = 2))
 ```
+
 
 I want to create a function `pnorm2` that behaves just like `pnorm`, but has the default standard deviation (sd) set to 2.
 In other words, `pnorm2(x)` should behave exactly like `pnorm(x, sd = 2)`.
 How can I do this?
 
-Work through ways...
-
-```{r}
-pnorm2 = function(..., sd = 2)
-{
-    pnorm(..., sd = sd)
-}
-```
 
 ## Group activity
 
-Write a wrapper for `hist` that changes the default title (parameter `main`)to "HISTOGRAM".
+1. Write a wrapper for `hist` that changes the default title (parameter `main`) to "HISTOGRAM".
+2. List the differences between the functions `extract_interest_rate` and `eir` in https://github.com/clarkfitzg/stat128/blob/master/extract_interest.R
 
 
 ## Debugging
@@ -57,15 +41,7 @@ What's a bug in software?
 
 Four kinds of bugs:
 
-1) Syntax Errors- The code isn't syntactically valid R.
-1) Runtime Errors- the code throws an error in the middle of evaluation.
-2) Code runs, but gives you something obviously incorrect.
-3) Code runs, and everything seems fine, but it's wrong.
 
-123 GO - which are the easiest to fix?
-The syntax and runtime errors.
-The last class is *much* harder to identify and fix.
-So you should be happy that you get an error :)
 
 
 ## Errors
@@ -88,12 +64,8 @@ Where is it?
 The expression `x > 18 = 0`.
 
 
-## Explaining this particular error
-
 123 GO - Is this a syntax or a runtime error?
 Runtime, unfortunately.
-In this case, R attempted to do functional assignment by pasting together the function call to `>` with the assignment operator `<-` to form a new function call `><-`.
-Assignment with `[` behaves the same:
 
 ```{r}
 x = 1:3
@@ -103,26 +75,45 @@ x[1] = 0
 x = `[<-`(x, 1, 0)
 ```
 
-The error is that the function `><-` is not defined, so R cannot find it.
-It doesn't make much sense at all to define such a function, but if we did, then the code would run:
-
-```{r}
-`><-` = function(a, b, value) paste("This is crazy.", value)
-
-x > 18 = 0
-
-# > x
-# [1] "This is crazy. 0"
-
-rm(`><-`) # Don't let this mess up the lesson :)
-```
-
-Bugs happen for a reason, but it takes the right background to understand them.
 
 
 ## Debugging
 
 
+## Write code that's easy to understand
 
 
-## Ignoring Errors
+```{r}
+#' Extract interest rates from a character vector
+#'
+#' @param x character vector containing text with interest rates
+#' @param pattern regular expression pattern to find the matching interest rates
+#' @return The first numeric interest rate found in the string, or NA if none found
+#' @examples
+#' extract_interest_rate("Fixed @ 3.92%, no TIC/NIC")  # 3.92
+#' extract_interest_rate("123.456 but no adjacent %")  # NA
+extract_interest_rate = function(x, pattern = "[0-9]+\\.[0-9]+\\%")
+{
+    interest = rep(NA, length(x))
+    match_locations = regexpr(pattern, x)
+    match_string = regmatches(x, match_locations)
+    match_number_string = gsub("\\%", "", match_string)
+    match_number = as.numeric(match_number_string)
+    interest[match_locations != -1] = match_number
+    interest
+}
+
+
+eir = function(x, p = "[0-9]+\\.[0-9]+\\%")
+{
+    i = rep(NA, length(x))
+    l = regexpr(p, x)
+    n = as.numeric(gsub("\\%", "", regmatches(x, l)))
+    (i[l != -1] = n)
+}
+```
+
+These 
+What are the differences between these functions?
+
+Which version of this function is easier to read?
