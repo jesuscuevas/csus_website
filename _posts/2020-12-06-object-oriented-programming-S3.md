@@ -3,9 +3,9 @@ tags:
     - stat128
 ---
 
-- Define new methods for generic functions like `plot`
 - Use `::` and `:::` to find objects in a namespace
-- Predict when 
+- Predict which object will be found based on search paths
+- Define new methods for generic functions like `plot`
 
 [live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-12-07.Rmd)
 
