@@ -6,7 +6,7 @@ tags:
 - Write wrapper functions
 - Debug functions that you write
 
-[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-12-01.Rmd)
+[live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-12-04.Rmd)
 
 123 GO – What's one item on your Christmas wish list?
 

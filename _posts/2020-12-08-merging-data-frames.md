@@ -1,3 +1,9 @@
+---
+tags:
+    - stat128
+---
+
+
 - Merge two data frames that share a common column
 
 [live notes](https://github.com/clarkfitzg/stat128/blob/master/2020-12-09.Rmd)
@@ -7,6 +13,8 @@
 Announcements:
 
 - Submit final project highlight separately from final project on Sunday.
+- Evaluate this course.
+
 
 ## Merging
 
