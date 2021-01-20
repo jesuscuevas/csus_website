@@ -2,7 +2,15 @@
 date: 2020-07-02
 ---
 
-Current students, please use [Canvas to communicate]({% link _posts/2020-08-27-communication-for-current-students.md %}) with me.
+
+<ul>
+  {% for post in site.tags.contact %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
 
 {% include datascience_mail_list.html %}
 

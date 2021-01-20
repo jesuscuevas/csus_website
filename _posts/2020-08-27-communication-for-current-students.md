@@ -1,8 +1,9 @@
 ---
 tags:
     - class
+    - contact
     - stat128
-date: 2020-01-19
+date: 2021-01-19
 ---
 
 Asking questions during live class is the fastest and most efficient way to communicate.
