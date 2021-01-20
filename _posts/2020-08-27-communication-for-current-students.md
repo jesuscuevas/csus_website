@@ -39,16 +39,18 @@ You can also set your notifications specific to each course by navigating to the
 If you are going to be late on an assignment, then turn in what you have, and leave a comment in the assignment submission form on Canvas telling me what's going on and when you expect to finish.
 Later, when I grade the assignment, that comment will show up and I will have some context for why that assignment is missing.
 
+
 ### Discord
 
 For questions and discussions on course content and policies, please use [Discord](https://discord.com/channels/@me).
-The best thing about Discord is that everyone in class can benefit from the discussion, and other students can respond and help you as well.
+Discord describes itself as "the easiest way to talk over voice, video, and text."
+The best thing about a public forum like Discord is that everyone in class can benefit from the discussion, and other students can respond and help you as well.
 This is not possible with email, which is why I check and respond to public questions on Discord much more frequently than email.
 
 If you have a question that requires my input, then tag me with `@Dr. Fitz` to make sure that I pay attention to it.
 Do not worry about bothering me at any time of the day or night, because I set my notifications so that I am notified if and only if I want to be notified.
-You should do the same.
-If I unplug for a long bike ride or a camping trip, then I'll see the notifications the next time I sign on, no problem.
+You should do the same, because it's important to unplug and rest.
+If I go for a long bike ride or a camping trip, then I'll see the notifications the next time I sign on, no problem.
 
 I've set up our Discord with a handful of channels.
 Feel free to [mute any of them](https://support.discord.com/hc/en-us/articles/209791877-How-do-I-mute-and-disable-notifications-for-specific-channels-).
@@ -59,18 +61,28 @@ Feel free to [mute any of them](https://support.discord.com/hc/en-us/articles/20
 - __# off-topic__ when you want to share something with the class, but it's not related to the class.
     For example, finding buddies to play video games with, or [Mandalorian memes](https://gamerant.com/star-wars-mandalorian-best-memes/)
 
+I suggest you set your Discord user name for our class to the same name displayed in Canvas, so that I know who you are and I can award you participation points for your helpful contributions to the conversation.
+If you [set your server nickname](https://support.discord.com/hc/en-us/articles/219070107-Server-Nicknames), then you can be `Jane Doe` for our class, but still be `TurdBurglar` when you're gaming on Discord.
+On a similar note, keep your profile pictures PG.
+
 
 ### Email
 
-If you need to communicate with me privately, then you can use private messages in Discord, or you can email me at <fitzgerald@csus.edu>.
-I'll typically see and respond to the private messages in Discord sooner, because I check that more often than email.
-However, if it's an official form or something that I need to forward to other people at the University, then email is better than Discord.
+Here are three ways to communicate with me privately:
+
+1. Discord direct messages.
+    I'll typically see and respond to these fastest, because I check them most often. 
+2. Canvas direct messages.
+    Same idea as Discord, but less efficient.
+    Use it if it's the only way you have to communicate.
+3. Email <fitzgerald@csus.edu>.
+    The best option for official forms or messages that I need to forward to other people at the University, or if you need to notify multiple professors simultaneously.
 
 
 ### General Advice
 
-It's easy to be misunderstood in an online environment.
-Here's a good general rule of thumb for online:
+Be polite and courteous when interacting with others online, because it's easy to be misunderstood.
+Here's a good general rule of thumb for online environments:
 
 > If you wouldn't say it in front of your Grandmother, then don't say it in class.
 

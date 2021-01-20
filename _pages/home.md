@@ -4,10 +4,11 @@ description: "CSUS Professor Clark Fitzgerald's personal website. Data science c
 permalink: /
 ---
 
-<img src="{% link img/profile.jpg %}" alt="profile picture" width="200"/>
+I'm an Assistant Professor in the [Department of Mathematics & Statistics](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/) at CSU Sacramento, where I teach [classes in statistics](https://catalog.csus.edu/courses-a-z/stat/).
+My specialty is statistical computing and data science.
+This site contains student work, course materials, technology and software tutorials, case studies, and miscellaneous writing.
 
-I'm an Assistant Professor in the [Department of Mathematics & Statistics](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/) at CSU Sacramento, where I teach [classes in statistics](https://catalog.csus.edu/courses-a-z/stat/), computing, and data science.
-This site contains course materials, technology and software tutorials, case studies, and miscellaneous writing.
+<img src="{% link img/profile.jpg %}" alt="profile picture" width="200"/>
 
 ## Data Science @ Sacramento State
 
