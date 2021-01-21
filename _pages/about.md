@@ -7,22 +7,14 @@ I'm an Assistant Professor in the [Department of Mathematics & Statistics](https
 I graduated from UC Davis in 2019, where I studied with [Professor Duncan Temple Lang](http://www.stat.ucdavis.edu/~duncan/) and spent lots of time in the [Datalab](https://datalab.ucdavis.edu/).
 My research interests include software development, data science, and scaling statistical applications to large data sets.
 
-------------------------------------------------------------
-
-This is my personal website, which I use primarily to share course material with the public.
+This is my personal website.
 It does not reflect the opinions of my employer.
-
 If you find the content on this site useful, feel free to link to it, or [send me an email](mailto:fitzgerald@csus.edu).
 Most content I post here is somewhat incomplete and unpolished, and I expect it to continue to evolve for many years.
 Use code at your own risk.
 
 
 ## Personal
-
-I value clear, direct, and timely communication with my students.
-Sometimes, I'm direct to the point of being terse.
-So if I reply with one word, or just a 👍, please know that's just a style I use when I'm short on time.
-Why am I short on time?
 
 ![biking with family]({% link img/bikefamily.jpg %})
 
