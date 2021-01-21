@@ -79,12 +79,37 @@ Here are three ways to communicate with me privately:
     The best option for official forms or messages that I need to forward to other people at the University, or if you need to notify multiple professors simultaneously.
 
 
-### General Advice
+## General Advice
 
-Be polite and courteous when interacting with others online, because it's easy to be misunderstood.
-Here's a good general rule of thumb for online environments:
+Here are a few suggestions for how to make this an enjoyable and safe social experience.
 
-> If you wouldn't say it in front of your Grandmother, then don't say it in class.
+#### Be polite and considerate of others
+
+You never know how someone else might interpret what you say or write.
+For example, sarcasm and profanity rarely go over well in the classroom.
+As students at Sac State, you're governed by about [50 Policies and Procedures](https://www.csus.edu/student-affairs/policy-procedures.html), and I'm sure that I'm governed by even more as a faculty member.
+I've heard the rule of thumb that if you wouldn't say it in front of your grandmother, then don't say it in the virtual classroom.
+This seems reasonable, based on most of the grandmothers I've met.
+
+#### Communicate with your fellow students
+
+I designed the participation assignments and discussions so that you can interact and have some exchange of ideas with others in the class.
+I encourage you to form study groups and meet outside of class; let me know if I can help facilitate this.
+Explaining a concept to another student is educational for both parties.
+
+#### Mind what you show on video
+
+Consider finding a good [Zoom background](https://sacstate.smugmug.com/Sac-State-Zoom-Backgrounds/) that hides your actual room.
+Technical issues might prevent you from turning on videos, for example, if your internet connection is unstable.
+You should also turn off your video if there's anything you don't want others to see, for example, if you need to briefly speak to another member of your household.
+
+#### Talk to me
+
+Talk with me about your classes and career plans, ask me about [my educational experiences](http://webpages.csus.edu/fitzgerald/my-education-path/), or ask about anything academic and career related.
+If you're experiencing relationship troubles, depression, or other issues more suitable for a trained counselor, then I may refer you to [Counseling Services](https://www.csus.edu/student-life/health-counseling/).
+Keep in mind that all faculty members are mandatory reporters, which means we must [report issues](https://www.csus.edu/title-ix/reporting.html) such as child abuse.
+
+#### Take a break
 
 Think before you post, and listen to your better judgement.
 Don't post anything online that you might regret or be embarrassed about later.
