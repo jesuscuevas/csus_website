@@ -1,9 +1,14 @@
 ---
+date: 2021-01-24
 tags:
     - stat128
+    - stat196k
     - teaching
     - howto
 ---
+
+We will share our videos with each other through Canvas discussions.
+This post describes two ways to upload videos and make them available to a Canvas discussion.
 
 In this class, we use videos first of all to build community.
 Don't spend hours making perfect videos; spend that time studying statistics.
@@ -16,11 +21,22 @@ Stretch your comfort zone, post your recording, and know that everyone feels the
 It does get easier.
 If you're truly stuck, then contact me, and we'll come up with an alternative activity that you're more comfortable with.
 
-We will share our videos with each other through Canvas discussions.
-The following are two ways to upload videos and make them available to a Canvas discussion.
+
+## 1 - Record video directly in Canvas
+
+If you have a webcam, you can use the recorder built in to canvas.
+Click the record button and you'll see a screen like the one below.
+
+IMPORTANT: after you click "save" it may appear that nothing happens.
+It's actually uploading the video.
+Don't navigate away, or you'll lose the recording.
+I just keep the tab open and work on something else.
+Even with a fast connection it can take a few minutes.
+
+![screenshot on how to use canvas recorder]({% link img/canvas_record_video.png %})
 
 
-## 1 - Upload videos with Mediasite
+## 2 - Upload videos with Mediasite
 
 This technique allows you to record your own video , and then upload it to Mediasite.
 Unlike public videos on YouTube, only your classmates will be able to view your videos.
@@ -74,17 +90,3 @@ Click on "HTML Editor".
 Step 12 - Paste your HTML code and then click "Post Reply" to share your video.
 
 ![]({% link img/video_upload/pastedhtml.png %})
-
-
-## 2 - Record video directly in Canvas
-
-If you have a webcam, you can use the recorder built in to canvas.
-Click the record button and you'll see a screen like the one below.
-
-IMPORTANT: after you click "save" it may appear that nothing happens.
-It's actually uploading the video.
-Don't navigate away, or you'll lose the recording.
-I just keep the tab open and work on something else.
-Even with a fast connection it can take a few minutes.
-
-![screenshot on how to use canvas recorder]({% link img/canvas_record_video.png %})

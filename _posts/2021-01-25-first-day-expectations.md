@@ -14,7 +14,7 @@ I'm OK with that.
 
 ### The Bad
 
-Here's why you might want to run away now. 😱
+Here's why you might want to run away now. 👎
 
 1. I like to "learn by doing".
     We're going to get our hands dirty processing large amounts of data.
@@ -31,7 +31,7 @@ I'm OK with not being the expert at all things.
 
 ### The Good
 
-Here's why you might want to stick around.
+Here's why you might want to stick around. 👍
 
 1. I taught a [similar class at UC Davis](https://github.com/clarkfitzg/sta141c-winter19), and I've spent about 10 years working in this field.
 3. I'll communicate often and support you as well as I can by engaging on Discord.
