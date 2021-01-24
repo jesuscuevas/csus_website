@@ -1,6 +1,6 @@
 ---
 tags:
-    - stat196K
+    - stat196k
 ---
 
 __Course Description:__
@@ -76,7 +76,7 @@ Percentage  |   Category    |   Description & Purpose     |   Collaboration Poli
 ----------  |   --------    |   -----------     |   ----------------------
 35          | Homework      |   The core course component where you will practice data analysis and programming. I will grade a subset of the prompts in the assignment and provide you with feedback. The assignment submission comments are also where you can communicate privately with me. |   Talking about problems is allowed, but you must state who you work with.
 15          |   Skills      |   Short, self contained assignments to reinforce and practice concepts from lecture. Some will be automatically graded, some will be graded on a binary scale (full points or 0), and some will receive full points if you turn anything in. I'll provide solutions so you can check your answers. |   Collaboration is allowed.
-15          | Participation |   Setting up online profiles, Canvas discussions, making review videos, and anything that doesn't fit cleanly somewhere else. The purpose is to provide experience producing different media, and to make our online class feel more like a community by having some interaction with each other.    |   Collaboration is allowed.
+15          | Engagement |   Setting up online profiles, Canvas discussions, making review videos, and anything that doesn't fit cleanly somewhere else. The purpose is to provide experience producing different media, and to make our online class feel more like a community by having some interaction with each other.    |   Collaboration is allowed.
 15          | Final Project        |   Culminating project that allows you to do something more involved and open ended than the homeworks. Treat this as an opportunity to show off your skills, and make something that you can show to a potential employer or graduate school.  |   You can choose to work in a group.
 10          |   Midterm      |   Motivates the video review assignment. 😁 This will give me some idea of your understanding, and what we need to spend more time on. |   Do not collaborate.
 10          | Final Exam        |   This is a standard comprehensive final exam to assess how well you've learned the class concepts. |   Do not collaborate.

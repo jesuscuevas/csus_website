@@ -7,7 +7,7 @@ The course notes are available here.
 Announcements, assignment submissions, grades, discussions, lecture recordings, and anything that may identify students is [available on Canvas](https://csus.instructure.com/courses/75528).
 
 <ul>
-  {% for post in site.tags.stat196K %}
+  {% for post in site.tags.stat196k %}
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       {{ post.excerpt }}

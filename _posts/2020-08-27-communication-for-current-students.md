@@ -3,7 +3,7 @@ tags:
     - class
     - contact
     - stat128
-    - stat196K
+    - stat196k
 date: 2021-01-21
 ---
 

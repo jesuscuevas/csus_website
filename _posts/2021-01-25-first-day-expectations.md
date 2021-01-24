@@ -1,6 +1,6 @@
 ---
 tags:
-    - stat128
+    - stat196k
 ---
 
 - Set expectations for this class

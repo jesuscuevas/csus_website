@@ -8,7 +8,7 @@ tags:
 ---
 
 We will share our videos with each other through Canvas discussions.
-This post describes two ways to upload videos and make them available to a Canvas discussion.
+This post describes several ways to upload videos and make them available to a Canvas discussion.
 
 In this class, we use videos first of all to build community.
 Don't spend hours making perfect videos; spend that time studying statistics.
@@ -36,18 +36,29 @@ Even with a fast connection it can take a few minutes.
 ![screenshot on how to use canvas recorder]({% link img/canvas_record_video.png %})
 
 
-## 2 - Upload videos with Mediasite
+## 2 - Upload video directly in Canvas
 
-This technique allows you to record your own video , and then upload it to Mediasite.
-Unlike public videos on YouTube, only your classmates will be able to view your videos.
-
-Step 1 - Record your video in whatever way works for you, for example:
+Create a video file using the format, device, and recording software of your choice.
+Smartphones work well if you don't have a webcam.
+For example:
 
 - you in front of a white board, classroom style
 - you in front of a powerpoint, presentation style
 - capture video while writing on tablet
 - voice over slides
 - voice over handwritten images
+
+Click on the Canvas media upload ▶️🎶 button, find the video file on your computer, and then upload it directly in the Canvas web interface.
+
+![screenshot upload button]({% link img/canvas_upload_media.png %})
+
+
+## 3 - Upload videos with Mediasite
+
+This technique allows you to record your own video, and then upload it to Mediasite.
+Unlike public videos on YouTube, only your classmates will be able to view your videos.
+
+Step 1 - Record your video in whatever way works for you.
 
 Step 2 - Log in to [CSUS Mediasite](https://www.csus.edu/mymediasite).
 
