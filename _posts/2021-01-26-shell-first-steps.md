@@ -3,13 +3,35 @@ tags:
     - stat196k
 ---
 
-- Navigate 
+- Explain reasons to use the shell
+- Do basic operations on files and directories, such as listing, creating, moving, and copying
+
+
+## Announcements
+
+- Our class Discord is an extension of our classroom.
+    It is an inclusive, welcoming place.
+
+123 GO: Come up with one example of either good or bad online classroom behavior.
+By bad, we mean anything that takes away from student's learning, or could make others feel unwelcome.
+For example:
+
+- Bad: Sending private messages to someone who's not interested.
+- Good: Helping someone through a technical issue in real time.
+
+![example of students helping on Discord]({% link img/discord_problem_solving.png %})
 
 
 ## Resources
 
 - [Software Carpentry Unix Shell Lesson](https://swcarpentry.github.io/shell-novice/)
 - notes from a [previous lecture on shell](https://github.com/clarkfitzg/sta141c-winter19/blob/master/lecture/01-31-bash1.md#shell)
+
+
+## Correspondence between shell and file explorer windows
+
+The shell is also known as: terminal, command line, UNIX shell, command prompt, console.
+It comes in several flavors: bash, zsh, ksh, tcsh, fish.
 
 
 ## Motivation
@@ -35,6 +57,12 @@ Reasons to use the shell:
     For example, what is the function to list objects in an environment in R?
     `ls()`, from the UNIX `ls`.
     There's also `rm`, `head`, `grep`, ... the list goes on :)
+6. Easier to share a sequence of steps with others, for example, to install software.
+7. The shell can be customized to your heart's content.
+
+Reasons NOT to use the shell:
+
+1. There's a learning curve.
 
 
 ## Time Productivity Curve
@@ -49,7 +77,6 @@ Command |   Mnemonic    |   Example
 `mkdir` |   make directory    |   `mkdir class` creates a new directory called `class` inside the current working directory
 
 
-## Correspondence between shell and file explorer windows
 
 
 ## Exercise
@@ -57,12 +84,13 @@ Command |   Mnemonic    |   Example
 Open up a shell and perform the following tasks.
 Turn in the commands you used, together with output.
 
-1) Create a new directory `stat196k_exercise1` in your home directory.
-2) Change your working directory to `stat196k_exercise1`.
-3) Check the absolute pathname of the current working directory.
-4) Create two files `data1.csv` containing just a single `1`, and `data2.csv` containing just a single `2`.
-5) Verify the contents of these two files.
-5) Create a directory called `data`.
-6) Move all the `.csv` files into the directory `data` using a single command.
-7) Copy the `.csv` files back from `data` into `stat196k_exercise1`. 
-7) Verify using a single command that you have two copies of `data1.csv`, one in `stat196k_exercise1` and one in `stat196k_exercise1/data`.
+1. Create a new directory `stat196k_exercise1` in your home directory.
+2. Change your working directory to `stat196k_exercise1`.
+3. Check the absolute pathname of the current working directory.
+4. Create two files `data1.csv` containing just a single `1`, and `data2.csv` containing just a single `2`.
+5. Verify the contents of these two files.
+5. Create a directory called `data`.
+6. Move all the `.csv` files into the directory `data` using a single command.
+    This same command should work for 2 files, or 2,000 files.
+7. Copy the `data1.csv` files back from `data` into `stat196k_exercise1/.data1.csv`. 
+7. Verify using a single command that you have two copies of `data1.csv`, one in `stat196k_exercise1` and one in `stat196k_exercise1/data`.
