@@ -1,4 +1,5 @@
 ---
+date: 2021-01-24
 tags:
     - stat196k
 ---
@@ -8,16 +9,36 @@ tags:
 
 ## Expectations
 
+123 GO is a Zoom game.
+You write the response to my question in the chat box, I say "123 GO", and then you press enter when you hear "GO", so that all responses show up simultaneously.
+
+123 GO- what is "big data"?
+
+Our typical starting point for assignments in this class:
+
+- high level questions
+- data set on a remote machine which may be larger than memory
+
+The goal of this class is to statistically analyze data larger than memory on remote machines.
+This requires:
+
+1. __data analysis__ develop precise questions and apply statistics
+2. __computational reasoning__ approaches and algorithms suitable for the data
+3. __technology__ implement the approach so it actually runs
+
+What's the difference between a data scientist and a data engineer?
+Our goal in this course is to grow as data scientists.
+
 This is a brand new experimental course.
 We're going to push the boundaries of technology and try new things, and they won't all work.
 I'm OK with that.
+
 
 ### The Bad
 
 Here's why you might want to run away now. 👎
 
 1. I like to "learn by doing".
-    We're going to get our hands dirty processing large amounts of data.
 1. Assignments will be open ended, and my expectations are high.
 1. We have very little support.
 2. My experience with AWS is limited.
@@ -33,6 +54,7 @@ I'm OK with not being the expert at all things.
 
 Here's why you might want to stick around. 👍
 
+1. Your success is my success.
 1. I taught a [similar class at UC Davis](https://github.com/clarkfitzg/sta141c-winter19), and I've spent about 10 years working in this field.
 3. I'll communicate often and support you as well as I can by engaging on Discord.
 2. We'll build up to the more involved assignments by focusing on individual prerequisite skills.
