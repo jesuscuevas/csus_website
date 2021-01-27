@@ -17,7 +17,7 @@ By bad, we mean anything that takes away from student's learning, or could make 
 For example:
 
 - Bad: Sending private messages to someone who's not interested.
-- Good: Helping someone through a technical issue in real time.
+- Good: Helping someone through a technical issue.
 
 ![example of students helping on Discord]({% link img/discord_problem_solving.png %})
 
@@ -32,6 +32,10 @@ For example:
 
 The shell is also known as: terminal, command line, UNIX shell, command prompt, console.
 It comes in several flavors: bash, zsh, ksh, tcsh, fish.
+
+Here we can see a shell and an open file explorer both listing the contents of my `csus_website` directory.
+
+![shell and files correspond]({% link img/shell_file_correspond.png %})
 
 
 ## Motivation
@@ -69,28 +73,36 @@ Reasons NOT to use the shell:
 ## Time Productivity Curve
 
 
-## Command Summary
+## Summary
 
 - The __working directory__ is the location of the shell in the file system, analagous to the directory you open in a GUI file explorer.
 - Two ways to identify files and directories:
-    - An __absolute path__ starts with `\`, the root of the directory tree
-    - A __relative path__ gives the location relative to the working directory.
+    - An __absolute path__ unambiguously identifies files and directories within the file system.
+        Absolute paths start with `\`, the root of the directory tree.
+    - A __relative path__ gives the location of files and directories relative to the working directory.
 - `~` means home directory, so `cd ~` means changes the working directory to your home directory.
 - `..` means the parent directory, so if my working directory is `/Users/fitzgerald/projects`, and then I run `cd ..`, then my working directory will be `/Users/fitzgerald`.
 - `*` is a __wildcard__ that matches any character.
-    `rm *.txt` removes all files that end in `.txt` within the working directory.
+    It can be combined with most of the commands below to operate on many files simultaneousy.
+    For example, `rm *.txt` removes all files that end in `.txt` within the working directory.
+- Arguments appear following the commands preceded by `-` or `--`.
+    For example, `ls -R` lists all directories recursively from the working directory.
+    The `-R` is for recursive.
+
+🧨  below denotes a command that can delete your files.
+Proceed with caution, because you CANNOT undo.
 
 Command |   Mnemonic    |   Example
 ------- |   --------    |   -----------
-`cat`   |   concatenate |   `cat README` prints out the contents of the file `README`
+`cat`   |   concatenate |   `$ cat README` prints out the contents of the file `README`
 `cd`    |   change directory    |   `cd bicycles` sets the working directory to `bicycles`
-`cp`    |   copy        |   `cp a.txt b.txt` copies `a.txt` to `b.txt`, and deletes the old `b.txt`.
-`cp bicycles` sets working directory to `bicycles`
-`echo`  |   echo text    |   `echo hello` prints out `hello`. `echo hello >> README` appends the line `hello` to the file `README`.
-`ls` |   list directory    |   `ls` creates a new directory called `bicycles` inside the working directory
-`mkdir` |   make directory    |   `mkdir bicycles` creates a new directory called `bicycles` inside the working directory
-`mv` |   move    |   `mv a.txt b.txt` renames `a.txt` to `b.txt`, and deletes the old `b.txt`.
-`pwd` |   print working directory    |   If `pwd` displays `/Users/fitzgerald/projects/csus_website`, then this is the absolute path to my working directory.
+`cp`  🧨|   copy    |   `$ cp a.txt b.txt` copies `a.txt` to `b.txt`, and deletes the old `b.txt`.
+`echo`  |   echo text    |   `$ echo hello` prints out `hello`. `$ echo hello >> README` appends the line `hello` to the file `README`.
+`ls` |   list directory    |   `$ ls` lists the contents of the working directory.
+`mkdir` |   make directory    |   `$ mkdir bicycles` creates a new directory called `bicycles` within the working directory
+`mv` 🧨 |   move |   `$ mv a.txt b.txt` renames `a.txt` to `b.txt`, and deletes the old `b.txt`.
+`pwd` |   print working directory    |   If `$ pwd` displays `/Users/fitzgerald/projects/csus_website`, then this is the absolute path to my working directory.
+`rm` 🧨 |   remove |   `$ rm b.txt` deletes the file `b.txt`. 
 
 
 
