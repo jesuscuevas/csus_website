@@ -4,7 +4,7 @@ tags:
 ---
 
 - Explain reasons to use the shell
-- Do basic operations on files and directories, such as listing, creating, moving, and copying
+- Do basic operations on files and directories, such as listing, creating, deleting, moving, and copying
 
 
 ## Announcements
@@ -63,6 +63,7 @@ Reasons to use the shell:
 Reasons NOT to use the shell:
 
 1. There's a learning curve.
+2. Commands can be cryptic.
 
 
 ## Time Productivity Curve
@@ -70,12 +71,26 @@ Reasons NOT to use the shell:
 
 ## Command Summary
 
+- The __working directory__ is the location of the shell in the file system, analagous to the directory you open in a GUI file explorer.
+- Two ways to identify files and directories:
+    - An __absolute path__ starts with `\`, the root of the directory tree
+    - A __relative path__ gives the location relative to the working directory.
+- `~` means home directory, so `cd ~` means changes the working directory to your home directory.
+- `..` means the parent directory, so if my working directory is `/Users/fitzgerald/projects`, and then I run `cd ..`, then my working directory will be `/Users/fitzgerald`.
+- `*` is a __wildcard__ that matches any character.
+    `rm *.txt` removes all files that end in `.txt` within the working directory.
 
 Command |   Mnemonic    |   Example
 ------- |   --------    |   -----------
-`cd`    |   change directory    |   `cd class` sets current working directory to `class`
-`mkdir` |   make directory    |   `mkdir class` creates a new directory called `class` inside the current working directory
-
+`cat`   |   concatenate |   `cat README` prints out the contents of the file `README`
+`cd`    |   change directory    |   `cd bicycles` sets the working directory to `bicycles`
+`cp`    |   copy        |   `cp a.txt b.txt` copies `a.txt` to `b.txt`, and deletes the old `b.txt`.
+`cp bicycles` sets working directory to `bicycles`
+`echo`  |   echo text    |   `echo hello` prints out `hello`. `echo hello >> README` appends the line `hello` to the file `README`.
+`ls` |   list directory    |   `ls` creates a new directory called `bicycles` inside the working directory
+`mkdir` |   make directory    |   `mkdir bicycles` creates a new directory called `bicycles` inside the working directory
+`mv` |   move    |   `mv a.txt b.txt` renames `a.txt` to `b.txt`, and deletes the old `b.txt`.
+`pwd` |   print working directory    |   If `pwd` displays `/Users/fitzgerald/projects/csus_website`, then this is the absolute path to my working directory.
 
 
 
@@ -92,5 +107,7 @@ Turn in the commands you used, together with output.
 5. Create a directory called `data`.
 6. Move all the `.csv` files into the directory `data` using a single command.
     This same command should work for 2 files, or 2,000 files.
-7. Copy the `data1.csv` files back from `data` into `stat196k_exercise1/.data1.csv`. 
-7. Verify using a single command that you have two copies of `data1.csv`, one in `stat196k_exercise1` and one in `stat196k_exercise1/data`.
+7. Verify the files are in the directory `data`, and not in `stat196k_exercise1`.
+7. Copy the `.csv` files from `data` into `stat196k_exercise1`. 
+7. Verify using a single command that you have two copies of each `.csv` file, one in `stat196k_exercise1` and one in `stat196k_exercise1/data`.
+8. Remove the `stat196k_exercise1` directory, and everything in it.
