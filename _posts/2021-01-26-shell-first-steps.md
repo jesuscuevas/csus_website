@@ -73,21 +73,46 @@ Reasons NOT to use the shell:
 ## Time Productivity Curve
 
 
-## Summary
+## Don't Type the Leading `$`
+
+The `$` preceding each command denotes the prompt where the user can interactively type commands.
+Don't type the `$`.
+For example, using `$ pwd` interactively displays this:
+
+```
+~/projects/csus_website $ pwd
+/Users/fitzgerald/projects/csus_website
+~/projects/csus_website $
+```
+
+The final line, `~/projects/csus_website $`, shows the shell is ready for another command.
+
+
+## Essential Concepts
 
 - The __working directory__ is the location of the shell in the file system, analagous to the directory you open in a GUI file explorer.
 - Two ways to identify files and directories:
     - An __absolute path__ unambiguously identifies files and directories within the file system.
         Absolute paths start with `\`, the root of the directory tree.
     - A __relative path__ gives the location of files and directories relative to the working directory.
-- `~` means home directory, so `cd ~` means changes the working directory to your home directory.
-- `..` means the parent directory, so if my working directory is `/Users/fitzgerald/projects`, and then I run `cd ..`, then my working directory will be `/Users/fitzgerald`.
+- `~` means home directory, so `$ cd ~` means changes the working directory to your home directory.
+- `..` means the parent directory, so if my working directory is `/Users/fitzgerald/projects`, and then I run `$ cd ..`, then my working directory will be `/Users/fitzgerald`.
 - `*` is a __wildcard__ that matches any character.
     It can be combined with most of the commands below to operate on many files simultaneousy.
-    For example, `rm *.txt` removes all files that end in `.txt` within the working directory.
+    For example, `$ rm *.txt` removes all files that end in `.txt` within the working directory.
 - Arguments appear following the commands preceded by `-` or `--`.
-    For example, `ls -R` lists all directories recursively from the working directory.
+    For example, `$ ls -R` lists all directories recursively from the working directory.
     The `-R` is for recursive.
+
+## Shortcuts
+
+- Press tab to autocomplete commands and file names.
+    For example, suppose I have a file called `2021-01-26-shell-first-steps.md` and I want to type the command `$ cat 2021-01-26-shell-first-steps.md`.
+    If there are no other files that begin with `2021-01-26`, then I can type `$ cat 2021-01-26`, press tab, and have my command.
+- Cycle through previous commands by pressing the up arrow.
+
+
+## Commands
 
 🧨  below denotes a command that can delete your files.
 Proceed with caution, because you CANNOT undo.
@@ -95,7 +120,8 @@ Proceed with caution, because you CANNOT undo.
 Command |   Mnemonic    |   Example
 ------- |   --------    |   -----------
 `cat`   |   concatenate |   `$ cat README` prints out the contents of the file `README`
-`cd`    |   change directory    |   `cd bicycles` sets the working directory to `bicycles`
+`cd`    |   change directory    |   `$ cd bicycles` sets the working directory to `bicycles`
+`clear`    |   clear    |   `$ clear` clears the output of the previous commands
 `cp`  🧨|   copy    |   `$ cp a.txt b.txt` copies `a.txt` to `b.txt`, and deletes the old `b.txt`.
 `echo`  |   echo text    |   `$ echo hello` prints out `hello`. `$ echo hello >> README` appends the line `hello` to the file `README`.
 `ls` |   list directory    |   `$ ls` lists the contents of the working directory.
