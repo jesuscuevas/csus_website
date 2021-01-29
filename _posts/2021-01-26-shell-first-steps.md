@@ -28,10 +28,14 @@ For example:
 - notes from a [previous lecture on shell](https://github.com/clarkfitzg/sta141c-winter19/blob/master/lecture/01-31-bash1.md#shell)
 
 
-## Correspondence between shell and file explorer windows
+## What's the shell?
 
-The shell is also known as: terminal, command line, UNIX shell, command prompt, console.
+The shell is a text-based way to interact with your computer and run commands.
+Graphical User Interface's (GUI's), in contrast, have been far more popular since at least the 1990's.
+
+The shell is also known as: terminal, command line, command line interpreter, UNIX shell, POSIX shell, command prompt, console.
 It comes in several flavors: bash, zsh, ksh, tcsh, fish.
+Windows also has PowerShell and others, which are the same concept, but different syntax, and we won't use it for this class.
 
 Here we can see a shell and an open file explorer both listing the contents of my `csus_website` directory.
 
@@ -47,7 +51,7 @@ Reasons to use the shell:
     For us, the shell will be the __only__ way to interact with our machines.
     By using it locally, we get relevant experience.
 2. The shell is more efficient and precise than GUI's.
-    For example, suppose you have 100 `.csv` files and 100 `.txt` files sitting in one directory, and you want to put the `.csv` files in one directory, and the `.txt` files in another.
+    For example, suppose you have 100 `.csv` files mixed in the same directory with 1000 other files, and you want to move only the `.csv` files to another directory.
     This is trivial with the shell.
 3. We can easily automate commands in the shell by saving the commands in a file.
 4. The shell is stable.
@@ -61,7 +65,8 @@ Reasons to use the shell:
     For example, what is the function to list objects in an environment in R?
     `ls()`, from the UNIX `ls`.
     There's also `rm`, `head`, `grep`, ... the list goes on :)
-6. Easier to share a sequence of steps with others, for example, to install software.
+    The [magic commands in IPython](https://ipython.readthedocs.io/en/stable/interactive/magics.html) are similar.
+6. Compared to GUI's, the shell makes it easier to describe and share a sequence of commands with others, for example, to install software.
 7. The shell can be customized to your heart's content.
 
 Reasons NOT to use the shell:
@@ -72,20 +77,25 @@ Reasons NOT to use the shell:
 
 ## Time Productivity Curve
 
+Get over the initial period of frustration, and life will be great.
+
+![time productivity curve]({% link img/shell_time_productivity.jpeg %})
+
 
 ## Don't Type the Leading `$`
 
 The `$` preceding each command denotes the prompt where the user can interactively type commands.
-Don't type the `$`.
-For example, using `$ pwd` interactively displays this:
+The preceding `$` usually refers to a complete, syntactically valid command, rather than just the name of a command.
+For example `$ mv a.txt b.txt` is a complete command, while `mv` by itself is the name of a command.
+Interactively, we'll see something like the following:
 
 ```
-~/projects/csus_website $ pwd
-/Users/fitzgerald/projects/csus_website
-~/projects/csus_website $
+~ $ echo "a" >> a.txt
+~ $ mv a.txt b.txt
+~ $
 ```
 
-The final line, `~/projects/csus_website $`, shows the shell is ready for another command.
+The final line, `~ $`, shows the shell is ready for another command.
 
 
 ## Essential Concepts
