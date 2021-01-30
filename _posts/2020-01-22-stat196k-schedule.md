@@ -3,8 +3,9 @@ tags:
     - stat196k
 ---
 
-Here is a tentative schedule of topics for STAT 196K.
-The topics are designed for a logical progression to achieve the following learning outcomes:
+Here is a tentative outline of topics for STAT 196K.
+The goal of the course is to achieve the following learning outcomes.
+
 
 ## Learning Outcomes
 
@@ -17,4 +18,19 @@ Students will be able to:
 2. Summarize their approach and conclusions for a data analysis problem through technical written reports with appropriate graphics.
 5. Perform data analysis using remote machines, which may include databases, remote compute clusters, and cloud services.
 6. Accelerate and scale data analysis programs by identifying and fixing performance bottlenecks.
+
+
+## Assignments
+
+We'll have around 5 large assignments in the class, each focused on a different kind of data or problem.
+Each assignment covers most of the above learning outcomes.
+For example, we will run the programs for all the assignments on AWS, so all the assignments support the learning outcome "Perform data analysis using remote machines".
+
+1. __Large Text Data__ is one or more text files larger than memory.
+2. __Nested Data__ has a hierarchical, nested structure in one or many files, possibly la
+
+database
+images
+simulation
+
 
