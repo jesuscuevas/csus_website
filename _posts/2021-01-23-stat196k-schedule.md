@@ -23,14 +23,25 @@ Students will be able to:
 ## Assignments
 
 We'll have around 5 large assignments in the class, each focused on a different kind of data or problem.
-Each assignment covers most of the above learning outcomes.
+Each assignment covers most of the above learning outcomes, with varying levels of emphasis.
 For example, we will run the programs for all the assignments on AWS, so all the assignments support the learning outcome "Perform data analysis using remote machines".
 
 1. __Large Text Data__ is one or more text files larger than memory.
-2. __Nested Data__ has a hierarchical, nested structure in one or many files, possibly la
+    Example: CSV file with many rows.
+2. __Nested Data__ has a hierarchical, nested structure in one or many files, possibly larger than memory.
+    Example: XML, JSON.
+3. __Relational Databases__ contain many related tables to join together.
+    Example: Remote database server accessed via a SQL client.
+4. __Images__ are collections of pictures, one per file.
+    We're going to use off the shelf high level image processing software in our language of choice rather than implement the details ourselves.
+    Example: PNG, JPG.
+5. __Simulation__ could be based on any kind of data or random process.
+    A pandemic simulation based on actual physical population densities could be very interesting.
 
-database
-images
-simulation
+These assignments require specific computing skills to complete as illustrated in the image below.
+The edges represent prerequisites.
+For example, the edge from "shell basics" to "version control" indicates that students should learn "shell basics" before "version control".
+Shaded boxes represent assignments, and the blue ovals on the right represent statistical concepts.
 
+![assignment dependency]({% link img/order.svg %})
 

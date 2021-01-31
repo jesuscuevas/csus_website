@@ -9,5 +9,5 @@ tags:
 
 picture:
 
-![TODO: alt text]({% link img/name.jpeg %})
+![TODO: alt text]({% link img/sac_state_logo.png %})
 

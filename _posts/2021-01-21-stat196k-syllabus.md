@@ -38,6 +38,9 @@ __Drops:__
 [College Drop Policy](https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/_internal/docs/drop-policy.pdf)
 Note that for the first two weeks, you can drop yourself on [My Sac State](https://my.csus.edu/).
 
+__Schedule:__
+See [schedule page]({% link _posts/2021-01-23-stat196k-schedule.md %})
+
 
 ## Course Materials
 
