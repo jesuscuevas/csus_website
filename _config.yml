@@ -24,6 +24,7 @@ locale: en-US
 search: true
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: contrast
+future: true
 plugins:
     - jekyll-feed
 exclude:
@@ -65,3 +66,4 @@ compress_html:
     envs: development  # disable compression in dev environment
 
 # Sac state web colors {green: #044432, gold: #bcac7a}
+
