@@ -39,9 +39,10 @@ For example, we will run the programs for all the assignments on AWS, so all the
     A pandemic simulation based on actual physical population densities could be very interesting.
 
 These assignments require specific computing skills to complete as illustrated in the image below.
-The edges represent prerequisites.
-For example, the edge from "shell basics" to "version control" indicates that students should learn "shell basics" before "version control".
+The edges represent prerequisites, with solid lines representing strict prerequisites or connections, and dashed lines representing more optional connections.
+For example, the solid edge from "shell basics" to "version control" indicates that students should learn "shell basics" before "version control".
 Shaded boxes represent assignments, and the blue ovals on the right represent statistical concepts.
 
 ![assignment dependency]({% link img/order.svg %})
 
+There are more possible edges, but the graph seems busy enough as it is.

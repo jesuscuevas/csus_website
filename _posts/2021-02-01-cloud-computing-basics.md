@@ -69,12 +69,12 @@ Follow the steps and click through the email links to create and activate your a
 7. When you launch, AWS will prompt you for a key pair.
     The first time, you'll have to create a key pair, and subsequently you can use these keys.
     Alternatively, you can import your own existing public key from the management console.
-8. I suggest you name the key pair the date that you create it, for example, `2020-02-01`.
+8. For simplicity, I suggest you name the key pair your name with the date that you create it, for example, `clark-2020-02-01`.
 9. Download the key, and verify that your instance is running.
 10. Click on your running instance, and then click "Connect".
 11. Follow the commands on the SSH client to login to the running machine using the keys you just created.
     For me on a mac, it looks like the following:
-12. `~/Downloads $ ssh -i "2020-01-31.pem" ec2-user@ec2-35-173-178-203.compute-1.amazonaws.com`
+12. `~/Downloads $ ssh -i "clark-2020-02-01.pem" ec2-user@ec2-35-173-178-203.compute-1.amazonaws.com`
 13. Once you login, print out the contents of the `README` file in your home directory, and your name.
     Take a screenshot.
 14. Go back to the console, and figure out how to terminate your running instance.
