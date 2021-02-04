@@ -8,6 +8,7 @@ date: 2021-02-05
 
 ## Announcements
 
+- The question "How much longer does X take than Y" is most interesting when answered in relative terms.
 - "shell first steps" homework solutions posted
 
 ## Resources
@@ -59,8 +60,35 @@ How many columns are there?
 Do they seem to match the column definitions?
 What character delimits the records?
 
-Briefly explain a single row.
-What is the CAMEO event gode, what event does this correspond to, and what is the Goldstein score? 
+Pick out a couple rows that look interesting to you, and explain them briefly.
+What is the CAMEO event code, what event does this correspond to, and what is the Goldstein score?
+Are the URL's to the news articles still live, and do they match the CAMEO event code?
+Does the Goldstein score appear to be doing what it was designed to do?
 
 
 ### 2 - histogram
+
+Create and plot a histogram of the Goldstein scores for all of 2018, using the integers as bin endpoints.
+It's possible to do this in less than 10 minutes using a single shell pipeline on a t2 micro instance with 1 vCPU, 1 GiB memory, and 8 GiB storage.
+How long does your program take to run?
+Explain in detail what each command in the pipeline does and how they work together.
+
+You'll probably want to download the summary statistics (around 20 numbers) to your personal computer to plot the histogram.
+
+
+### 3 - performance
+
+Print and interpret the output of `top` while your program is running.
+What are the bottlenecks?
+
+Run and time your program on an EC2 instance with more vCPU's and a faster network and look at `top` once more.
+Is it faster?
+Are you benefitting from pipeline parallelism?
+What's the bottleneck now?
+
+
+### 4 - Extra Credit Challenge
+
+Starting with the same 3.8 GB file on S3, calculate the summary statistics necessary for the histogram as fast as possible, using the shell or any other programming language.
+Hint: use a fast enough machine, and look into software like [GNU parallel](https://www.gnu.org/software/parallel/) and [pigz](http://zlib.net/pigz/)
+The student with the fastest program gets extra credit.
