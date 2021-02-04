@@ -7,6 +7,11 @@ tags:
 - Perform experiments to estimate time required to download data
 - Download objects from Amazon's Simple Storage Service (S3)
 
+## Announcements
+
+1. REU summer program - see Martin's post on Discord
+2. Save your key as `~/.ssh/id_rsa`
+
 123 GO: How would you spend $100 discretionary cash right now?
 
 ## References
@@ -16,7 +21,7 @@ tags:
 
 ### Data processing cannot go faster than the slowest step.
 
-{% include slide.html %}
+![bottleneck]({% link img/bottleneck.jpeg %})
 
 Computer network and data transfer performance is commonly measured with two metrics:
 
@@ -34,14 +39,15 @@ Indeed, for some applications of data movement it might be more efficient to phy
 
 {% include slide.html %}
 
-Programs are small relative to data; you can do a lot in 100 lines of code.
-Bring the program to the data, not the data to the program.
-
 Our architecture consists of three locations:
 
 - many TB of data stored in S3
 - 8 GB of local solid state hard drive (SSD) storage in an EC2 instance
 - local client
+
+Programs are small relative to data; you can do a lot in 100 lines of code.
+Bring the program to the data, not the data to the program.
+
 
 
 ### AWS S3 (Simple Storage Service) is an example of an object store.
@@ -77,15 +83,13 @@ TODO: save history from demo
 
 ## Exercise
 
-Submit your answers to these qeustions along with bash commands and output.
+Submit your answers to these questions along with bash commands and output.
 
 1. SSH to an EC2 instance.
 2. Find which files are in the bucket `stat196k-data-examples`.
 3. How large are these files?
-3. Time how long it takes to download one of the files to your EC2 instance.
-    What is a lower bound for the network bandwidth?
 3. How many files are in the bucket?
-4. Time how long it takes to download one of the files to your EC2 instance.
-5. What is a lower bound for the network bandwidth to access data in S3 on this instance?
+3. Time how long it takes to download one of the files from S3 to your EC2 instance.
+    What is a lower bound for the network bandwidth?
 5. How long does it take to download the same file to your local machine?
-5. How much faster is it to access this data from an EC2 instance versus downloading it?
+5. How much faster is it to access the data in S3 from an EC2 instance versus downloading it?
