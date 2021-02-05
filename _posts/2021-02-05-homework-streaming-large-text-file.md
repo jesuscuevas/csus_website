@@ -8,7 +8,8 @@ date: 2021-02-05
 
 ## Announcements
 
-- The question "How much longer does X take than Y" is most interesting when answered in relative terms.
+- The question "How much longer does X take than Y" is usually most useful when answered in relative terms.
+    For example, if the transfer took 1.9 seconds, and now it takes 79.2 seconds, then say that the second way is 79.2/1.9 = 42 times slower than the first.
 - "shell first steps" homework solutions posted
 
 ## Resources
@@ -46,12 +47,17 @@ I believe this is the [CAMEO event code mapping](http://eventdata.parusanalytics
 
 ## Assignment
 
-Turn in your answers to the following questions in a neatly organized report.
+Turn in two files:
+
+- A PDF or HTML document containing your answers to the following questions in a neatly organized report.
+- A file with extension `.sh.txt` showing all the code necessary to reproduce your work.
 
 
 ## Questions
 
 ### 1 - subset
+
+_5 pts_
 
 Download a small subset of the data (100 rows is plenty) to your personal computer, and examine it using any software you like.
 
@@ -68,6 +74,8 @@ Does the Goldstein score appear to be doing what it was designed to do?
 
 ### 2 - histogram
 
+_10 pts_
+
 Create and plot a histogram of the Goldstein scores for all of 2018, using the integers as bin endpoints.
 It's possible to do this in less than 10 minutes using a single shell pipeline on a t2 micro instance with 1 vCPU, 1 GiB memory, and 8 GiB storage.
 How long does your program take to run?
@@ -77,6 +85,8 @@ You'll probably want to download the summary statistics (around 20 numbers) to y
 
 
 ### 3 - performance
+
+_5 pts_
 
 Print and interpret the output of `top` while your program is running.
 What are the bottlenecks?
@@ -89,6 +99,8 @@ What's the bottleneck now?
 
 ### 4 - Extra Credit Challenge
 
+_0 pts, optional_
+
 Starting with the same 3.8 GB file on S3, calculate the summary statistics necessary for the histogram as fast as possible, using the shell or any other programming language.
-Hint: use a fast enough machine, and look into software like [GNU parallel](https://www.gnu.org/software/parallel/) and [pigz](http://zlib.net/pigz/)
-The student with the fastest program gets extra credit.
+Hint: use a fast enough machine, and look into software like [GNU parallel](https://www.gnu.org/software/parallel/) and [pigz](http://zlib.net/pigz/).
+The student with the fastest program gets extra credit and everlasting glory.
