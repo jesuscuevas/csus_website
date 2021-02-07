@@ -67,7 +67,7 @@ Rstudio has a bunch of ways for you to run chunks.
 Some chunks may not be finished.
 In this case, you should use comments, prefacing your code with `#`.
 
-Q: Check them out. Which method is most similar to what heppens 
+Q: Check them out. Which method is most similar to what happens 
 One handy feature is "Restart R and Run all chunks", since this is most similar
 
 
