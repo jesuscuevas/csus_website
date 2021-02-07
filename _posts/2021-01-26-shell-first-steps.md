@@ -100,7 +100,7 @@ The final line, `~ $`, shows the shell is ready for another command.
 
 ## Essential Concepts
 
-- The __working directory__ is the location of the shell in the file system, analagous to the directory you open in a GUI file explorer.
+- The __working directory__ is the location of the shell in the file system, analogous to the directory you open in a GUI file explorer.
 - Two ways to identify files and directories:
     - An __absolute path__ unambiguously identifies files and directories within the file system.
         Absolute paths start with `\`, the root of the directory tree.
