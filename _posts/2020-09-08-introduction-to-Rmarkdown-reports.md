@@ -73,7 +73,7 @@ For example:
 - _italics_
 - ~~strike through~~
 
-Of course, Markdown is intentially simple, so you do give up some features that you have in richer languages.
+Of course, Markdown is intentionally simple, so you do give up some features that you have in richer languages.
 That's a feature, not a bug. 🐛
 The simplicity helps you focus more on the content, less on the formatting.
 
