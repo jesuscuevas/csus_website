@@ -12,8 +12,8 @@ tags:
 
 - The Canvas wiki looks great!
     Let me know if you want more pages.
-- Don't look at Discord and think "everyone gets it except for me" 😢
-    We're all starting from different places, and the goal is for us all to grow.
+- Don't look at Discord and think, "everyone gets it except for me." 😢
+    Instead, think, "Wow, there's so much cool stuff here for me to learn!" 😁
 - Beginner focused office hours after class today.
 
 
@@ -22,6 +22,23 @@ tags:
 - Software Carpentry [Pipes and Filters Lesson](https://swcarpentry.github.io/shell-novice/04-pipefilter/index.html)
 - Wikipedia [Software Filters](https://en.wikipedia.org/wiki/Filter_(software))
 - [Bash Redirection](https://www.gnu.org/software/bash/manual/html_node/Redirections.html)
+
+
+## Filter programs process standard input into standard output
+
+![filter program]({% link img/lecture_sketch_placeholder.jpeg %})
+
+123 GO - Can filters produce more data to `stdout` than comes in through `stdin`?
+
+
+## Join two or more filters together into a pipeline
+
+![pipeline]({% link img/lecture_sketch_placeholder.jpeg %})
+
+The UNIX philosophy is to take many small, specialized programs and join them together in useful ways.
+
+123 GO - Below we have 10 commands.
+How many different pipelines with 5 commands can we potentially create?
 
 
 ## Commands
@@ -67,6 +84,8 @@ It often helps to write down in prose what you are trying to do.
 
 Use verbose options and clear formatting.
 Writing 
+
+Unfortunately, options are not always __portable__, which means the same command might not work on two different versions of the shell.
 
 ### 3. Save your work
 
