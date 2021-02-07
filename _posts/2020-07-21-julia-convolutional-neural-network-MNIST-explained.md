@@ -15,7 +15,7 @@ We explain in detail Julia's [model-zoo example of a convolutional neural networ
 
 ## Background
 
-A student, Stephen Gibson, wanted to use a convolutional neural network to classify vidoeos of skateboarding tricks.
+A student, Stephen Gibson, wanted to use a convolutional neural network to classify videos of skateboarding tricks.
 I want to learn Julia, so this seemed like a nice application to motivate me to learn something new.
 My strategy is to comment the existing code in great detail, along with what I don't understand, so that we can adapt this code to our video classification task.
 
