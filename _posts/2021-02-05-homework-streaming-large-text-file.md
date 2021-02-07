@@ -15,6 +15,7 @@ date: 2021-02-05
 - Check for comments / feedback on skills assignments.
 - will post skills assignment solutions next week.
 
+123 GO - what was the last kind of physical exercise you did?
 
 ## Resources
 
@@ -55,7 +56,8 @@ Turn in two files:
     The `.txt` allows Canvas to render it as plain text in the web browser, so I can grade it.
 
 I suggest you use markdown through something like pandoc, Rmarkdown, or Jupyter notebooks to create your report.
-The [markdown source for the assignment] is on Github, so you can copy and paste it.
+The [markdown source for the assignment](https://raw.githubusercontent.com/clarkfitzg/csus_website/master/_posts/2021-02-05-homework-streaming-large-text-file.md) is on Github, so you can copy and paste from there.
+MS Word and other GUI programs should work fine too.
 
 
 ## Questions
