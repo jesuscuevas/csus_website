@@ -74,22 +74,73 @@ These principles can also apply to
 ### 1. Define goal
 
 Start with a precise, explicit goal, expressed as a minimal working example.
-For example:
-
 It often helps to write down in prose what you are trying to do.
 
+Here's an example:
+
+```
+echo "D,bill
+R,George
+D,Barack
+R,Donald
+D,Joe" > presidents.csv
+```
+
+Our goal is to count up all the names that start with each letter.
+We want to produce a table of counts like this:
+
+```
+     2 b
+     1 d
+     1 g
+     1 j
+```
+
+
 ### 2. Take one step at a time
+
+Just do one thing that gets you closer to goal, and check that it does what you expected on your minimal working example before trying another step.
+If there are many possible steps, then pick the one that will simplify the data and the next task, as much as possible.
+
+```
+$ cut --delimiter=, --fields=2 presidents.csv
+bill
+George
+Barack
+Donald
+Joe
+```
+
 
 ### 3. Write clear, explicit code
 
 Use verbose options and clear formatting.
-Writing 
-
 Unfortunately, options are not always __portable__, which means the same command might not work on two different versions of the shell.
 
-### 3. Save your work
+```
+cut --delimiter=, --fields=2 presidents.csv |
+    cut --characters=1 |
+    tr [:upper:] [:lower:] |
+    sort |
+    uniq --count
+```
 
-### 3. Iterate
+The pipelines above and below are exactly equivalent, except for the way they are written.
+Which one is easier to explain and maintain?
+
+```
+cut -d, -f2 presidents.csv | cut -c1 | tr [:upper:] [:lower:] | sort | uniq -c
+```
+
+
+### 4. Save your work
+
+When you do get a step that works, save it into a script file.
+It can also be useful to record commands you try that don't work, as well as your thought process.
+For example, here are some [experiments I did to explore the capabilities of aws streaming](https://github.com/clarkfitzg/stat196K/blob/main/s3_wildcard_copy.sh).
+
+
+### 5. Iterate
 
 Once you have something that minimally does what you want, try to run it on the full data set.
 You'll most likely have problems, and then you'll need to identify and fix them.
@@ -97,3 +148,17 @@ Update your original minimal working example to include the problematic data.
 
 
 ## Exercise
+
+1. Use `grep` to find all the rows in `presidents.csv` beginning with `D`.
+2. Write a simple pipeline with `gzip` followed by `gunzip`.
+    This is called a "round trip", with data first being compressed, and then uncompressed.
+    Can pipes handle binary data, in addition to text?
+3. Use `sed` to transform `presidents.csv` into the following output:
+
+```
+DEM,bill
+REP,George
+DEM,Barack
+REP,Donald
+DEM,Joe
+```
