@@ -42,7 +42,7 @@ Indeed, for some applications of data movement it might be more efficient to phy
 Our architecture consists of three locations:
 
 - many TB of data stored in S3
-- 8 GB of local solid state hard drive (SSD) storage in an EC2 instance
+- 8 GB of local Solid State Drive (SSD) storage in an EC2 instance
 - local client
 
 Programs are small relative to data; you can do a lot in 100 lines of code.
