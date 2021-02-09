@@ -3,9 +3,9 @@ tags:
     - stat196k
 ---
 
-- describe how a filter program processes standard input (`stdin`) into standard output (`stdout`)
-- interactively develop data processing pipelines using standard shell commands
-- create minimal working examples to check programs
+- Describe how a filter program processes standard input (`stdin`) into standard output (`stdout`)
+- Interactively develop data processing pipelines using standard shell commands
+- Create minimal working examples to check programs
 
 
 ## Announcements
