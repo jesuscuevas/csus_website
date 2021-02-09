@@ -52,9 +52,7 @@ Command |   Mnemonic    |   Example
 `gunzip`  |   unzip        |   `$ gunzip README.gz` decompresses the file `README.gz`, saves it in the file `README`, and deletes `README.gz`
 `sed`   |           |
 `sort`   |           |
-`tail`   |           |
-`time`  |   time        |   `$ time cp a.txt b.txt` prints out the time required to run the command `cp a.txt b.txt`
-`uniq`   |           |
+`tail` | | `time` | time | `$ time cp a.txt b.txt` prints out the time required to run the command `cp a.txt b.txt` `uniq`   |           |
 
 
 ## Redirection
@@ -68,13 +66,14 @@ Command |   Mnemonic    |   Example
 
 ## A principled approach to building shell pipelines
 
-Shell pipelines 
-These principles can also apply to 
+In this section we describe an approach to quickly and correctly developing shell pipelines.
+Your approach is far more important than having encyclopedic knowledge of all possible commands.
+This approach can also apply to other data analysis tasks.
 
 ### 1. Define goal
 
 Start with a precise, explicit goal, expressed as a minimal working example.
-It often helps to write down in prose what you are trying to do.
+It often helps to write down in words what you are trying to do.
 
 Here's an example:
 
@@ -97,10 +96,59 @@ We want to produce a table of counts like this:
 ```
 
 
-### 2. Take one step at a time
+### 2. Read documentation
+
+Unfortunately, options are not always __portable__, which means the same command might not work on two different versions of the shell.
+The authoritative source on what a command does on the system that you are actually on is the manual page.
+This is also known as the "man page" from the command `man`.
+
+In the above example, we somehow figure out (Google?) that a program called `cut` might help us.
+Below are the relevant parts from the manual page.
+
+```
+man cut
+
+NAME
+       cut - remove sections from each line of files
+
+SYNOPSIS
+       cut OPTION... [FILE]...
+
+DESCRIPTION
+       Print selected parts of lines from each FILE to standard output.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+
+       -c, --characters=LIST
+              select only these characters
+
+       -d, --delimiter=DELIM
+              use DELIM instead of TAB for field delimiter
+
+       -f, --fields=LIST
+              select only these fields;  also print any line that contains no delimiter character, unless the -s
+              option is specified
+
+       Use one, and only one of -b, -c or -f.  Each LIST is made up of one range, or many  ranges  separated  by
+       commas.   Selected input is written in the same order that it is read, and is written exactly once.  Each
+       range is one of:
+
+       N      N'th byte, character or field, counted from 1
+
+ Manual page cut(1) line 1 (press h for help or q to quit)
+```
+
+That last line on the bottom is especially important, because it tells you how to navigate the pager that scrolls through the documentation.
+The keys to navigate the file pager may seem esoteric at first, but they're the same as Vim and `less`.
+Use all of them together, and you will be more efficient.
+Synergy!
+
+
+### 3. Take one step at a time
 
 Just do one thing that gets you closer to goal, and check that it does what you expected on your minimal working example before trying another step.
-If there are many possible steps, then pick the one that will simplify the data and the next task, as much as possible.
+If there are many possible steps, then pick the one that will simplify the data and the next task as much as possible.
 
 ```
 $ cut --delimiter=, --fields=2 presidents.csv
@@ -112,10 +160,9 @@ Joe
 ```
 
 
-### 3. Write clear, explicit code
+### 4. Write clear, explicit code
 
 Use verbose options and clear formatting.
-Unfortunately, options are not always __portable__, which means the same command might not work on two different versions of the shell.
 
 ```
 cut --delimiter=, --fields=2 presidents.csv |
@@ -133,14 +180,14 @@ cut -d, -f2 presidents.csv | cut -c1 | tr [:upper:] [:lower:] | sort | uniq -c
 ```
 
 
-### 4. Save your work
+### 5. Save your work
 
 When you do get a step that works, save it into a script file.
 It can also be useful to record commands you try that don't work, as well as your thought process.
 For example, here are some [experiments I did to explore the capabilities of aws streaming](https://github.com/clarkfitzg/stat196K/blob/main/s3_wildcard_copy.sh).
 
 
-### 5. Iterate
+### 6. Iterate
 
 Once you have something that minimally does what you want, try to run it on the full data set.
 You'll most likely have problems, and then you'll need to identify and fix them.
@@ -149,11 +196,25 @@ Update your original minimal working example to include the problematic data.
 
 ## Exercise
 
+Setup:
+
+```
+echo "D,bill
+R,George
+D,Barack
+R,Donald
+D,Joe" > presidents.csv
+```
+
+Copy and paste your commands together with the output.
+
 1. Use `grep` to find all the rows in `presidents.csv` beginning with `D`.
+    Hint: you shouldn't find `R,Donald`.
 2. Write a simple pipeline with `gzip` followed by `gunzip`.
     This is called a "round trip", with data first being compressed, and then uncompressed.
     Can pipes handle binary data, in addition to text?
-3. Use `sed` to transform `presidents.csv` into the following output:
+3. Use `sed` to transform `presidents.csv` into the output below.
+    Hint: an easy way to do this is to use `sed` twice in a pipeline.
 
 ```
 DEM,bill
