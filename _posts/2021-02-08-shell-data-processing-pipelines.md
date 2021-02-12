@@ -53,6 +53,7 @@ Command |   Mnemonic    |   Example
 `sed`   |           |
 `sort`   |           |
 `tail` | | `time` | time | `$ time cp a.txt b.txt` prints out the time required to run the command `cp a.txt b.txt` `uniq`   |           |
+`uniq` |  unique    | `$ uniq --count data.txt`
 
 
 ## Redirection
