@@ -11,6 +11,8 @@ date: 2021-02-12
 
 - You do not need to use custom scripts on HW due tomorrow.
 - A couple people have asked for extensions on assignment, that's fine.
+- HW specific text channels (good suggestion @lKappachino)
+- Formatted code works better than screenshots in Discord- use backticks.
 
 123 GO - How do you feel about HW due tomorrow?
 For example, "fine", "program works, just need to write", "lost".
@@ -60,7 +62,7 @@ $ sqlite3 database.sqlite < selection.sql |
 In the above pipeline:
 
 - `database.sqlite` is a local SQL database file
-- `selection.sql` is a SQL query. The `<` means that `sqlite` takes `selection.sql` as standard input.
+- `selection.sql` is a SQL query. The `sqlite3 database.sqlite < selection.sql` means that `sqlite3` takes `selection.sql` as standard input.
 - `sweet.sh` is a bash script
 - `able.awk` is an Awk script
 - `rad.R` is an R script
@@ -159,7 +161,7 @@ $ seq 3
 3
 ```
 
-Call your file `seq.jl` and verify it behaves as follows (for any integer, not just 4):
+Call your file `seq.jl` and verify it behaves as follows (for any positive integer, not just 4):
 
 ```bash
 $ julia seq.jl 4

@@ -26,14 +26,14 @@ tags:
 
 ## Filter programs process standard input into standard output
 
-![filter program]({% link img/lecture_sketch_placeholder.jpeg %})
+![filter program]({% link img/filter_program.jpeg %})
 
 123 GO - Can filters produce more data to `stdout` than comes in through `stdin`?
 
 
 ## Join two or more filters together into a pipeline
 
-![pipeline]({% link img/lecture_sketch_placeholder.jpeg %})
+![pipeline]({% link img/pipeline_cat_sed.jpeg %})
 
 The UNIX philosophy is to take many small, specialized programs and join them together in useful ways.
 
