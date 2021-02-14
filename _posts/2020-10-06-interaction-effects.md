@@ -75,7 +75,7 @@ Here is an example of a __contingency table__, a table of counts.
 t1 = table(covid[, c("age_group", "medcond_yn")])
 ```
 
-The areas in this plot represent relatively how many observations fall into each categoy.
+The areas in this plot represent relatively how many observations fall into each category.
 
 ```{r}
 plot(t1)
