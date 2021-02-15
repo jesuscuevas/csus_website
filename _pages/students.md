@@ -9,6 +9,21 @@ A list of current and former students follows.
 
 <!--
 Can't figure it out, and don't have time.
+My story:
+
+I start out with all the minimal templates, building stuff, and it works fine.
+I want to do something basic, but unsupported, and all hell breaks loose.
+Instead of just need HTML, now I need to also know:
+
+- kramdown
+- CSS
+- Ruby
+- liquid
+- The jekyll theme
+
+And how it all interacts to generate HTML. Ugh!
+
+
 https://stackoverflow.com/questions/31918354/stop-floating-with-the-end-of-a-tag/31918440
 .floatBlock:after {
     display: block;
