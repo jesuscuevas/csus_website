@@ -126,3 +126,32 @@ The student with the fastest program gets a minimal amount of extra credit and a
 Watch until 10:50.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tc4ROCJYbm0?start=331" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Feedback
+
+Why does the histogram look like this?
+Why is there nothing in some bins, and many in adjacent bins?
+Shouldn't this data be continuous?
+
+![histogram]({% link img/lecture_sketch_placeholder.jpeg %})
+
+We say a program is:
+
+-  __CPU bound__ (CPU = central processing unit) if the CPU speed prevents the program from being faster.
+-  __I/O bound__ (I/O is input/output) if the rate at which data arrives at the CPU prevents the program from being faster.
+
+We can determine when a program is CPU bound by observing how busy the processors are, for example, with `top`.
+In shell pipelines, there are a couple ways a program can be CPU bound:
+
+- __Bottleneck__ If one step in the pipeline uses 100% of a processor, then that step is a true bottleneck.
+    The program won't go any faster until you make that bottleneck go faster, regardless of whether you have 2 CPU's or 100 CPU's.
+- __Max out all processors__ If the processes in a pipeline cumulatively use all the available CPU capacity, but no process is at 100%, then you've maxed out all the processing power.
+    For example, if you have 2 CPU's, and 3 processes at 75%, 50%, and 74% CPU utilization, then you've cumulatively used 75 + 50 + 75 = 199% CPU, which is approximately all of the 200% available from the 2 CPU's.
+    Adding CPU's will make it faster, up until one process becomes a bottlneck, or the program becomes I/O bound.
+
+If a shell pipeline is not CPU bound, then it's I/O bound, or else there's something weird going on.
+In this assignment, when we switched to bigger, better machines, the program which was CPU bound became I/O bound, and didn't go all that much faster for most of you.
+
+![interpreting bottlenecks]({% link img/lecture_sketch_placeholder.jpeg %})
+

@@ -22,6 +22,7 @@ For example, "fine", "program works, just need to write", "lost".
 
 - [Julia scripting FAQ](https://docs.julialang.org/en/v1/manual/faq/#man-scripting)
 - [Julia IO](https://docs.julialang.org/en/v1/base/io-network/)
+- [Julia function documentation](https://docs.julialang.org/en/v1/manual/documentation/)
 
 
 ## Custom steps
@@ -83,6 +84,54 @@ These languages have significant overlap with one another, and it's reasonable t
 TODO: add hello world examples for R and python.
 
 
+## Comparing R, Python, Julia
+
+### My History
+
+I started with Matlab and R in college courses in 2012, and I started using Python in 2013 at work.
+I've had my eye on Julia since around 2015, and dabbled just a bit.
+
+![my history with languages]({% link img/lecture_sketch_placeholder.jpeg %})
+
+People invest tremendous amounts of time developing skill in a language or learning technologies.
+It can be quite threatening to hear "X is dumb, Y is better."
+Keep this in mind next time you witness a technology flame war.
+
+R, Python, Julia, and Matlab are all relatively high level languages.
+Their speed for data analysis comes from compiled code.
+I would argue that the high level syntax is not that different among languages, particularly for linear algebra, which tends to resemble the mathematical form.
+
+### The Two Language Problem
+
+The "two language problem" is that sometimes you want or need much faster code than you can get with an interpreted language like Python or R, so you rewrite the slow code in a faster language like C or Fortran.
+This is a problem because now you need to know three things (taking R and C as the example): the R language, the C language, and how the interface between them works.
+In general, when programming you want to be in the highest level language possible, because this allows you to get more done with less code, so you're more productive.
+
+![two language problem]({% link img/lecture_sketch_placeholder.jpeg %})
+
+
+language    |   Date 1.0    |  initial idea    
+------------|---------------|-------------------
+Python      |  1994         |  code should be easy to read  (high level)
+R           |  2000 (S much earlier) |  by statisticians, for statisticians
+Julia       |  2018         |  solve the two language problem
+
+123 GO:
+What do you like about one language that you use?
+I may ask a few of you to elaborate.
+
+![what you like about language]({% link img/lecture_sketch_placeholder.jpeg %})
+
+This class is about concepts, not syntax.
+People can and do use R, Python, and Julia for the kinds of applications we will do in this class.
+You're welcome to use whatever language you want, but I encourage you to stick with Julia for this semester, because I believe Julia will make it easier to write programs that are efficient enough for the data sets we're after.
+
+- lecture and homework will use Julia
+- you'll get better support from me and your peers 
+
+The final project is a good time to experiment with different languages.
+
+
 ## Julia basic script
 
 This is a basic example, not following best practices yet.
@@ -96,6 +145,11 @@ This is a basic example, not following best practices yet.
 # hello 3
 
 
+"""
+    greet(x)
+
+Greet `x` with a hello.
+"""
 function greet(x)
     println("hello " * x)
 end

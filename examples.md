@@ -13,5 +13,4 @@ date: 2021-02-05
 
 picture:
 
-![TODO: alt text]({% link img/sac_state_logo.png %})
-
+![TODO: alt text]({% link img/lecture_sketch_placeholder.jpeg %})
