@@ -10,3 +10,5 @@ date: 2021-02-05
 
 ## Resources
 
+- [chi-square test](https://www.itl.nist.gov/div898/handbook/eda/section3/eda35f.htm) National Institute of Standards and Technology (NIST)
+
