@@ -34,11 +34,22 @@ It's useful when the number of elements in the stream is unknown ahead of time.
 1. Suppose we halt reservoir sampling at element m, with m < n, where n is the size of the entire stream.
     Can this be a sample of the entire data?
     Explain.
+3. I [read on the internet](https://unix.stackexchange.com/a/108604/456485) that `shuf -n 100 data.txt` uses reservoir sampling.
+The following commands each produce 100 lines from `data.txt`.
+For each command, will it produce a simple random sample of the lines of the file `data.txt`?
+Why or why not?
+```
+head -n 100 data.txt | shuf         # 1
+shuf -n 100 data.txt | head -n 100  # 2
+shuf -n 200 data.txt | head -n 100  # 3
+shuf -n 100 data.txt | head -n 100  | sort  # 4
+```
+
 
 
 ### 2 - Program
 
-Implement a program in Julia that works
+Implement reservoir sampling by writing a program in Julia that works like a simple version of `shuf`.
 
 ### 2 - Program
 
@@ -48,7 +59,6 @@ Implement a program in Julia that works
 
 `$ shuf -n `
 
-I [read on the internet](https://unix.stackexchange.com/a/108604/456485) that `shuf
 Making our own version of `shuf`.
 
 Idea: come up with a reservoir sampling scheme that doesn't take longer than a fixed amount of time, meaning it stops once a certain amount of time has passed.
@@ -61,7 +71,6 @@ Idea: This could be a good lead in to parallel programming.
 Simulations are the easiest things to parallelize.
     
 3. Which of these will produce a simple random sample?
-
 ```
 head data.txt | reservoir_sample
 reservoir_sample data.txt | head
