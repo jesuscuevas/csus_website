@@ -5,7 +5,7 @@ tags:
 
 - implement a streaming algorithm
 - create a custom step for a shell pipeline
-- test distributional assumptions
+- test for a distribution
 
 
 ## Resources
@@ -46,59 +46,29 @@ shuf -n 100 data.txt | head -n 100  | sort  # 4
 ```
 
 
+### 2
 
-### 2 - Program
+Implement reservoir sampling by writing a program in Julia called `shuf.jl` that works like a simple version of `shuf`.
+It should accept one positional argument with the number of elements to sample, and default to 100.
 
-Implement reservoir sampling by writing a program in Julia that works like a simple version of `shuf`.
+Verify that it works for the following cases:
 
-### 2 - Program
-
-
-## Scratch
-
-
-`$ shuf -n `
-
-Making our own version of `shuf`.
-
-Idea: come up with a reservoir sampling scheme that doesn't take longer than a fixed amount of time, meaning it stops once a certain amount of time has passed.
-
-2. Test your implementation of the algorithm on the uniform distribution on the positive integers.
-Use the Kolmogorov-Smirnov test or the Chi squared test to see how close your distribution is to the expected.
-Plot some QQ plots to verify that the distribution looks as you expect.
-
-Idea: This could be a good lead in to parallel programming.
-Simulations are the easiest things to parallelize.
-    
-3. Which of these will produce a simple random sample?
-```
-head data.txt | reservoir_sample
-reservoir_sample data.txt | head
-```
-
-Test your classmate's code and verify that it works in the following cases:
-
-1. input data with 0 lines
-2. input data with 5 lines
-2. input data with 20 lines
-1. input file specified and empty (stdin)
-
-1. If your input data has fewer than the number of samples, then write an informative message to standard error.
-
-Harder:
-
-1. Generalize your program through a function that works on any iterable data in Julia, rather than only `stdin`.
-4. Wikipedia claims simple reservoir sampling is slow.
-Is it?
-Check by implementing another algorithm and comparing speeds.
-5. Make sure your program works for arbitrarily large input.
-    Hint: you need to handle more points than this:
-```
-julia> typemax(Int)
-9223372036854775807
-```
-How long must your program run before something like this matters?
+1. `seq 10 | julia shuf.jl` shuffles the integers from 1 to 10.
+2. `seq 100 | julia shuf.jl 20` samples 20 random integers without replacement from 1 to 100.
+2. `seq 1000 | julia shuf.jl` samples 100 random integers without replacement from 1 to 1000.
+2. `seq 1e7 | julia shuf.jl` samples 100 random integers without replacement from 1 to 1000.
 
 
+### 3 - Testing
+
+TODO: elaborate
+
+Use the chi square test or kolmogorov smirnoff test together with `seq` to check if your implementation of reservoir sampling differs from the uniform distribution on the integers 1 to n.
+State the null hypothesis, the p value, and your conclusion.
 
 
+### 4 - Extra Credit
+
+Math option: Prove that reservoir sampling produces simple random samples.
+
+Programming option:
