@@ -30,6 +30,8 @@ It's useful when the number of elements in the stream is unknown ahead of time.
 
 ### 1
 
+(3 pts)
+
 1. Why is it better to take a simple random sample, instead of just the first k rows?
 1. Suppose we halt reservoir sampling at element m, with m < n, where n is the size of the entire stream.
     Can this be a sample of the entire data?
@@ -48,6 +50,8 @@ shuf -n 100 data.txt | head -n 100  | sort  # 4
 
 ### 2
 
+(10 pts)
+
 Implement reservoir sampling by writing a program in Julia called `shuf.jl` that works like a simple version of `shuf`.
 It should accept one positional argument with the number of elements to sample, and default to 100.
 
@@ -61,6 +65,8 @@ Verify that it works for the following cases:
 
 ### 3 - Testing
 
+(7 pts)
+
 TODO: elaborate
 
 Use the chi square test or kolmogorov smirnoff test together with `seq` to check if your implementation of reservoir sampling differs from the uniform distribution on the integers 1 to n.
@@ -69,6 +75,14 @@ State the null hypothesis, the p value, and your conclusion.
 
 ### 4 - Extra Credit
 
-Math option: Prove that reservoir sampling produces simple random samples.
+(1 pt)
+
+Minimal points, maximal glory.
+
+Math option:
+Prove that reservoir sampling produces simple random samples.
 
 Programming option:
+Wikipedia claims simple reservoir sampling is slow.
+Is it?
+Check by implementing another variation of reservoir sampling and comparing speeds.
