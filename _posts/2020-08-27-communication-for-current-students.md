@@ -30,6 +30,8 @@ You can even send a private message to me through Zoom chat.
 
 ### Canvas
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iuZy0pckWlE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 We will use Canvas announcements for time sensitive, important announcements that everyone in class should see.
 For example, when I post the final exam I will send a Canvas announcement.
 Set your [Canvas notification preferences](https://csus.instructure.com/profile/communication) to email or give you a push notification for Announcements.
