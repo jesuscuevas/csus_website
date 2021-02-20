@@ -5,6 +5,8 @@ tags:
 
 - use basic syntax in Julia programming language
 
+next week: stats
+
 The goal today is to expose you to just those parts of Julia that you need to implement reservoir sampling for the [most recent homework]({% link _posts/2021-02-17-homework-sampling-stream.md %}).
 
 
@@ -12,11 +14,19 @@ The goal today is to expose you to just those parts of Julia that you need to im
 
 - Iterative grading implemented
 - See [video describing how to access Canvas feedback](https://youtu.be/iuZy0pckWlE)
-- I played around with some different instances, and wasn't able to get past the network bottleneck of around 3:30 for [previous homework]({% link _posts/2021-02-05-homework-streaming-large-text-file.md }).
+- Travis wins speed challenge with a time of 1:20! 👏
+- I played around with some different instances, and wasn't able to get past the network bottleneck of around 3:30 for [previous homework]({% link _posts/2021-02-05-homework-streaming-large-text-file.md %}).
 
 123 GO - who is one person you admire?
 
-Error: How I thought pipelines get bottlenecks cannot be exactly right.
+Mistake in last lecture: The way I inferred a network bottleneck from looking at `top` cannot be exactly right.
+
+If you have an explanation, I would love to hear it.
+
+These things are still true:
+
+- The network can be a bottleneck.
+- Measure to see what the bottleneck is.
 
 When I run the histogram pipeline on c4.xlarge with 4 vCPU's it takes 3:30.
 Here's `top`:
@@ -31,7 +41,7 @@ Here's `top`:
  2694 rngd      20   0  397100   4672   3832 S   0.3  0.1   0:24.59 rngd
 ```
 
-When I run a simpler pipeline (`wc -l`) on c4.xlarge it takes 1:30.
+When I run a simpler pipeline that simply counts lines (`aws s3 cp ... - | unpigz | wc -l`) on c4.xlarge it takes 1:30.
 Here's `top`:
 
 ```
@@ -43,24 +53,6 @@ Here's `top`:
  3852 ec2-user  20   0  171020   4484   3780 R   0.3  0.1   0:00.03 top
     1 root      20   0  191044   5388   3980 S   0.0  0.1   0:01.56 systemd
 ```
-
-When I run the histogram pipeline on c4.4xlarge which has 16 vCPUs it takes 2:59.
-Here's `top`:
-
-
-```
-   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
-  4970 ec2-user  20   0   44948   1228   1124 S 103.3  0.0   1:37.66 unpigz
-  4973 ec2-user  20   0  133436   8324   2004 R  67.3  0.0   1:02.99 sort
-  4971 ec2-user  20   0  114648    728    664 S  52.0  0.0   0:49.05 cut
-  4976 ec2-user  20   0 1262828 423832  11136 S  22.7  1.4   0:22.60 aws
-  4972 ec2-user  20   0  123636    960    860 S  17.0  0.0   0:16.39 sed
-  4075 rngd      20   0  169760   4580   3740 S   0.7  0.0   0:06.40 rngd
-  4977 ec2-user  20   0  171036   4360   3796 R   0.3  0.0   0:00.15 top
-```
-
-Observe that `unpigz` is using slightly higher CPU (103%) vs. the c4.xlarge (78%).
-
 
 
 ## Resources
@@ -75,33 +67,150 @@ Share the ones you find helpful on Discord.
 Ask questions!
 
 - Good: clarify conceptual differences between languages.
-- Harder: 
+- Harder: really specific syntax or which function to use.
 
 Modules organize objects in namespaces.
 Use `import X` to use namespace lookups in module `X`.
 
+```julia
+import Random
+Random.shuffle(1:5)
+```
+
+
 `using X` makes exported objects from the module `X` globally available.
+
+```julia
+using Random
+
+shuffle(1:5)
+```
+
+Why `import` rather than `using`?
+
+- Avoid name collisions if both modules export same name.
+- Let's you be more clear and specific - tells you what's happening.
 
 `?` enters the help menu to access builtin documentation.
 
 `rand(x)` selects a random element from `x`.
 
+```julia
+rand([10, 20, 30])
+rand(1:10)
+```
+
 When there are too versions of a function, `f(x)` and `f!(x)`, the convention is that `f!(x)` mutates `x`, meaning it modifies `x` in place.
+
+```julia
+x = [10, 20, 30]
+shuffle(x)
+
+shuffle!(x)
+```
+
 
 Mutation is an example of a side effect.
 123 GO - Do side effects make it easier or more difficult to understand code?
 
+Answer- more difficult, particularly for parallel programming.
+
 Arrays are the basic container in Julia.
+
+```julia
+x = [10, 20, 30]
+
+typeof(x)
+```
+
 
 We can select and assign elements in arrays based on indexes.
 
+Julia uses 1 based indexing.
+
+```julia
+x[2]
+
+# update
+x[2] = 200
+```
+
+
 `1:n` represents a sequence of integers from `1` to `n`.
+
+```julia
+y = 1:10
+```
+
 
 When used inside brackets `[`, `end` represents the last element of an array.
 
+```julia
+x[length(x)]
+
+
+x[end]
+
+x[2:end]
+
+x[1:end]
+
+# syntactic sugar
+x[end-1]
+
+x[length(x) - 1]
+
+x[-1]
+
+x[end-2]
+```
+
+
 `end` closes the end of syntactic blocks, like `if` statements.
 
+```
+if 1 < 2
+    println("sweet")
+else
+    println("uh oh")
+end
+```
+
+
 Simple functions return the value of the last expression.
+
+```
+function foo(x)
+    y = x + 1
+    y * 2       # <-- last expression
+end
+
+foo(10)
+
+function foo2(x)
+    println("starting")
+    y = x + 1
+    return y * 2
+    println("all done")
+end
+
+```
+
+Office hours
+
+```julia
+
+function set_first_to_100!(x)
+    x[1] = 100
+end
+
+x = [10, 20, 30]
+
+set_first_to_100!(x)
+
+```
+
+
 
 
 ## Exercise
