@@ -7,38 +7,43 @@ If you're a major or minor in the [College Natural Science & Mathematics](https:
 A list of current and former students follows.
 
 
-<!--
-Can't figure it out, and don't have time.
-My story:
+### Julian Hernandez
 
-I start out with all the minimal templates, building stuff, and it works fine.
-I want to do something basic, but unsupported, and all hell breaks loose.
-Instead of just need HTML, now I need to also know:
+- Spring 2021, funded by SEE IRA program (Science Educational Equity Instructionally Related Activities)
 
-- kramdown
-- CSS
-- Ruby
-- liquid
-- The jekyll theme
-
-And how it all interacts to generate HTML. Ugh!
+![Julian Hernandez]({% link img/julian_photo.jpg %})
 
 
-https://stackoverflow.com/questions/31918354/stop-floating-with-the-end-of-a-tag/31918440
-.floatBlock:after {
-    display: block;
-    content: " ";
-    clear: both;
-    height: 0;
-}
--->
+### Shawheen Naderi
 
-{% for post in site.tags.student %}
-<div class="floatBlock">
-  <p>
-  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-  {{ post.excerpt }}
-  {{ post.time }}
-  </p>
-</div>
-{% endfor %}
+- Spring 2021, funded by SEE IRA program (Science Educational Equity Instructionally Related Activities)
+
+![Shawheen Naderi]()
+
+
+### Aleksey Zasorin
+
+- Fall 2020, STAT 128 class
+- [US 2020 Election Tweet Sentiment Analysis]({% link assets/2020_tweet_sentiment_aleksey.html %})
+
+![Aleksey Zasorin]({% link img/aleksey_zasorin.png %})
+
+Aleksey analyzed tweets around the 2020 US presidential election for his final project in STAT 128.
+He tracked the general sentiment of tweets mentioning each candidate over time, and used this to predict some of the outcomes in battleground states.
+This project demonstrates persuasive graphics, and clean R code.
+
+
+### Stephen Gibson
+
+- Summer 2020
+- [Machine Learning Skateboard Tricks](https://github.com/LightningDrop/SkateboardML)
+
+![Stephen Gibson]({% link img/stephen_gibson.jpeg %})
+
+Skateboarders can easily recognize tricks performed by other skateboarders.
+Given a video of a skateboard trick, can the computer classify the trick with high probability?
+Stephen developed a dataset and a machine learning model that can distinguish between two of the most common skateboarding tricks, ollies and kickflips.
+
+Here's Stephen doing a kickflip:
+
+![Stephen does a kickflip]({% link img/stephen_kickflip.gif %})

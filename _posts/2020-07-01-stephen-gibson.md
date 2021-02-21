@@ -16,3 +16,4 @@ Summer 2020 - [Machine Learning Skateboard Tricks](https://github.com/LightningD
 Here's Stephen doing a kickflip:
 
 ![Stephen does a kickflip]({% link img/stephen_kickflip.gif %})
+
