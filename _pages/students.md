@@ -18,7 +18,7 @@ A list of current and former students follows.
 
 - Spring 2021, funded by SEE IRA program (Science Educational Equity Instructionally Related Activities)
 
-![Shawheen Naderi]()
+![Shawheen Naderi]({% link img/shawheen.jpg %})
 
 
 ### Aleksey Zasorin
