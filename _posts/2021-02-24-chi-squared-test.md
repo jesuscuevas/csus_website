@@ -97,7 +97,7 @@ Why subtract 1?
 ![chi square distribution]({% link img/chisquare5.png %})
 
 
-## Hypothesis tests and P values quantify the implausability of the null hypothesis.
+## Hypothesis tests and P values quantify the implausibility of the null hypothesis.
 
 Let's be optimistic, and assume that we generated data correctly from the uniform distribution.
 
