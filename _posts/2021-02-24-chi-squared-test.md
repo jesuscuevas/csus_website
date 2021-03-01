@@ -4,15 +4,16 @@ tags:
 date: 2021-03-01
 ---
 
-- verify 
+- Apply the Chi Squared test to determine if data comes from a particular distribution
+- Verify calculations in statistical software
 
 ## Announcements
 
-- 
 
 ## Resources
 
 - [Pearson's chi-squared test](https://en.wikipedia.org/wiki/Pearson%27s_chi-squared_test) Wikipedia
+- [chi-square test](https://www.itl.nist.gov/div898/handbook/eda/section3/eda35f.htm) National Institute of Standards and Technology (NIST)
 - Julia HypothesisTests [Pearson chi-squared test](https://juliastats.org/HypothesisTests.jl/latest/parametric/#Pearson-chi-squared-test-1)
 
 ## Background
@@ -77,7 +78,7 @@ bins = collect(range(0, 1e6, length = 5))
       1.0e6
 ```
 
-## The Chi squared sample statistic compares the expected and actual outcomes per bin
+## The Chi squared sample statistic compares the expected and actual outcomes per bin.
 
 ![TODO: alt text]({% link img/lecture_sketch_placeholder.jpeg %})
 
@@ -85,13 +86,16 @@ bins = collect(range(0, 1e6, length = 5))
 counts = [7, 5, 4, 4]
 expected = [5, 5, 5, 5]
 
-
+chi_stat = sum((counts - expected).^2 ./ expected)
+# 1.2
 ```
-
 
 [It turns out](https://en.wikipedia.org/wiki/Pearson%27s_chi-squared_test#Many_cells) that this sample statistic approximately follows a Chi squared distribution with 4 - 1 = 3 degrees of freedom.
 
 Why subtract 1?
+
+![chi square distribution]({% link img/chisquare5.png %})
+
 
 ## Hypothesis tests and P values quantify the implausability of the null hypothesis.
 
@@ -101,10 +105,42 @@ Let's be optimistic, and assume that we generated data correctly from the unifor
 
 ![TODO: alt text]({% link img/lecture_sketch_placeholder.jpeg %})
 
-A one sided hypothesis test tells us 
+
+```julia
+using Distributions
+import HypothesisTests
+
+# P-value calculation
+chi_rv = Chisq(length(counts) - 1)
+pval1 = 1 - cdf(chi_rv, chi_stat)
+0.753004311656458
+
+# Verify statistic and pvalue calculation with external library
+test_one = HypothesisTests.ChisqTest(counts)
+
+Pearson's Chi-square Test
+-------------------------
+Population details:
+    parameter of interest:   Multinomial Probabilities
+    value under h_0:         [0.25, 0.25, 0.25, 0.25]
+    point estimate:          [0.35, 0.25, 0.2, 0.2]
+    95% confidence interval: [(0.15, 0.5788), (0.05, 0.4788), (0.0, 0.4288), (0.0, 0.4288)]
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.7530
+
+Details:
+    Sample size:        20
+    statistic:          1.1999999999999997
+    degrees of freedom: 3
+    residuals:          [0.894427, 0.0, -0.447214, -0.447214]
+    std. residuals:     [1.0328, 0.0, -0.516398, -0.516398]
+```
 
 ## Visualization and formal statistics complement each other.
 
+![qq plot when data matches]({% link img/qq_from_chisquare5.png %})
 
 ## Exercise
 
