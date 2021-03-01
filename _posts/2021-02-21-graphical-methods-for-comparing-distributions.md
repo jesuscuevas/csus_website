@@ -111,7 +111,7 @@ The p quantile for a distribution X is the point xq that satisfies P(X <= xq) = 
 q = range(0, 1, step = 0.1)
 collect(q)
 
-collect(q)
+#julia> collect(q)
 #11-element Array{Float64,1}:
 # 0.0
 # 0.1
