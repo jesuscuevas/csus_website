@@ -138,9 +138,19 @@ Details:
     std. residuals:     [1.0328, 0.0, -0.516398, -0.516398]
 ```
 
+
 ## Visualization and formal statistics complement each other.
 
 ![qq plot when data matches]({% link img/qq_from_chisquare5.png %})
+
+Summarizing: We've seen three methods to check whether data is different from a reference distribution:
+
+1. Histograms
+2. QQ plots
+3. Chi square test
+
+These techniques apply to data generated from any distribution, which make them powerful tools for checking parametric assumptions.
+
 
 ## Exercise
 

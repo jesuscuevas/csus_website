@@ -111,7 +111,11 @@ Verify that it works for the following cases:
 1. `seq 10 | shuf | julia shuf.jl` shuffles the integers from 1 to 10.
 2. `seq 100 | julia shuf.jl 20` samples 20 random integers without replacement from 1 to 100.
 2. `seq 1000 | julia shuf.jl` samples 100 random integers without replacement from 1 to 1000.
-2. `seq -f "%.0f" 1e7 | julia shuf.jl` samples 100 random integers without replacement from 1 to 10 million.
+1. `time seq 1e9 | julia shuf.jl` samples 100 integers from 1 to 1 billion
+1. `seq 20 | sed "s/1/one/" | julia shuf.jl` shuffles non integer input lines
+1. `seq 10 | julia shuf.jl 10` shuffles the integers from 1 to 10
+1. `seq 11 | julia shuf.jl 10` samples and shuffles 10 integers without replacement from 1 to 11.
+
 
 
 ### 3 - Hypothesis Testing
