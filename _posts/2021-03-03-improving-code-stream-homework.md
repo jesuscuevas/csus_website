@@ -110,15 +110,25 @@ I'd be happy to work them into self contained examples, just ask!
 ------------------------------------------------------------
 
 Organize logic into small functions you can understand, test, and tinker with.
-
 This is the essence of programming.
 
 ```julia
+
+# 1
+# jump right into reservoir sampling
+
+# 2 
 function main()
     ... # implement reservoir sampling
 
-
+# 3 
 function shuf(data=stdin, size=parse(Int, ARGS[1]))
+
+# Separate function into something that works on any data stream.
+function reservoir_sample(stream, size=100)
+
+function main()
+    R = reservoir_sample(stdin)
 ```
 
 
@@ -138,6 +148,26 @@ end
 
 123 GO: What is unnecessarily repeated?
 
+Better:
+
+```julia
+if i < sampleSize  #smaller sequence than sample size
+    num = Random.shuffle!(num)
+end  
+display(num)  
+```
+
+
+Better:
+
+```julia
+if i < sampleSize
+    num = Random.shuffle(num)
+end  
+display(num)  
+```
+
+
 There's still a bug here, and we can exercise it with this test:
 
 ```
@@ -154,18 +184,37 @@ $ seq 11 | julia shuf.jl 10
 10
 ```
 
+Best:
+
+```julia
+# Before:
+if i < sampleSize  #smaller sequence than sample size
+    num = Random.shuffle!(num)
+    display(num) 
+else
+    display(num)  
+end  
+
+# After:
+num = Random.shuffle(num)
+display(num)  
+```
+
+
 ------------------------------------------------------------
 
 Stream (iterate) through the data for memory efficiency. 
 There's no reason to use reservoir sampling if the data fits in memory.
 
 ```julia
-data = readlines()
+data = readlines(stdin)  # Reads EVERYTHING from stdin
 
 for line in eachline(stdin)
-    push!(stream,parse(Int64,line))
+    push!(stream,parse(Int,line))
 end
 ```
+
+We like __lazy__ data structures that stream over inputs when processing large data.
 
 ------------------------------------------------------------
 
@@ -173,35 +222,61 @@ More generally, assume as little as possible about your inputs.
 
 ```julia
 for line in eachline()
-    n = parse(Int64, line)
+    n = parse(Int, line)
 
     # ... do something with n
+
+
+# Better:
+for line in eachline()
+
+    # ... do something with line
 ```
+
 
 ------------------------------------------------------------
 
 Choose descriptive variable names.
 
 ```julia
+# Any argument for args? seems less ideal
 args = parse(Int, ARGS[1])
 
+# Strong argument- following notation in Wikipedia algo
 k = parse(Int, ARGS[1])
 
 reservoir_size = parse(Int, ARGS[1])
+
+reservoirSize = parse(Int, ARGS[1])
 ```
 
 123 GO- what's your favorite?
 
+Most say `reservoir_size`, `reservoirSize`
+
+Too far:
+reservoirSizeForSimpleReservoirSampling
+
+
 ------------------------------------------------------------
 
 Avoid global variables when possible.
-The only global variables you have should be the functions that you define.
+The only global variables should be the functions that you define (usually).
 
 ```julia
-global i = 0
+global i = 0  # defining
 for line in eachline()
-    global i += 1
+    global i += 1   # reads and updates a global variable - AVOID when possible
     # ...
+
+
+# This will work and be better:
+function main()
+    i = 0
+    for line in eachline()
+        i += 1
+end
+ 
 ```
 
 The way to avoid globals here is to wrap everything up in one function, see demo after class on Monday, Mar 1.
@@ -215,6 +290,14 @@ for i = 1:(size(result, 1))
     print(result[i])
     println()
 end
+
+# Better:
+for ri in result
+    println(ri)     # ri will be set to each value in iterable object `result`
+end
+
+# can iterate over `eachline(stdin)`
+
 ```
 
 ------------------------------------------------------------
@@ -240,3 +323,4 @@ It's a programmer faux pas.
     println(element)
   end
 ```
+
