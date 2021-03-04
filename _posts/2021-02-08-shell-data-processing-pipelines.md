@@ -26,35 +26,42 @@ tags:
 
 ## Filter programs process standard input into standard output
 
-![filter program]({% link img/lecture_sketch_placeholder.jpeg %})
+![filter program]({% link img/filter_program.jpeg %})
 
 123 GO - Can filters produce more data to `stdout` than comes in through `stdin`?
+
+Yes.
+We can add a novel to every line if we want.
 
 
 ## Join two or more filters together into a pipeline
 
-![pipeline]({% link img/lecture_sketch_placeholder.jpeg %})
+![pipeline]({% link img/pipeline_cat_sed.jpeg %})
 
 The UNIX philosophy is to take many small, specialized programs and join them together in useful ways.
 
 123 GO - Below we have 10 commands.
 How many different pipelines with 5 commands can we potentially create?
 
+10^5, since there are 10 different choices for each command, and you can repeat the same command several times.
+A proper subset of these pipelines make sense and are useful.
+
 
 ## Commands
 
-| Command  | Mnemonic | Example                                                                                                        |
-| :------: | :------: | :------------------------------------------------------------------------------------------------------------- |
-|  `cut`   |          |                                                                                                                |
-|  `head`  |   head   | `$ head README` prints out the first few lines in the file README                                              |
-|  `grep`  |          |                                                                                                                |
-|  `gzip`  |   zip?   | `$ gzip README` compresses the file `README`, saves it in the file `README.gz`, and deletes `README`           |
-| `gunzip` |  unzip   | `$ gunzip README.gz` decompresses the file `README.gz`, saves it in the file `README`, and deletes `README.gz` |
-|  `sed`   |          |                                                                                                                |
-|  `sort`  |          |                                                                                                                |
-|  `tail`  |          |                                                                                                                |
-|  `time`  |   time   | `$ time cp a.txt b.txt` prints out the time required to run                                                    |
-|  `uniq`  |          |                                                                                                                |
+Command |   Mnemonic    |   Example
+------- |   --------    |   -----------
+`cut`   |  cut          | `$ echo "1,2,3" | cut -f2 -d,` cuts out the second field in `1,2,3`, as separated by comma delimiters, so it prints `2`.
+`head`  |   head        |   `$ head README` prints out the first few lines in the file README.
+`grep`  | global regular expression print  | `$ grep "clark" d
+`gzip`  |   zip?        |   `$ gzip README` compresses the file `README`, saves it in the file `README.gz`, and deletes `README`
+`gunzip`|   unzip       |   `$ gunzip README.gz` decompresses the file `README.gz`, saves it in the file `README`, and deletes `README.gz`
+`sed`   | streaming editor |
+`sort`  | sort          | 
+`tail`  | tail          | 
+`time`  | time          | `$ time cp a.txt b.txt` prints out the time required to run the command `cp a.txt b.txt` `uniq`  
+`uniq`  |  unique       | `$ uniq --count data.txt`
+
 
 
 ## Redirection
