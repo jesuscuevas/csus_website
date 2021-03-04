@@ -51,16 +51,17 @@ A proper subset of these pipelines make sense and are useful.
 
 Command |   Mnemonic    |   Example
 ------- |   --------    |   -----------
-`cut`   |  cut         | `$ echo "1,2,3" | cut -f2 -d,` cuts out the second field in `1,2,3`, as separated by comma delimiters, so it prints `2`.
+`cut`   |  cut          | `$ echo "1,2,3" | cut -f2 -d,` cuts out the second field in `1,2,3`, as separated by comma delimiters, so it prints `2`.
 `head`  |   head        |   `$ head README` prints out the first few lines in the file README.
-`grep`   | global regular expression print  | `$ grep "clark" d
+`grep`  | global regular expression print  | `$ grep "clark" d
 `gzip`  |   zip?        |   `$ gzip README` compresses the file `README`, saves it in the file `README.gz`, and deletes `README`
-`gunzip`  |   unzip        |   `$ gunzip README.gz` decompresses the file `README.gz`, saves it in the file `README`, and deletes `README.gz`
+`gunzip`|   unzip       |   `$ gunzip README.gz` decompresses the file `README.gz`, saves it in the file `README`, and deletes `README.gz`
 `sed`   | streaming editor |
-`sort`   | sort          | 
-`tail` | tail | 
-`time` | time       | `$ time cp a.txt b.txt` prints out the time required to run the command `cp a.txt b.txt` `uniq`  
-`uniq` |  unique    | `$ uniq --count data.txt`
+`sort`  | sort          | 
+`tail`  | tail          | 
+`time`  | time          | `$ time cp a.txt b.txt` prints out the time required to run the command `cp a.txt b.txt` `uniq`  
+`uniq`  |  unique       | `$ uniq --count data.txt`
+
 
 
 ## Redirection
