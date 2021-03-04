@@ -141,7 +141,7 @@ The entire `plot` function is just a single function call: `UseMethod("plot")`.
 The actual implementation happens in the plotting methods, namely:
 
 - `plot.default`
-- `grahpics::plot.function`
+- `graphics::plot.function`
 - `graphics:::plot.histogram`
 - `stats:::plot.lm`
 
