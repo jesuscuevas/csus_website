@@ -346,6 +346,9 @@ More numerical and meta data.
 
 Here are the people involved in running the organization.
 
+We can ask: who is getting paid, and how much?
+
+
 
 ```xml
       <BooksInCareOfDetail>
@@ -444,9 +447,6 @@ Here are the people involved in running the organization.
         <OtherCompensationAmt>18994</OtherCompensationAmt>
       </Form990PartVIISectionAGrp>
 ```
-
-We can ask: who is getting paid, and how much?
-
 
 ------------------------------------------------------------
 
