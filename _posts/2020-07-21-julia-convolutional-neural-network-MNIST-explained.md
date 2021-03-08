@@ -117,7 +117,7 @@ end
 
 The rest of the program passes `Args` around all over, so they act like global parameters.
 `lr` is the learning rate which controls 
-They're mutuable because the program [dynamically adjusts them later](#learning-rate) based on how the training goes.
+They're mutable because the program [dynamically adjusts them later](#learning-rate) based on how the training goes.
 
 
 ### Transforming Images to Arrays
