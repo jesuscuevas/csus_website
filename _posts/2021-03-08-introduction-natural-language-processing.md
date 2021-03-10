@@ -9,8 +9,11 @@ tags:
 ## Announcements
 
 - Written course notes uploaded to Canvas
-- streaming homework hard deadline tonight
+- Streaming homework hard deadline tonight
+- Submit last week's participation if you haven't
+- Want midterm next week, or after Spring break?
 
+123 GO - What's something you enjoyed this weekend?
 
 ## Resources
 
@@ -40,9 +43,25 @@ Consider these two phrases:
 
 How are we going to represent these as a table / matrix?
 
+
+```
+    Bash    has     been    processing  big     data    forever don't
+1   1       1       1       1           1       1       1      0
+2   1       0       0       0           2       1       0      1       
+
+... more columns for the rest of second.
+```
+
 123 GO: Notice anything that might hinder our analysis?
 
+- misspelling
+- tense (past present future)
+- bash is a homonym
+- sentences and punctuation
+
+
 A __document term matrix__ has rows for every observation (document) and columns with counts for every term (word).
+
 
 ## Objects
 
@@ -51,8 +70,8 @@ It has many other names: aka free text, plain text, raw text, strings.
 
 __Encoding__ is how exactly the computer stores that text in binary format.
 
-- ASCII (American Standard Code for Information Interchange) is old, it can represent the English language with standard punctuation.
-- Unicode is newer, it can represent other languages, mathematical symbols, and emoticons.
+- __ASCII__ (American Standard Code for Information Interchange) is old, it can represent the English language with standard punctuation.
+- __Unicode__ is newer, it can represent other languages, mathematical symbols, and emoticons.
     The most common Unicode encoding is UTF-8.
 
 ```
@@ -63,6 +82,16 @@ file abc.csv
 ```
 
 123 GO- when should you encode text data in format other than ASCII or UTF-8?
+
+Only if you're forced to.
+
+Other options:
+
+- UTF-16
+- UTF-32
+- latin 
+- japanese specific
+- many others
 
 
 A __document__ is one unit of text, for example:
@@ -89,6 +118,8 @@ Printing shows some metadata.
 A __corpus__ is a collection of documents.
 The plural form is corpora.
 
+`Corpus`
+
 ```julia
 c = Corpus([d1, d2])
 ```
@@ -107,25 +138,28 @@ tokens(d1)
 
 123 GO: what doesn't belong?
 
+The period.
+
 
 `prepare!`, `strip_punctuation`, `remove_case!`
 
 ```julia
 prepare!(d1, strip_punctuation)
 
-d1
-
 remove_case!(d1)
 ```
 
 123 GO: are these updates happening in place?
+Will the documents inside the corpus be changed?
+
+Yes!
 
 Let's look at the corpus.
 
 ```julia
-remove_case!(c)
+text(c[1])
+text(c[2])
 ```
-
 
 
 "The __lexicon__ of a corpus consists of all the terms that occur in any document in the corpus."
@@ -140,7 +174,7 @@ lexicon(c)
 
 ------------------------------------------------------------
 
-123 go: How many unique words are in the following example.
+123 go: How many unique words are in the following example?
 
 ```julia
 d3 = StringDocument("help helpful helper helping person")
@@ -160,7 +194,9 @@ Let's stem the whole corpus.
 
 ```julia
 stem!(c)
-update_lexicon!(c)
+
+text(c[1])
+
 ```
 
 ## Document Term Matrix
@@ -180,7 +216,7 @@ text(c[1])
 text(c[2])
 ```
 
-`DocumentTermMatrix`, `dtm`
+`DocumentTermMatrix`, `dtm`, `:dense`
 
 ```julia
 d = DocumentTermMatrix(c)
@@ -192,8 +228,9 @@ dtm(d, :dense)
 
 Let's check that the columns correspond to these terms:
 
+`.term`
+
 ```julia
-d.terms
 ```
 
 
@@ -203,6 +240,3 @@ What's a sparse matrix?
 Why use it here?
 
 Hint: There are more than 100,000 words in the English language.
-
-```
-```
