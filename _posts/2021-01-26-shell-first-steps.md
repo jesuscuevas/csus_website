@@ -108,7 +108,7 @@ The final line, `~ $`, shows the shell is ready for another command.
 - `~` means home directory, so `$ cd ~` means changes the working directory to your home directory.
 - `..` means the parent directory, so if my working directory is `/Users/fitzgerald/projects`, and then I run `$ cd ..`, then my working directory will be `/Users/fitzgerald`.
 - `*` is a __wildcard__ that matches any character.
-    It can be combined with most of the commands below to operate on many files simultaneousy.
+    It can be combined with most of the commands below to operate on many files simultaneously.
     For example, `$ rm *.txt` removes all files that end in `.txt` within the working directory.
 - Arguments appear following the commands preceded by `-` or `--`.
     For example, `$ ls -R` lists all directories recursively from the working directory.
