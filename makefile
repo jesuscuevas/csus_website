@@ -8,3 +8,6 @@ up:
 # Used after updating OS
 update:
 	bundle update
+
+%.pdf: %.md
+	pandoc -t beamer -s $< -o $@
