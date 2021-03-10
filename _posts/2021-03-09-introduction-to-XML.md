@@ -5,6 +5,12 @@ tags:
 
 - extract data from XML documents
 
+XML stands for eXtensible Markup Language.
+
+## Announcements
+
+123 GO:
+
 
 # Why should we learn how to extract data from XML?
 
@@ -27,9 +33,15 @@ Or why learn any other data format, for that matter?
     </Filer>
 ```
 
-XML is a hierarchical format, like JSON.
-Here's the same data represented as JSON (JavaScript Object Notation).
+# XML vocabulary
 
+
+# XML represents data in a hierarchical format {.t}
+
+Draw tree of document
+
+
+# Many other data formats can represent hierarchical data
 
 ```JSON
 {
@@ -48,8 +60,10 @@ Here's the same data represented as JSON (JavaScript Object Notation).
 }
 ```
 
-123 GO- why do you think they call it JavaScript Object Notation?
+123 GO- JSON stands for Javascript Object Notation. Why?
 
+
+# If we didn't know XML, how might we find and extract the tag `CityNm`?
 
 
 ```julia
