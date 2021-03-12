@@ -165,7 +165,7 @@ Alternatively, with an absolute (full) path:
 ```bash
 $ xmllint --xpath \
     "/Return/ReturnHeader/Filer/USAddress/CityNm/text()" \
-    201932259349302043_.xmlic.
+    201932259349302043_public.xml 
 
 BOSTON
 ```
