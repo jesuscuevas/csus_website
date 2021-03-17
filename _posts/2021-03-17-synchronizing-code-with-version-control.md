@@ -47,5 +47,6 @@ git, svn (subversion)
 - Uploading SSH keys to Github
 - Creating EC2 instance with more disk space
 - `ssh -A` to use key forwarding
+- Cloning
 - Pushing, pulling
 - Merging with and without conflicts
