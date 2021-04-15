@@ -15,7 +15,7 @@ In high school I worked on a ranch, mostly digging holes.
 By the end of high school I was tired of school, and ready to see the world.
 I didn't expect to ever go to college, and I wanted to be independent of my parents, so I enlisted in the Army.
 
-![me as a soldier]({% link img/army.jpg %})
+![my buddy and me in Afghanistan]({% link img/fitz_williams_army.png %})
 
 In the Army I chose the military occupation specialty (MOS) of "heavy construction equipment operator" so that I could have an actual job skill when I got out.
 I volunteered for Airborne school and became a Maroon Beret in a combat unit at Fort Bragg, NC, and then Afghanistan.
