@@ -3,8 +3,6 @@ tags:
     - stat196k
 ---
 
-# Synchronizing code with version control
-
 - describe idea and use cases for version control
 - use version control to synchronize files between a laptop and a server
 

@@ -103,7 +103,7 @@ The final line, `~ $`, shows the shell is ready for another command.
 - The __working directory__ is the location of the shell in the file system, analogous to the directory you open in a GUI file explorer.
 - Two ways to identify files and directories:
     - An __absolute path__ unambiguously identifies files and directories within the file system.
-        Absolute paths start with `\`, the root of the directory tree.
+        Absolute paths start with `/`, the root of the directory tree.
     - A __relative path__ gives the location of files and directories relative to the working directory.
 - `~` means home directory, so `$ cd ~` means changes the working directory to your home directory.
 - `..` means the parent directory, so if my working directory is `/Users/fitzgerald/projects`, and then I run `$ cd ..`, then my working directory will be `/Users/fitzgerald`.
