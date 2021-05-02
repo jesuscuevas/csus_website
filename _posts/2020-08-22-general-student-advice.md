@@ -23,7 +23,7 @@ When you travel, you'll meet young people from all over the world, and have a gr
 You have the whole rest of your life to be responsible.
 
 When you're ready to go back to school, you can go to any community college.
-On average, my community college teachers were better teachers than the Professors at UC Berkeley, who are famous for their research.
+On average, my community college teachers were better teachers than the professors at UC Berkeley, who are famous for their research.
 You'll do better when you're ready to focus, and you have an idea of what you like.
 The older community college students in any math or science class are quite focused.
 They know where they want to go, and that it's going to take work.
